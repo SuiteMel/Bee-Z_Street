@@ -18,7 +18,7 @@ const Navbar = props => (
               : "nav-item"
           }
         >
-          <Link to="/" className="nav-link">
+          <Link to="/search" className="nav-link">
             Search
           </Link>
         </li>
@@ -29,7 +29,7 @@ const Navbar = props => (
               : "nav-item"
           }
         >
-          <Link to="/discover" className="nav-link">
+          <Link to="/garden" className="nav-link">
             Garden
           </Link>
         </li>
@@ -40,7 +40,7 @@ const Navbar = props => (
               : "nav-item"
           }
         >
-          <Link to="/search" className="nav-link">
+          <Link to="/contact" className="nav-link">
             Contact
           </Link>
         </li>

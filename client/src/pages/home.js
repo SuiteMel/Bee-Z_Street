@@ -1,10 +1,12 @@
 import React from "react";
 import "../css/home.css";
+import Wrapper from "../components/Wrapper";
+
 
 const Home = () => (
-  <div>
+  <Wrapper>
     <h2>Hello World</h2>
-  </div>
+  </Wrapper>
 );
 
 export default Home;
