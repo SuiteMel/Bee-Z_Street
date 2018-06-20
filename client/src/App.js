@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./pages/home";
 import Search from "./pages/search";
 import Garden from "./pages/garden";
@@ -10,6 +11,7 @@ const App = () => (
 
   <Router>
     <div> 
+    <Navbar />
     <Route exact path="/" component={Home} />
     <Route exact path="/search" component={Search} />
     <Route exact path="/garden" component={Garden} />
