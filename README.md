@@ -1,12 +1,21 @@
-# Create React Express App
+# Bee-Z Street
 
-## About This Boilerplate
+(screenshot goes here)
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Description
 
-## Starting the app locally
+## Technologies Used:
+
+Front-End: React-dnd, react-dnd-html5-backend, React.js, ES6, JSX, Materialize, Javascript
+
+Back-End: MongoDB, Passport Authentication, Nodemon, Webpack, Babel, Express, ORM file structure
+
+#Demo
+
+Check out Bee-Z Street here XXXXXXXXXXXXXXXX
+
+## Installation
 
 Start by installing front and backend dependencies. While in this directory, run the following commands:
 
@@ -27,6 +36,8 @@ That's it, your app should be running on <http://localhost:3000>. The Express se
 
 ## Deployment (Heroku)
 
+##Delete Heroku info
+
 After confirming that you have an up to date git repository and a Heroku app created, complete the following:
 
 1. Build the React app for production by running the following command:
@@ -41,3 +52,6 @@ yarn build
 3. Push to Heroku
 
 If all previous steps were followed correctly, your application should be deployed to Heroku!
+
+
+Coded by Melissa Waltner, Sam McCall, Patrick Kearney and Jennifer Lang
