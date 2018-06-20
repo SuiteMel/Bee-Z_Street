@@ -1,3 +1,7 @@
 node_modules
+<<<<<<< HEAD
 
 DS_store
+=======
+.DS_Store
+>>>>>>> 231884b061770c8f656df9d9ff7e9d2921f99bb2
