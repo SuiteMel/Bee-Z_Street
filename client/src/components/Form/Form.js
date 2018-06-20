@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Form = props => {
+export const Form = props => {
 
   return (
     <form>
@@ -19,5 +19,3 @@ const Form = props => {
     </form>
   )
 }
-
-export default Form;
