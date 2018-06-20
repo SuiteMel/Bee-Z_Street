@@ -1,0 +1,31 @@
+.submit{
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  display: block;
+  font-size: 1.5em;
+  border-radius: 5px;
+  border-style: groove;
+  color: black;
+  margin:0 auto;
+  margin-top: 10px;
+  background: rgb(224, 197, 45);
+  border: 5px solid goldenrod;
+}
+ 
+.submit a{
+  color: white;
+  text-decoration: none;
+  background: rgb(224, 197, 45);
+  border: 5px solid goldenrod;
+}
+ 
+.submit a:link{
+  background: rgb(224, 197, 45);
+  border: 5px solid goldenrod;
+}
+ 
+.submit a:hover{
+  background: rgb(207, 158, 21);
+  border: 5px solid goldenrod;
+}

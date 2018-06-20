@@ -3,7 +3,7 @@ import "../css/home.css";
 
 const Search = () => (
   <div>
-    <h2>It's a Search!</h2>
+    <h2>It's a Search</h2>
   </div>
 );
 

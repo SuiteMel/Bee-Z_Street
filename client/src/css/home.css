@@ -1,3 +1,12 @@
+@import url("search.css");
+@import url("contact.css");
+@import url("garden.css");
+
+body { 
+  cursor: url('../images/bee-cursor.ico'), default; 
+  }
+
+
 h2 {
   color: red;
 }
