@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "../css/home.css";
-import Form from "../components/Form";
-import Button from "../components/Button";
+import { Form, Button } from "../components/Form";
 import Wrapper from "../components/Wrapper";
 
 class Contact extends Component {
