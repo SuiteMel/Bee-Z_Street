@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route } from "react-router-dom";
+import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
@@ -9,7 +10,7 @@ import Contact from "./pages/contact";
 import "./App.css";
 
 const App = () => (
-<div>
+<Wrapper>
   <Router>
     <div> 
     <Navbar />
@@ -22,7 +23,7 @@ const App = () => (
   <Footer> 
   <h3>Bee-Z Street &copy; 2018</h3>
 </Footer>
-</div>
+</Wrapper>
 );
 
 export default App;
