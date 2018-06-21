@@ -13,7 +13,6 @@ class Contact extends Component {
   render() {
     return (
     <div>
-  <Wrapper >
 
     <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
@@ -50,7 +49,6 @@ class Contact extends Component {
         Submit
     </Button>
     </form>
-  </Wrapper >
 </div >
     )};
   };
