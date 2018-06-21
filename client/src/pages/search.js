@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/home.css";
 import API from "../utils/API";
+import Main from "../components/Main";
 
 class Search extends Component {
   state = {
@@ -20,7 +21,7 @@ class Search extends Component {
 
   render() {
     return (  
-    <div>
+    <Main>
       <h2>It's a Search</h2>
   {this.state.plants.length ? (
     <div>
@@ -34,7 +35,7 @@ class Search extends Component {
     <h3>No Results to Display</h3>
   )}
       
-    </div>)
+    </Main>)
   }
 }
 

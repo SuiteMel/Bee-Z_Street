@@ -11,14 +11,15 @@ import "./App.css";
 
 const App = () => (
 <Wrapper>
+
   <Router>
-    <div> 
+    <div>
     <Navbar />
-    <Route exact path="/" component={Home} />
-    <Route exact path="/search" component={Search} />
-    <Route exact path="/garden" component={Garden} />
-    <Route exact path="/contact" component={Contact} />
-    </div>   
+      <Route exact path="/" component={Home} />
+      <Route exact path="/search" component={Search} />
+      <Route exact path="/garden" component={Garden} />
+      <Route exact path="/contact" component={Contact} />
+      </div>
   </Router>
   <Footer> 
   <h3>Bee-Z Street &copy; 2018</h3>

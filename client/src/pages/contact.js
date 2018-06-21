@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/home.css";
 import { Button, Input, TextArea } from "../components/Form";
+import Main from "../components/Main";
 
 class Contact extends Component {
   state = {
@@ -11,7 +12,8 @@ class Contact extends Component {
 
   render() {
     return (
-    <div>   
+    <Main>
+      
     <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
     <h2>Have a question? Let us help!</h2>
@@ -83,7 +85,7 @@ class Contact extends Component {
     </div>
   </div>
 </form>
-</div >
+</Main>
     )};
   };
 
