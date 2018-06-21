@@ -12,6 +12,7 @@ class Contact extends Component {
   render() {
     return (
     <div>
+
     <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
     <h2>Have a question? Let us help!</h2>
@@ -42,7 +43,7 @@ class Contact extends Component {
           value={this.state.body.text}
           onChange={this.handleInputChange}
           type="text"
-          class="black-text" 
+          className="black-text" 
           name="body"
           placeholder="Leave your message here. If you're asking about a specific plant 
           and you have a picture, upload it below."
