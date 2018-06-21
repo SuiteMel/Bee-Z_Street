@@ -44,7 +44,7 @@ class Contact extends Component {
           value={this.state.body.text}
           onChange={this.handleInputChange}
           type="text"
-          class="black-text" 
+          className="black-text" 
           name="body"
           placeholder="Leave your message here. If you're asking about a specific plant 
           and you have a picture, upload it below."
