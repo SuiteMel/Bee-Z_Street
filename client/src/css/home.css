@@ -10,3 +10,13 @@ body {
 h2 {
   color: red;
 }
+
+.Garden {
+  text-align: center;
+}
+
+.plant-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
