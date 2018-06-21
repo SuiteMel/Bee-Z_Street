@@ -1,0 +1,54 @@
+.contact body {
+}
+
+.contact div {
+  border: 1px blue dotted;
+}
+
+.form {
+background: url('../images/bee-on-flower.jpg');
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 30px;
+margin: 0px -40px 0px -40px;
+border: 1px black solid;
+} 
+
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+h3{
+  font-size: 1.5rem;
+}
+
+input{
+  width: 300px;
+  height: 30px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+textarea{
+  width: 600px;
+  height: 400px;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid rgb(184, 133, 40);
+}
+
+button{
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid rgb(184, 133, 40);
+
+}
