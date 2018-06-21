@@ -8,17 +8,13 @@ body, html {
   padding: 10px;
 }
 
-
-
 h2 {
-<<<<<<< HEAD
   color: black;
 }
 
 p {
   font-size: 1rem;
-=======
-  color: red;
+  color: black;
 }
 
 .Garden {
@@ -29,5 +25,4 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
->>>>>>> ac5730471bb27fe1d5ea81bc11a14ec34f5a9cea
 }

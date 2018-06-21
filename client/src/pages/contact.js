@@ -20,7 +20,8 @@ class Contact extends Component {
     <h2>Have a question? Let us help!</h2>
     <h3>Subject</h3>
       <Input
-        value={this.state.subject}
+        type="text"
+        value={this.state.subject.text}
         onChange={this.handleInputChange}
         name="subject"
         placeholder="Ex.: Plant identification"
@@ -28,8 +29,9 @@ class Contact extends Component {
     <h3>Post your question</h3>
 
       <TextArea 
-        value={this.state.body}
+        value={this.state.body.text}
         onChange={this.handleInputChange}
+        type="text"
         name="body"
         placeholder="Leave your message here. If you're asking about a specific plant 
         and you have a picture, upload it below."
@@ -41,6 +43,8 @@ class Contact extends Component {
         name="image"
       />
       <Button
+        type="submit"
+        value="Submit"
         onClick={this.handleFormSubmit}
       >
         Submit

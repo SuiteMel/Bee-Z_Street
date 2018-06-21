@@ -1,3 +1,10 @@
+.contact body {
+}
+
+.contact div {
+  border: 1px blue dotted;
+}
+
 .form {
 background: url('../images/bee-on-flower.jpg');
 height: 100%; 
@@ -5,6 +12,8 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 padding: 30px;
+margin: 0px -40px 0px -40px;
+border: 1px black solid;
 } 
 
 h1{
@@ -17,10 +26,6 @@ h2{
 }
 h3{
   font-size: 1.5rem;
-}
-
-div {
-  margin: -5px;
 }
 
 input{
