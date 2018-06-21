@@ -15,6 +15,7 @@ return {
 
 class Target extends Component {
   render() {
+      // eslint-disable-next-line 
       const {connectDropTarget, hovered, plants} = this.props;
       const backgroundColor = hovered ? 'lightgreen' : 'white';
     

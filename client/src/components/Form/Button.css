@@ -8,7 +8,7 @@
   border-style: groove;
   color: black;
   margin:0 auto;
-  margin-top: 10px;
+  margin: 10px 0px 20px 0px;
   background: rgb(224, 197, 45);
   border: 5px solid goldenrod;
 }

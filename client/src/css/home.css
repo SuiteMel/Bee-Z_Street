@@ -8,12 +8,21 @@ body, html {
   padding: 10px;
 }
 
-
-
 h2 {
   color: black;
 }
 
 p {
   font-size: 1rem;
+  color: black;
+}
+
+.Garden {
+  text-align: center;
+}
+
+.plant-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
