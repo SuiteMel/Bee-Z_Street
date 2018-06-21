@@ -1,53 +1,54 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "../css/home.css";
-import { Form, Button } from "../components/Form";
+import { Button, Input, TextArea } from "../components/Form";
 import Wrapper from "../components/Wrapper";
 
 class Contact extends Component {
-  constructor (props){
-    super(props)
-  }
   state = {
-    topic: ""
-  }
-  handleInputChange=(e) =>{
-    console.log(e)
-    this.setState({
-      topic: e.target.value
-    })
-  }
-  handleSubmit=() =>{
-    console.log(this.state.topic)
-    // axios.post(`/test`, { topic:this.state.message })
-    .then(res => {
-      console.log(res);
-      console.log(res.data);
-    })
-  }
-  //invoked to load component data
-  componentDidMount() {
-  }
+    subject: "",
+    body: "",
+    image: ""
+  };
 
   render() {
     return (
-      <div>
-        <Wrapper>
-              <h2>Contact Bee-Z Street</h2>
-              <Form 
-                handleInputChange={this.handleInputChange}
-                {...this.props}
-                value={this.state.message}
-              />
-              <Button 
-                className="submit" 
-                onClick={this.handleSubmit}
-              >
-                Search
-              </Button>          
-        </Wrapper>
-      </div>
-    );
-  }
-}
+    <div>
+  <Wrapper >
+
+    <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <h1>Bee-friendly gardening is a breeze!</h1>
+    <h2>Have a question? Let us help!</h2>
+    <h3>Subject</h3>
+      <Input
+        value={this.state.subject}
+        onChange={this.handleInputChange}
+        name="subject"
+        placeholder="Ex.: Plant identification"
+      />
+    <h3>Post your question</h3>
+
+      <TextArea 
+        value={this.state.body}
+        onChange={this.handleInputChange}
+        name="body"
+        placeholder="Leave your message here. If you're asking about a specific plant 
+        and you have a picture, upload it below."
+      />
+      <h3>Select a file (.pdf, .jpg .png or .gif):</h3> 
+      <Input
+        type="file"
+        onChange={this.handleInputChange}
+        name="image"
+      />
+      <Button
+        onClick={this.handleFormSubmit}
+      >
+        Submit
+    </Button>
+    </form>
+  </Wrapper >
+</div >
+    )};
+  };
 
 export default Contact;
