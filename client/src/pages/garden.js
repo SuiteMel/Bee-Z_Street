@@ -1,23 +1,9 @@
 import React, { Component } from "react";
-import "../css/home.css";
-<<<<<<< HEAD
-import Wrapper from "../components/Wrapper";
-
-const Garden = () => (
-  <div>
-    <Wrapper>
-    <h2>My Beautiful Garden</h2>
-    </Wrapper>
-  </div>
-
-);
-=======
+import "../css/garden.css";
 import Plants from "../components/Plants";
 import Target from "../components/Target";
 import HTML5Backend from 'react-dnd-html5-backend'
 import {DragDropContext } from 'react-dnd'
-
->>>>>>> ac5730471bb27fe1d5ea81bc11a14ec34f5a9cea
 
 
 class Garden extends Component {
