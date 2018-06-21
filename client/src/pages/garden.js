@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../css/garden.css";
 import Plants from "../components/Plants";
 import Target from "../components/Target";
+import Main from "../components/Main";
 import HTML5Backend from 'react-dnd-html5-backend'
 import {DragDropContext } from 'react-dnd'
 
@@ -27,6 +28,7 @@ class Garden extends Component {
 
   render() {
     return (
+      <Main>
       <div className="Garden">
       <h1 className="Garden-title">Welcome To Your Garden!</h1>
       <div className="plant-container">
@@ -38,6 +40,7 @@ class Garden extends Component {
 
       <Target />
       </div>
+      </Main>
   );
   }
 }
