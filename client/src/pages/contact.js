@@ -11,8 +11,7 @@ class Contact extends Component {
 
   render() {
     return (
-    <div>
-
+    <div>   
     <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
     <h2>Have a question? Let us help!</h2>
