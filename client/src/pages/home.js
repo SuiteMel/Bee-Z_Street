@@ -1,7 +1,5 @@
 import React from "react";
 import "../css/home.css";
-import Wrapper from "../components/Wrapper";
-
 
 const Home = () => (
   <div>
