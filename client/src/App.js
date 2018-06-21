@@ -17,11 +17,10 @@ const App = () => (
     <Route exact path="/search" component={Search} />
     <Route exact path="/garden" component={Garden} />
     <Route exact path="/contact" component={Contact} />
-    </div>
-    
+    </div>   
   </Router>
   <Footer> 
-  <p>Bee-Z Street &copy; 2018</p>
+  <h3>Bee-Z Street &copy; 2018</h3>
 </Footer>
 </div>
 );

@@ -2,12 +2,22 @@
 @import url("contact.css");
 @import url("garden.css");
 
-body { 
-  cursor: url('../images/bee-cursor.ico'), default; 
-  }
+body, html { 
+  cursor: url('../images/bee_cursor.png'), default; 
+  height: 100%;
+  padding: 10px;
+}
+
 
 
 h2 {
+<<<<<<< HEAD
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+=======
   color: red;
 }
 
@@ -19,4 +29,5 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+>>>>>>> ac5730471bb27fe1d5ea81bc11a14ec34f5a9cea
 }
