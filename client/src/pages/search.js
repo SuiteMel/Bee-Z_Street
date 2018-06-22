@@ -26,9 +26,12 @@ class Search extends Component {
   {this.state.plants.length ? (
     <div>
     {this.state.plants.map(plant => (
+      <div>
       <p>
       {plant.name}
       </p>
+      <p>{plant.commonName}</p>
+      </div>
     ))}
     </div>
   ) : (
