@@ -9,7 +9,7 @@
 
 Front-End: React-dnd, react-dnd-html5-backend, React.js, ES6, JSX, Materialize, Javascript
 
-Back-End: MongoDB, Passport Authentication, Nodemon, Webpack, Babel, Express, ORM file structure
+Back-End: MongoDB, Passport Authentication, Nodemon, Webpack, Babel, Express, ORM file structure, Axios, Mongoose
 
 #Demo
 
