@@ -7,7 +7,7 @@ const Navbar = props => (
   <nav className="nav #f9a825 yellow darken-3">
     <div classsName="nav-wrapper #f9a825 yellow darken-3">
     <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
-      Bee-Z Street
+      <h2>Bee-Z Street</h2>
     </Link>
    
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
