@@ -1,10 +1,5 @@
-.Garden {
-    text-align: center;
-  }
-  
-  .plant-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
- 
-  }
+.gardenMain {
+ background: url('../images/dirt.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
