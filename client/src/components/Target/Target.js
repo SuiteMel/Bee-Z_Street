@@ -33,6 +33,7 @@ class Container extends Component {
 		const { cards } = this.state;		
 		const dragCard = cards[dragIndex];
 
+
 		this.setState(update(this.state, {
 			cards: {
 				$splice: [

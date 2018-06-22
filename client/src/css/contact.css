@@ -5,22 +5,27 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 padding: 30px;
+margin: 0px -40px 0px -40px;
+color: black;
 } 
+
 
 h1{
   font-size: 2rem;
+  color: black;
+  padding-left: 20px;
 }
 h2{
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 10px;
+  color: black;
+  padding-left: 20px;
 }
 h3{
   font-size: 1.5rem;
-}
-
-div {
-  margin: -5px;
+  color: black;
+  padding-left: 20px;
 }
 
 input{
@@ -28,14 +33,16 @@ input{
   height: 30px;
   font-size: 1rem;
   padding: 5px;
+  color: black;
 }
 
 textarea{
   width: 600px;
   height: 400px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 10px;
   border: 2px solid rgb(184, 133, 40);
+  color: black;
 }
 
 button{

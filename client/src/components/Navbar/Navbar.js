@@ -4,13 +4,13 @@ import "./Navbar.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Navbar = props => (
-  <nav>
-     <div classsName="nav-wrapper">
-    <Link className="brand-logo" to="/">
+  <nav className="nav #f9a825 yellow darken-3">
+    <div classsName="nav-wrapper #f9a825 yellow darken-3">
+    <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
       Bee-Z Street
     </Link>
    
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
+      <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
         <li
           className={
             window.location.pathname === "/" ||

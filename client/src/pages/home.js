@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/home.css";
-import Wrapper from "../components/Wrapper";
+import Main from "../components/Main";
 
 
 const Home = () => (
-  <Wrapper>
+  <Main>
     <h2>Welcome to bee-friendly gardening!</h2>
 
     <p>If you're like many homeowners today, you're interested in beautifying your 
@@ -22,7 +22,7 @@ const Home = () => (
 
     <p>Bee-Z Street is designed to help you choose easy-care native plants that brighten and beautify 
       your home landscaping. We think you'll love the results; the bees will thank you too!</p>
-  </Wrapper>
+  </Main>
 );
 
 export default Home;

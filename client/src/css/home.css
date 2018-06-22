@@ -4,11 +4,8 @@
 
 body, html { 
   cursor: url('../images/bee_cursor.png'), default; 
-  height: 100%;
-  padding: 10px;
+  height: 100%;  
 }
-
-
 
 h2 {
   color: black;
@@ -16,4 +13,15 @@ h2 {
 
 p {
   font-size: 1rem;
+  color: black;
+}
+
+.Garden {
+  text-align: center;
+}
+
+.plant-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }

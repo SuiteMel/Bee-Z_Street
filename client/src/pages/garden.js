@@ -3,6 +3,7 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import Container from '../components/Target';
 import "../css/garden.css";
+import Main from "../components/Main";
 
 class Garden extends Component {
 
@@ -26,15 +27,16 @@ class Garden extends Component {
 		];
 
 		const listTwo = [];
-
 		const listThree = [];
 
 		return (
+      <Main>
 			<div className = "gardenMain" style={{...style}}>
 				<Container id={1} className="plantContainer" list={listOne} />
 				<Container id={2} className="dirtGarden" list={listTwo} />
 				<Container id={3} className="grassGarden" list={listThree} />
 			</div>
+      </Main>
 		);
 	}
 }

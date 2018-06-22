@@ -1,18 +1,16 @@
 .footer {
     position: fixed;
-    height: 100px;
+    height: 50px;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
-    background-color: rgb(184, 133, 40);
-    border-top: 2px solid rgb(129, 93, 26);
     text-align: center;
-    }     
+    }   
+
 .footer h3 {
     color: black;
     font-size: 1.5rem;
-    padding-top: 30px;
-    margin-top: 0;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
 }
-      
