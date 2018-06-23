@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../css/home.css";
 import API from "../utils/API";
 import Main from "../components/Main";
+import PlantCard from "../components/PlantCard";
 
 class Search extends Component {
   state = {
@@ -24,16 +25,16 @@ class Search extends Component {
     <Main>
       <h2>It's a Search</h2>
   {this.state.plants.length ? (
-    <div>
+    <ul class="collection">
     {this.state.plants.map(plant => (
-      <div>
-      <p>
-      {plant.name}
-      </p>
-      <p>{plant.commonName}</p>
-      </div>
+      <PlantCard 
+        image = {plant.images.proportional}
+        commonName = {plant.commonName}
+        name = {plant.name}
+        notes= {plant.notes}
+      />
     ))}
-    </div>
+    </ul>
   ) : (
     <h3>No Results to Display</h3>
   )}
