@@ -11,11 +11,13 @@ class Garden extends Component {
 		const style = {
       display: "flex",
 			justifyContent: "space-around",
-			paddingTop: "20px"
+			background: '#3F250B'
+			
+		
 		}
 
 		const listOne = [
-			{ id: 1, text: "🌱" },
+			{ id: 1, text: "🌱", src: this.props.src },
 			{ id: 2, text: "🌿" },
       { id: 3, text: "🌵" },
       { id: 4, text: "🍀" },
@@ -28,15 +30,90 @@ class Garden extends Component {
 
 		const listTwo = [];
 		const listThree = [];
+		const listFour = [];
+		const listFive = [];
+		const listSix = [];
+		const listSeven = [];
+		const listEight = [];
+		const listNine = [];
+		const listTen = [];
+		const backgroundImage = 'url("../images/dirt.png")';
+		const row = 'row, col s1';
+		
 
 		return (
-      <Main>
-			<div className = "gardenMain" style={{...style}}>
-				<Container id={1} className="plantContainer" list={listOne} />
-				<Container id={2} className="dirtGarden" list={listTwo} />
-				<Container id={3} className="grassGarden" list={listThree} />
+   <Main>
+		 <h1>Welcome To Your Garden!</h1>
+			<div className = {{row}} style={{...style, backgroundImage}}>
+				<Container id={1}  list={listOne} />
+				<Container id={2}  list={listTwo} />
+				<Container id={3}  list={listThree} />
+				<Container id={4}  list={listFour} />
+				<Container id={4}  list={listFour} />
+				<Container id={5}  list={listFive} />
+				<Container id={6} list={listSix} />
+				<Container id={7}  list={listSeven} />
+				<Container id={8}  list={listEight} />
+				<Container id={9}  list={listNine} />
 			</div>
-      </Main>
+
+			<div className = {{row}} style={{...style, backgroundImage}}>
+				
+				<Container id={2}  list={listTwo} />
+				<Container id={3}  list={listThree} />
+				<Container id={4}  list={listFour} />
+				<Container id={4}  list={listFour} />
+				<Container id={5}  list={listFive} />
+				<Container id={6} list={listSix} />
+				<Container id={7}  list={listSeven} />
+				<Container id={8}  list={listEight} />
+				<Container id={9}  list={listNine} />
+				<Container id={9}  list={listTen} />
+			</div>
+
+			<div className = {{row}} style={{...style, backgroundImage}}>
+				
+				<Container id={2}  list={listTwo} />
+				<Container id={3}  list={listThree} />
+				<Container id={4}  list={listFour} />
+				<Container id={4}  list={listFour} />
+				<Container id={5}  list={listFive} />
+				<Container id={6} list={listSix} />
+				<Container id={7}  list={listSeven} />
+				<Container id={8}  list={listEight} />
+				<Container id={9}  list={listNine} />
+				<Container id={9}  list={listTen} />
+			</div>
+
+			<div className = {{row}} style={{...style, backgroundImage}}>
+			
+				<Container id={2} list={listTwo} />
+				<Container id={3} list={listThree} />
+				<Container id={4} list={listFour} />
+				<Container id={4} list={listFour} />
+				<Container id={5} list={listFive} />
+				<Container id={6} list={listSix} />
+				<Container id={7} list={listSeven} />
+				<Container id={8} list={listEight} />
+				<Container id={9} list={listNine} />
+				<Container id={9} list={listTen} />
+			</div>
+
+			<div className = {{row}} style={{...style, backgroundImage}}>
+			
+				<Container id={2} list={listTwo} />
+				<Container id={3} list={listThree} />
+				<Container id={4} list={listFour} />
+				<Container id={4} list={listFour} />
+				<Container id={5} list={listFive} />
+				<Container id={6} list={listSix} />
+				<Container id={7} list={listSeven} />
+				<Container id={8} list={listEight} />
+				<Container id={9} list={listNine} />
+				<Container id={9} list={listTen} />
+			</div>
+			</Main>
+     
 		);
 	}
 }
