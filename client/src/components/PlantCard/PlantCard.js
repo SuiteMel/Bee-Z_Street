@@ -2,16 +2,13 @@ import React from "react";
 // import "./Main.css";
 
 const PlantCard = props => (
-  <div className="row">
-    <div className="col s12 m6">
-      <div className="card">
-        <div className="card-content">
-          <span className="card-title">{props.commonName}</span>
-          <p>This is some text</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
+  <li className="collection-item avatar">
+    <img src={props.image} alt="" className="circle" />
+      <span className="title">{props.commonName}</span> <small><em>{props.name}</em></small> <br />
+      {props.notes}
+      
+        <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+    </li>
+      );
+      
 export default PlantCard;

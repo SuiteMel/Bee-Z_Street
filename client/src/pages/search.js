@@ -25,13 +25,16 @@ class Search extends Component {
     <Main>
       <h2>It's a Search</h2>
   {this.state.plants.length ? (
-    <div>
+    <ul class="collection">
     {this.state.plants.map(plant => (
       <PlantCard 
+        image = {plant.images.proportional}
         commonName = {plant.commonName}
+        name = {plant.name}
+        notes= {plant.notes}
       />
     ))}
-    </div>
+    </ul>
   ) : (
     <h3>No Results to Display</h3>
   )}
