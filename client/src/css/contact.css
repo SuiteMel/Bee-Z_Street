@@ -1,11 +1,11 @@
 .form {
 background: url('../images/bee-on-flower.jpg');
-height: 100%; 
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; 
+height: 100%; 
 padding: 30px;
-margin: 0px -40px 0px -40px;
+margin: 0px -20px 0px -20px;
 color: black;
 } 
 
@@ -37,8 +37,8 @@ input{
 }
 
 textarea{
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 350px;
   font-size: 1.5rem;
   padding: 10px;
   border: 2px solid rgb(184, 133, 40);
