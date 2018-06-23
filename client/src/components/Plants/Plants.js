@@ -5,16 +5,13 @@ import flow from 'lodash/flow';
 import "./Plants.css";
 
 
-
-
 const style = {
 	
 	padding: '0.5rem 1rem',
 	margin: '.5rem',
-	cursor: 'move',
-	width: '20px',
-	fontSize: '36px'
-	
+    cursor: 'move',
+    size: '24px'
+    
 };
 
 class Card extends Component {
@@ -24,8 +21,8 @@ class Card extends Component {
 		const opacity = isDragging ? 0 : 1;
 
 		return connectDragSource(connectDropTarget(
-			<div className='plants' style={{ ...style, opacity }}>
-				{card.text} 
+			<div style={{ ...style, opacity }}>
+				{card.text}
 			</div>
 		));
 	}
@@ -33,8 +30,7 @@ class Card extends Component {
 
 const cardSource = {
 
-	beginDrag(props) {	
-		const item = { src: props.src, id: props.id }	
+	beginDrag(props) {		
 		return {			
 			index: props.index,
 			listId: props.listId,
