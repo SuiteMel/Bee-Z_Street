@@ -1,11 +1,15 @@
+.contactMain {
+  background: url('../images/bee-on-flower.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0px 0px 0px -20px;
+ }
+ 
+
 .form {
-background: url('../images/bee-on-flower.jpg');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover; 
 height: 100%; 
 padding: 30px;
-margin: 0px -20px 0px -20px;
 color: black;
 } 
 

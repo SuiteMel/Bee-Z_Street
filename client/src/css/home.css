@@ -1,28 +1,24 @@
-@import url("search.css");
-@import url("contact.css");
-@import url("garden.css");
-
 body, html { 
   cursor: url('../images/bee_cursor.png'), default; 
   height: 100%;  
 }
 
-h2 {
-  color: black;
+h1 {
+  color: blue;
+  font-style: normal;
 }
 
+h2 {
+  color: black;
+  font-style: normal;
+}
+
+.border {
+  border: solid blue 1px;
+}
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: black;
   padding-left: 20px;
 }
 
-.Garden {
-  text-align: center;
-}
-
-.plant-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}

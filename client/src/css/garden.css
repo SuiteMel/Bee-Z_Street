@@ -4,3 +4,12 @@
  background-size: cover;
  margin: 0px -20px 0px -20px;
 }
+.Garden {
+  text-align: center;
+}
+
+.plant-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
