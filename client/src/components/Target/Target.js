@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import update from 'immutability-helper';
 import Card from '../Plants';
 import { DropTarget } from 'react-dnd';
-import "./Target.css";
 
 
 class Container extends Component {
@@ -51,17 +50,15 @@ class Container extends Component {
 		const isActive = canDrop && isOver;
 		const style = {
 			width: "100%",
-			height: "80px",
-			border: '1px dashed gray'
-		
+			height: "804px",
+            border: '1px dashed gray'
             
 		};
 
 		const backgroundColor = isActive ? 'green' : 'transparent';
-		const row = 'row';
 
 		return connectDropTarget(
-			<div className = {{row}} style={{...style, backgroundColor}}>
+			<div style={{...style, backgroundColor}}>
 				{cards.map((card, i) => {
 					return (
 						<Card 
@@ -74,7 +71,6 @@ class Container extends Component {
 					);
 				})}
 			</div>
-				
 		);
   }
 }

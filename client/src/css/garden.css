@@ -1,22 +1,6 @@
-/*.gardenMain {
- background: url('../images/dirt.png');
+.gardenMain {
+ background: url('../images/dirt.jpg');
  background-repeat: no-repeat;
  background-size: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-*/
-
-.gardenMain {
-    background: rgb(139,69,19);
-}
-
-.dirtGarden {
-    background: black;
-=======
  margin: 0px -20px 0px -20px;
->>>>>>> bca74cd522675371004c1dd2895b3abb04fc3186
-=======
- margin: 0px -20px 0px -20px;
->>>>>>> bca74cd522675371004c1dd2895b3abb04fc3186
 }
