@@ -1,15 +1,16 @@
-.gardenMain {
- background: url('../images/dirt.jpg');
+/* .gardenMain {
+ background: url('../images/dirt.png');
  background-repeat: no-repeat;
  background-size: cover;
- margin: 0px -20px 0px -20px;
-}
-.Garden {
-  text-align: center;
+
+} */
+
+
+.gardenMain {
+    background: rgb(139,69,19);
 }
 
-.plant-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+.dirtGarden {
+    background: black;
+    margin: 0px -20px 0px -20px;
 }

@@ -6,13 +6,16 @@
   margin: 0px 0px 0px -20px;
  }
  
-
 .form {
 height: 100%; 
 padding: 30px;
 color: black;
+width: 60%;
 } 
 
+.border {
+  border: 1px red dotted;
+}
 
 h1{
   font-size: 2rem;
@@ -26,10 +29,11 @@ h2{
   color: black;
   padding-left: 20px;
 }
-h3{
+.subhead{
   font-size: 1.5rem;
   color: black;
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
+  text-align: left;
 }
 
 input{

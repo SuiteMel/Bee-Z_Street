@@ -6,7 +6,7 @@ var createReactClass = require('create-react-class');
 var SignupForm = createReactClass({
   render: function(){
     return(
-      <div className="input-field col s12 black-text">
+      <div className="input-field col s12 screen black-text">
 
       <form id="signup" onSubmit={this.handleSubmit}>
         <input className="col s12" type="text" placeholder="First Name" required ref="firstName"/>

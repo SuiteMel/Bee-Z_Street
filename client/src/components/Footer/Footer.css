@@ -8,8 +8,10 @@
     text-align: center;
     }   
 
-.footer h3 {
+.footer-text {
     color: black;
+    font-size: 1rem;
+    font-weight: bolder;
     text-align: center;
     padding: 10px 0px 10px 0px;
 }

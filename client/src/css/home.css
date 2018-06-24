@@ -1,11 +1,23 @@
 body, html { 
   cursor: url('../images/bee_cursor.png'), default; 
   height: 100%;  
+  background-color: #f9a825;
 }
+
+.homeMain {
+  background: url('../images/home-bee4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0px 200px 0px;
+  margin: 0px 0px -20px -20px;
+  z-index: 2;
+ }
 
 h1 {
   color: blue;
   font-style: normal;
+  z-index: 1;
 }
 
 h2 {
