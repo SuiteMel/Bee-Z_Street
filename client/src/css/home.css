@@ -33,4 +33,25 @@ p {
   color: black;
   padding-left: 20px;
 }
+::-webkit-input-placeholder {
+  color: #3B3C36;
+  opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+  font-style: italic;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {  
+ color: #3B3C36;
+ font-style: italic;
+}

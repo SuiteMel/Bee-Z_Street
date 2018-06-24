@@ -47,7 +47,7 @@ input{
 textarea{
   width: 500px;
   height: 350px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 10px;
   border: 2px solid rgb(184, 133, 40);
   color: black;
@@ -61,4 +61,27 @@ button{
   padding: 10px;
   border: 2px solid rgb(184, 133, 40);
 
+}
+
+::-webkit-input-placeholder {
+  color: #3B3C36;
+  opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {  
+ color: #3B3C36;
+ font-style: italic;
 }
