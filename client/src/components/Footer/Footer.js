@@ -23,7 +23,7 @@ const Footer = props => <main className="page-footer" {...props} >
             {/* </div>*/}
           <div className="footer-copyright #f9a825 yellow darken-3">
             <div className="container #f9a825 yellow darken-3">
-            <h3>© 2018 Copyright Bee-Z Street</h3>
+            <p className="footer-text">© 2018 Copyright Bee-Z Street</p>
             </div>
           </div>
         </div> 

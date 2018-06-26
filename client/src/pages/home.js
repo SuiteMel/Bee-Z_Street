@@ -1,32 +1,30 @@
 import React from "react";
 import "../css/home.css";
 import Main from "../components/Main";
-
+import SignupForm from "../components/SignupForm";
 
 const Home = () => (
-  <Main>
+  <Main className = "homeMain">
     <div class="container">
       <div class="row">
-        <div class="col s4">
-          sign up/login fields here
-    </div>
-        <div class="col s8">
-          <h2>Welcome to bee-friendly gardening!</h2>
+        <div class="col s6">
+          <h2>New to Bee-Z Street? Sign up is easy!</h2>
+          <SignupForm />
 
-          <p>If you're like many homeowners today, you're interested in beautifying your
-            garden with fewer chemicals and more diverse plants. The great news is it's never
-      been easier to introduce hearty, native plants into your own yard.</p>
+        </div>
+        <div class="col s6">
+          <h1>Welcome to bee-friendly gardening!</h1>
 
-          <p>If you're planning garden updates, you probably know pollinators play an important
-            role in the health and beauty of the plants you choose. Honey bees around the world are
-            dying off at alarming rates, but you can help them by choosing indigenous plants. Since these
-      plants grow in your region anyway, they're great natural food sources for bees.</p>
+          <p>If you're interested in beautifying your garden with more diversity and fewer chemicals,
+            it's never been easier to find and grow hearty native plants.</p>
 
-          <p>It doesn't take any extra work on your part to help bees and other pollinators. In fact,
-            native plants use less water and are more climate tolerant. The fascinating bees, butterflies,
-      and birds they attract are a beautiful bonus Mother Nature throws in free of charge!</p>
+          <p>Pollinators play an important role in the health and beauty of your garden. By choosing indigenous 
+            plants, you provide a great natural food sources for endangered bees and other pollinators.</p>
 
-          <p>Bee-Z Street is designed to help you choose easy-care native plants that brighten and beautify
+          <p>Climate-tolerant native plants are low-maintenance and use less water. And the fascinating bees, butterflies,
+      and birds they attract are a beautiful bonus Mother Nature throws in for free!</p>
+
+          <p>Bee-Z Street help you identify native plants and visualize how they can brighten and beautify
       your home landscaping. We think you'll love the results; the bees will thank you too!</p>
         </div>
       </div>
