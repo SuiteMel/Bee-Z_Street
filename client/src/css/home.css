@@ -1,28 +1,57 @@
-@import url("search.css");
-@import url("contact.css");
-@import url("garden.css");
-
 body, html { 
   cursor: url('../images/bee_cursor.png'), default; 
   height: 100%;  
+  background-color: #f9a825;
+}
+
+.homeMain {
+  background: url('../images/home-bee4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0px 200px 0px;
+  margin: 0px 0px -20px -20px;
+  z-index: 2;
+ }
+
+h1 {
+  color: blue;
+  font-style: normal;
+  z-index: 1;
 }
 
 h2 {
   color: black;
+  font-style: normal;
 }
 
+.border {
+  border: solid blue 1px;
+}
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: black;
   padding-left: 20px;
 }
-
-.Garden {
-  text-align: center;
+::-webkit-input-placeholder {
+  color: #3B3C36;
+  opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+  font-style: italic;
 }
 
-.plant-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
+:-moz-placeholder { /* Firefox 18- */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #3B3C36;
+  opacity: 1 !important;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {  
+ color: #3B3C36;
+ font-style: italic;
 }

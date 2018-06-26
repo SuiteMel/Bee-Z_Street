@@ -21,6 +21,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
+    "create-react-class": "^15.6.3",
     "express": "^4.15.4",
     "immutability-helper": "^2.7.1",
     "mongoose": "^5.0.11",

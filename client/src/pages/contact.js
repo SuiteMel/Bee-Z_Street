@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/home.css";
+import "../css/contact.css";
 import { Button, Input, TextArea } from "../components/Form";
 import Main from "../components/Main";
 
@@ -12,18 +12,17 @@ class Contact extends Component {
 
   render() {
     return (
-    <Main>
-      
-    <form class="form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <Main className = "contactMain">
+    <form className="form" action="mailto:samanthamccallfp18@gmail.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
     <h2>Have a question? Let us help!</h2>
-    <h3>Subject</h3>
+    <p className="subhead">Subject</p>
     <div class="row">
     <div class="col s12">
       <div class="row">
         <div className="input-field col s3 black-text">
           {/* <i class="material-icons prefix">textsms</i> */}
-          <input 
+          <Input 
           type="text" 
           className="black-text"
           value={this.state.subject.text}
@@ -35,7 +34,7 @@ class Contact extends Component {
       </div>
     </div>
     {/* new field */}
-    <h3>Post your question</h3>
+    <p className="subhead">Post your question</p>
     <div class="col s12">
       <div class="row">
         <div className="input-field col s3 black-text">
@@ -53,7 +52,7 @@ class Contact extends Component {
       </div>
     </div>
     {/* new field */}
-    <h3>Select a file (.pdf, .jpg .png or .gif):</h3> 
+    <p className="subhead">Select a file (.pdf, .jpg .png or .gif):</p> 
     <div class="col s12">
       <div class="row">
         <div className="input-field col s3 black-text">
