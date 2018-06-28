@@ -11,9 +11,22 @@ const Navbar = props => (
     </Link>
    
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
-        <li
+      <li
           className={
             window.location.pathname === "/" ||
+            window.location.pathname === "/"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+        </li>
+        
+        <li
+          className={
+            
             window.location.pathname === "/search"
               ? "nav-item active"
               : "nav-item"

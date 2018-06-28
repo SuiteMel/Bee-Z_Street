@@ -4,21 +4,16 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 import "./Plants.css";
 
+const style =  {
 
-
-
-const style = {
-	
 	padding: '0.5rem 1rem',
 	margin: '.5rem',
     cursor: 'move',
-	size: '24px',
+	size: '24px',	
 };
 
 class Card extends Component {
 	
-		
-
 	render() {
 		const { card, isDragging, connectDragSource, connectDropTarget } = this.props;
 		const opacity = isDragging ? 0 : 1;
@@ -27,9 +22,7 @@ class Card extends Component {
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
 				{card.text}
-				
-				
-
+			
 				
 			</div>
 		));
@@ -40,13 +33,13 @@ const cardSource = {
 
 	beginDrag(props) {	
 		
-		return {			
+		return {
+						
 			index: props.index,
 			listId: props.listId,
 			card: props.card,
 			
-		}
-		;
+		};
 	},
 
 	endDrag(props, monitor) {

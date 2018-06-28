@@ -8,22 +8,22 @@ import { DropTarget } from 'react-dnd';
 class Container extends Component {
 
 	constructor(props) {
-		super(props);		
+		super(props);
 		this.state = { cards: props.list };
 	}
 
-	//function that puts the c
+
 	pushCard(card) {
 		this.setState(update(this.state, {
 			cards: {
-				$push: [ card ]
+				$push: [card]
 			}
 		}));
 	}
 
 
 	//function that deletes the card from it's spot after it is moved away
-	removeCard(index) {		
+	removeCard(index) {
 		this.setState(update(this.state, {
 			cards: {
 				$splice: [
@@ -32,9 +32,9 @@ class Container extends Component {
 			}
 		}));
 	}
-//function that moves card
+	//function that moves card
 	moveCard(dragIndex, hoverIndex) {
-		const { cards } = this.state;		
+		const { cards } = this.state;
 		const dragCard = cards[dragIndex];
 
 
@@ -53,44 +53,42 @@ class Container extends Component {
 		const { canDrop, isOver, connectDropTarget } = this.props;
 		const isActive = canDrop && isOver;
 		const style = {
-			
+
 			width: "100px",
 			height: "100px",
 			cursor: 'move',
-            border: '1px dashed gray'
-            
+			border: '1px dashed gray'
+
 		};
 
 		const backgroundColor = isActive ? 'green' : 'lightgreen';
 
 		return connectDropTarget(
-			<div style={{...style, backgroundColor}}>
+			<div style={{ ...style, backgroundColor }}>
 				{cards.map((card, i) => {
 					return (
 						<div>
-						<Card 
-							key={card.id}
-							index={i}
-							listId={this.props.id}
-							card={card}														
-							removeCard={this.removeCard.bind(this)}
-							moveCard={this.moveCard.bind(this)} />
-							
-							
-							</div>
-							
-					);
+							<Card
+								key={card.id}
+								index={i}
+								listId={this.props.id}
+								card={card}
+								removeCard={this.removeCard.bind(this)}
+								moveCard={this.moveCard.bind(this)} />
+						</div>
+
+					)
 				})}
 			</div>
 		);
-  }
+	}
 }
 
 const cardTarget = {
-	drop(props, monitor, component ) {
+	drop(props, monitor, component) {
 		const { id } = props;
-		const sourceObj = monitor.getItem();		
-		if ( id !== sourceObj.listId ) component.pushCard(sourceObj.card);
+		const sourceObj = monitor.getItem();
+		if (id !== sourceObj.listId) component.pushCard(sourceObj.card);
 		return {
 			listId: id
 		};
