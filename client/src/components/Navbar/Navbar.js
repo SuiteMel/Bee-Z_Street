@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-const Navbar = props => (
+const Navbar = () => (
   <nav className="nav #f9a825 yellow darken-3">
-    <div classsName="nav-wrapper #f9a825 yellow darken-3">
+    <div className="nav-wrapper #f9a825 yellow darken-3">
     <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
       <h2>Bee-Z Street</h2>
     </Link>
@@ -13,7 +13,6 @@ const Navbar = props => (
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
         <li
           className={
-            window.location.pathname === "/" ||
             window.location.pathname === "/search"
               ? "nav-item active"
               : "nav-item"
