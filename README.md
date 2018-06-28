@@ -13,7 +13,7 @@ Back-End: MongoDB, Passport Authentication, Nodemon, Webpack, Babel, Express, OR
 
 #Demo
 
-Check out Bee-Z Street here XXXXXXXXXXXXXXXX
+Check out Bee-Z Street here https://bee-z-street.herokuapp.com/
 
 ## Installation
 

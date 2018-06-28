@@ -4,6 +4,7 @@ import Card from '../Plants';
 import { DropTarget } from 'react-dnd';
 
 
+
 class Container extends Component {
 
 	constructor(props) {
@@ -11,6 +12,7 @@ class Container extends Component {
 		this.state = { cards: props.list };
 	}
 
+	//function that puts the c
 	pushCard(card) {
 		this.setState(update(this.state, {
 			cards: {
@@ -19,6 +21,8 @@ class Container extends Component {
 		}));
 	}
 
+
+	//function that deletes the card from it's spot after it is moved away
 	removeCard(index) {		
 		this.setState(update(this.state, {
 			cards: {
@@ -28,7 +32,7 @@ class Container extends Component {
 			}
 		}));
 	}
-
+//function that moves card
 	moveCard(dragIndex, hoverIndex) {
 		const { cards } = this.state;		
 		const dragCard = cards[dragIndex];
@@ -49,18 +53,21 @@ class Container extends Component {
 		const { canDrop, isOver, connectDropTarget } = this.props;
 		const isActive = canDrop && isOver;
 		const style = {
-			width: "100%",
-			height: "804px",
+			
+			width: "100px",
+			height: "100px",
+			cursor: 'move',
             border: '1px dashed gray'
             
 		};
 
-		const backgroundColor = isActive ? 'green' : 'transparent';
+		const backgroundColor = isActive ? 'green' : 'lightgreen';
 
 		return connectDropTarget(
 			<div style={{...style, backgroundColor}}>
 				{cards.map((card, i) => {
 					return (
+						<div>
 						<Card 
 							key={card.id}
 							index={i}
@@ -68,6 +75,10 @@ class Container extends Component {
 							card={card}														
 							removeCard={this.removeCard.bind(this)}
 							moveCard={this.moveCard.bind(this)} />
+							
+							
+							</div>
+							
 					);
 				})}
 			</div>
