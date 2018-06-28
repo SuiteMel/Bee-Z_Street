@@ -11,7 +11,7 @@ const Navbar = () => (
     </Link>
    
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
-        <li
+      <li
           className={
             window.location.pathname === "/search"
               ? "nav-item active"
