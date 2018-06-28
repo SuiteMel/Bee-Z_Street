@@ -28,12 +28,12 @@ const Modal = props => ({
           {this.props.children}
           <div className="card-content">
             <span className="card-title">{props.commonName}</span>
-            <img src={props.image} height="200px" className="circle left" />
-            
+            <img src={props.image} height="200px" className="circle left" alt={props.commonName} />
+
             <p>{props.notes}</p>
           </div>
           <div className="card-action">
-            <a href="#" onClick={this.props.onClose}>This is a link</a>
+            <a onClick={this.props.onClose}>This is a link</a>
           </div>
         </div>
       </div>

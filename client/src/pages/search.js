@@ -4,7 +4,7 @@ import API from "../utils/API";
 import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
 import SearchForm from "../components/SearchForm";
-import Modal from "../components/Modal";
+// import Modal from "../components/Modal";
 import "../css/search.css";
 
 class Search extends Component {
@@ -37,7 +37,7 @@ class Search extends Component {
       .then(res =>
         this.setState({ plants: res.data })
       ).catch(err => console.log(err));
-      
+
   }
 
   toggleModal = () => {
@@ -73,6 +73,8 @@ class Search extends Component {
                       name={plant.name}
                       notes={plant.notes}
                       onClick={this.toggleModal}
+                      show={this.state.isOpen}
+                      onClose={this.toggleModal}
                     >
 
                     </PlantCard>
