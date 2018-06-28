@@ -5,14 +5,14 @@ import SignupForm from "../components/SignupForm";
 
 const Home = () => (
   <Main className = "homeMain">
-    <div class="container">
-      <div class="row">
-        <div class="col s6">
+    <div className="container">
+      <div className="row">
+        <div className="col s6">
           <h2>New to Bee-Z Street? Sign up is easy!</h2>
           <SignupForm />
 
         </div>
-        <div class="col s6">
+        <div className="col s6">
           <h1>Welcome to bee-friendly gardening!</h1>
 
           <p>If you're interested in beautifying your garden with more diversity and fewer chemicals,
