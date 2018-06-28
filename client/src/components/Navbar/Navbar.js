@@ -13,23 +13,6 @@ const Navbar = () => (
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
       <li
           className={
-<<<<<<< HEAD
-            window.location.pathname === "/" ||
-            window.location.pathname === "/"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
-        </li>
-        
-        <li
-          className={
-            
-=======
->>>>>>> 466092265911d3d31fe3347cbdc6e30a6a4585c9
             window.location.pathname === "/search"
               ? "nav-item active"
               : "nav-item"
