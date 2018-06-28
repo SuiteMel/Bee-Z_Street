@@ -5,11 +5,11 @@ import "./Navbar.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Navbar = () => (
   <nav className="nav #f9a825 yellow darken-3">
-    <div className="nav-wrapper #f9a825 yellow darken-3">
-    <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
-      <h2>Bee-Z Street</h2>
-    </Link>
-   
+    <div classsName="nav-wrapper #f9a825 yellow darken-3">
+      <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
+        <h2>Bee-Z Street</h2>
+      </Link>
+
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
         <li
           className={
@@ -42,6 +42,17 @@ const Navbar = () => (
         >
           <Link to="/contact" className="nav-link">
             Contact
+          </Link>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/" className="nav-link">
+            Log Out
           </Link>
         </li>
       </ul>

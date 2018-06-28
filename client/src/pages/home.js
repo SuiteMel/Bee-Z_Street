@@ -19,10 +19,10 @@ const Home = () => (
             it's never been easier to find and grow hearty native plants.</p>
 
           <p>Pollinators play an important role in the health and beauty of your garden. By choosing indigenous 
-            plants, you provide a great natural food sources for endangered bees and other pollinators.</p>
+            plants, you provide great natural food sources for endangered bees and other pollinators. <a className="home" href="./search">Search plants</a></p>
 
           <p>Climate-tolerant native plants are low-maintenance and use less water. And the fascinating bees, butterflies,
-      and birds they attract are a beautiful bonus Mother Nature throws in for free!</p>
+      and birds they attract are a beautiful bonus Mother Nature throws in free!</p>
 
           <p>Bee-Z Street help you identify native plants and visualize how they can brighten and beautify
       your home landscaping. We think you'll love the results; the bees will thank you too!</p>

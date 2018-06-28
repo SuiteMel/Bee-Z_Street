@@ -4,12 +4,14 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import Container from '../components/Target';
 import "../css/garden.css";
 import Main from "../components/Main";
+import Navbar from "../components/Navbar";
+
 
 class Garden extends Component {
 
 	render() {
 		const style = {
-      display: "flex",
+			display: "flex",
 			justifyContent: "space-around",
 			paddingTop: "20px"
 		}
@@ -17,11 +19,11 @@ class Garden extends Component {
 		const listOne = [
 			{ id: 1, text: "🌱" },
 			{ id: 2, text: "🌿" },
-      { id: 3, text: "🌵" },
-      { id: 4, text: "🍀" },
+			{ id: 3, text: "🌵" },
+			{ id: 4, text: "🍀" },
 			{ id: 5, text: "🌾" },
-      { id: 6, text: "🌷" },
-      { id: 7, text: "🌻" },
+			{ id: 6, text: "🌷" },
+			{ id: 7, text: "🌻" },
 			{ id: 8, text: "🌺" },
 			{ id: 9, text: "🍄" }
 		];
@@ -30,13 +32,16 @@ class Garden extends Component {
 		const listThree = [];
 
 		return (
-      <Main>
-			<div className = "gardenMain" style={{...style}}>
-				<Container id={1} className="plantContainer" list={listOne} />
-				<Container id={2} className="dirtGarden" list={listTwo} />
-				<Container id={3} className="grassGarden" list={listThree} />
+			<div>
+				<Navbar />
+				<Main>
+					<div className="gardenMain" style={{ ...style }}>
+						<Container id={1} className="plantContainer" list={listOne} />
+						<Container id={2} className="dirtGarden" list={listTwo} />
+						<Container id={3} className="grassGarden" list={listThree} />
+					</div>
+				</Main>
 			</div>
-      </Main>
 		);
 	}
 }

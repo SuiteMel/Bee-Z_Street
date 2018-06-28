@@ -22,3 +22,15 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+a:hover, a:active {
+  color: #6a1b9a purple darken-3;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+  }
+a:link, a:visited {
+  color: #9c27b0 purple;
+  text-decoration: none;
+  font-size: 100%;
+  }

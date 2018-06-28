@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../css/contact.css";
 import { Button, Input, TextArea } from "../components/Form";
 import Main from "../components/Main";
+import Navbar from "../components/Navbar";
 
 class Contact extends Component {
   state = {
@@ -12,6 +13,8 @@ class Contact extends Component {
 
   render() {
     return (
+      <div>
+      <Navbar />
     <Main className = "contactMain">
     <form className="form" action="mailto:samanthamccallfp18@gmail.com" method="post" enctype="text/plain">
     <h1>Bee-friendly gardening is a breeze!</h1>
@@ -85,6 +88,7 @@ class Contact extends Component {
   </div>
 </form>
 </Main>
+</div>
     )};
   };
 

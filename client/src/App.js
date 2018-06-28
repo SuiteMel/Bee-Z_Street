@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Route } from "react-router-dom";
 import Wrapper from "./components/Wrapper";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import Search from "./pages/search";
@@ -14,7 +14,7 @@ const App = () => (
 
   <Router>
     <div>
-    <Navbar />
+    {/* <Navbar /> */}
       <Route exact path="/" component={Home} />
       <Route exact path="/search" component={Search} />
       <Route exact path="/garden" component={Garden} />
