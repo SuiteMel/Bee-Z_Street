@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Search from "./pages/search";
 import Garden from "./pages/garden";
 import Contact from "./pages/contact";
+import PlantInfo from "./pages/plantInfo";
 import "./App.css";
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
       <Route exact path="/search" component={Search} />
       <Route exact path="/garden" component={Garden} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/search/:id" component={PlantInfo} />
       </div>
   </Router>
   <Footer> 

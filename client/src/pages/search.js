@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import "../css/home.css";
 import API from "../utils/API";
+import { Link } from "react-router-dom";
 import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
 import SearchForm from "../components/SearchForm";
-// import Modal from "../components/Modal";
 import "../css/search.css";
 
 class Search extends Component {
   state = {
     plants: [],
-    cName: "",
-    isOpen: false
+    cName: ""
   }
 
   componentDidMount() {
@@ -23,7 +22,7 @@ class Search extends Component {
     this.setState({
       [name]: value
     });
-  };
+  }
 
   // loadPlants = () => {
   //   API.getPlants()
@@ -38,12 +37,6 @@ class Search extends Component {
         this.setState({ plants: res.data })
       ).catch(err => console.log(err));
 
-  }
-
-  toggleModal = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
   }
 
   render() {
@@ -67,16 +60,16 @@ class Search extends Component {
                   <div>
                     <PlantCard
                       key={plant._id}
-                      id={plant.id}
                       image={plant.images.box}
                       commonName={plant.commonName}
                       name={plant.name}
                       notes={plant.notes}
-                      onClick={this.toggleModal}
-                      show={this.state.isOpen}
-                      onClose={this.toggleModal}
                     >
-
+                      <span key={plant._id}>
+                        <Link to={"/search/" + plant._id}>
+                          <span className="btn"><i className="material-icons">arrow_forward</i></span>
+                        </Link>
+                      </span>
                     </PlantCard>
                   </div>
                 ))}
@@ -85,16 +78,7 @@ class Search extends Component {
                 <h3>No Results to Display</h3>
               )}
           </div>
-          {/* <Modal show={this.state.isOpen}
-            onClose={this.toggleModal}
-            image={this.state.plants[0].images.box}
-            commonName={this.state.plants[0].commonName}
-            notes={this.state.plants[0].notes}
-          >
-          </Modal> */}
         </div>
-        <a className="waves-effect waves-light btn modal-trigger" href="#modal2" onClick={this.toggleModal}>Modal</a>
-
       </Main>)
   }
 }
