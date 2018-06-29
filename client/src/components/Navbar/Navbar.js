@@ -7,7 +7,7 @@ const Navbar = () => (
   <nav className="nav #f9a825 yellow darken-3">
     <div className="nav-wrapper #f9a825 yellow darken-3">
     <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
-      <h2>Bee-Z Street</h2>
+      <h3 className="navbar">Bee-Z Street</h3>
     </Link>
    
       <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
@@ -15,7 +15,7 @@ const Navbar = () => (
           className={
             window.location.pathname === "/search"
               ? "nav-item active"
-              : "nav-item"
+              : "nav-item navbar"
           }
         >
           <Link to="/search" className="nav-link">
@@ -26,7 +26,7 @@ const Navbar = () => (
           className={
             window.location.pathname === "/garden"
               ? "nav-item active"
-              : "nav-item"
+              : "nav-item navbar"
           }
         >
           <Link to="/garden" className="nav-link">
@@ -37,11 +37,22 @@ const Navbar = () => (
           className={
             window.location.pathname === "/contact"
               ? "nav-item active"
-              : "nav-item"
+              : "nav-item navbar"
           }
         >
           <Link to="/contact" className="nav-link">
             Contact
+          </Link>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/"
+              ? "nav-item active"
+              : "nav-item navbar"
+          }
+        >
+          <Link to="/" className="nav-link">
+            Log Out
           </Link>
         </li>
       </ul>

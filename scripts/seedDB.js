@@ -1,3 +1,21 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @green64 Sign out
+3
+1 0 SuiteMel/Bee-Z_Street
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+Bee-Z_Street/scripts/seedDB.js
+a34f51e  23 hours ago
+@green64 green64 moved garden page images to public image folder
+@pckearney25 @green64
+     
+Executable File  383 lines (372 sloc)  12.4 KB
 const mongoose = require("mongoose");
 const db = require("../models");
 mongoose.Promise = global.Promise;
@@ -28,8 +46,8 @@ const plantSeed = [
       box:
         "https://cdn.shopify.com/s/files/1/1008/4432/products/Rattlesnake_Master_2.jpg?v=1525018687",
       proportional:
-        "https://wimastergardener.org/files/2015/12/Eryngium_yuccifolium-plant.jpg"
-    },
+        "./images/rattlesnake_master_252.png",
+      },
     insects: [
       {
         insect: "Honey Bees",
@@ -65,7 +83,7 @@ const plantSeed = [
       box:
         "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/a/s/asclepias-tuberosa-butterfly-weed-close-up.jpg",
       proportional:
-        "https://blazingstargardens.com/wp-content/uploads/2016/02/Asclepias-tuberosa-Butterfly-Milkweed3.jpg"
+        "./images/butterfly_milkweed_250.png",
     },
     insects: [
       {
@@ -87,11 +105,11 @@ const plantSeed = [
   },
   {
     name: "Phlox pilosa",
-    commonName: "Prarie Plox",
+    commonName: "Prairie Phlox",
     height: 15, //inches
     spacing: 12, //inches
     notes:
-      "Prairie plax performs best in well-drained soils in full sun. Use massed on the edges of small prarie plantings or in a boulevard planting.",
+      "Prairie phlox performs best in well-drained soils in full sun. Use massed on the edges of small prarie plantings or in a boulevard planting.",
     habitat: "prarie",
     flowering: ["April", "May"],
     sun: ["full"],
@@ -101,7 +119,7 @@ const plantSeed = [
       box:
         "https://www.highcountrygardens.com/media/catalog/product/cache/3/image/cdd56dd0d7347dc27aa421c918b212c4/p/h/phlox_villosissima_alplains_cc.jpg",
       proportional:
-        "https://www.prairiemoon.com/mm5/graphics/00000001/phlox-pilosa-prairie-phlox_529x705.jpg"
+        "./images/prairie_phlox_80.png",
     },
     insects: [
       {
@@ -137,7 +155,7 @@ const plantSeed = [
       box:
         "https://www.australianseed.com/persistent/catalogue_images/products/echinacea_pallida.jpg",
       proportional:
-        "https://www.sharpseed.com/_ccLib/image/plants/DETA-100008.jpg"
+        "./images/coneflower_235.png",
     },
     insects: [
       {
@@ -173,7 +191,8 @@ const plantSeed = [
       box:
         "https://dorsetperennials.co.uk/wp-content/uploads/2015/05/Geranium-maculatum-Chatto-3.jpg",
       proportional:
-        "https://www.prairiemoon.com/mm5/graphics/00000001/Geranium-maculatum-Wild-Geranium_main_467x705.jpg"
+        "./images/wild_geranium_120.png",
+
     },
     insects: [
       {
@@ -196,11 +215,11 @@ const plantSeed = [
 
   {
     name: "Eurybia macrophylla",
-    commonName: "Large-Leaved Aster",
+    commonName: "Large-Leafed Aster",
     height: 30, //inches
     spacing: 36, //inches
     notes:
-      "Large-leaved aster is one of the few native woodland perrenials to flower in late summer. Combine wirth ferns for great contrast and foliage textures",
+      "Large-leafed aster is one of the few native woodland perennials to flower in late summer. Combine with ferns for great contrast and foliage textures",
     habitat: "woodland edge",
     flowering: ["July", "August", "September"],
     sun: ["part-sun", "shade"],
@@ -209,7 +228,8 @@ const plantSeed = [
     images: {
       box:
         "https://cdn.shopify.com/s/files/1/0739/9053/products/Aster-large-leaved-wood_1024x1024.jpg?v=1478537263",
-      proportional: "http://www.mrsoshouse.com/plants/image/aster.jpg"
+      proportional: 
+        "./images/large_leafed_aster_240.png",
     },
     insects: [
       {
@@ -246,7 +266,7 @@ const plantSeed = [
       box:
         "http://www.illinoiswildflowers.info/woodland/photos/va_waterleaf1.jpg",
       proportional:
-        "https://www.prairiemoon.com/mm5/graphics/00000001/hydrophyllum-virginianum-virginia-waterleaf_main.jpg"
+      "./images/virginia_waterleaf_215.png",
     },
     insects: [
       {
@@ -282,7 +302,7 @@ const plantSeed = [
       box:
         "https://www.omcseeds.com/image/cache/data/products/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",
       proportional:
-        "http://bearmountainbutterflies.com/wp-content/uploads/2015/04/Milkweed-plant.jpg"
+      "./images/swamp_milkweed_235.png",
     },
     insects: [
       {
@@ -317,7 +337,7 @@ const plantSeed = [
       box:
         "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/c/h/chelone-glabra-_1_.jpg",
       proportional:
-        "https://www.prairiemoon.com/mm5/graphics/00000001/chelone-glabra-turtlehead_pollinator_468x705.jpg"
+        "./images/white_turtlehead_313.png",
     },
     insects: [
       {

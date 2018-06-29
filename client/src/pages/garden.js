@@ -4,6 +4,8 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import Container from '../components/Target';
 import "../css/garden.css";
 import Main from "../components/Main";
+import Navbar from "../components/Navbar";
+
 
 class Garden extends Component {
 
@@ -30,6 +32,8 @@ class Garden extends Component {
 		const listThree = [];
 
 		return (
+			<div>
+				<Navbar />
       <Main>
 			<div className = "gardenMain" style={{...style}}>
 				<Container id={1} className="plantContainer" list={listOne} />
@@ -37,6 +41,7 @@ class Garden extends Component {
 				<Container id={3} className="grassGarden" list={listThree} />
 			</div>
       </Main>
+			</div>
 		);
 	}
 }
