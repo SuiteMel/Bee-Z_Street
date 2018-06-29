@@ -14,7 +14,7 @@ var SignupForm = createReactClass({
         <input className="col s12" type="text" placeholder="User Name" required ref="userName"/>
         <input className="col s12" type="password" placeholder="Password" required ref="password"/>
         <input className="col s12" type="email" placeholder="Email" required ref="email"/>
-        <input className="btn waves-effect waves-light #f9a825 yellow darken-3 s2" type="submit" value="Submit" />
+        <input className="btn waves-effect waves-light #f9a825 yellow darken-3 s2 home" type="submit" value="Submit" />
         </form>
         </div>
 
