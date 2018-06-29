@@ -6,6 +6,8 @@ import PlantCard from "../components/PlantCard";
 import SearchForm from "../components/SearchForm";
 // import Modal from "../components/Modal";
 import "../css/search.css";
+import Navbar from "../components/Navbar";
+
 
 class Search extends Component {
   state = {
@@ -48,8 +50,10 @@ class Search extends Component {
 
   render() {
     return (
+    <div>
+      <Navbar />
       <Main>
-        <h2>It's a Search</h2>
+        <h2 className="search">It's a Search</h2>
         <div className="row">
           <div className="col s3" id="searchCol">
             <SearchForm
@@ -82,7 +86,7 @@ class Search extends Component {
                 ))}
               </ul>
             ) : (
-                <h3>No Results to Display</h3>
+                <h3 className="search">No Results to Display</h3>
               )}
           </div>
           {/* <Modal show={this.state.isOpen}
@@ -95,7 +99,8 @@ class Search extends Component {
         </div>
         <a className="waves-effect waves-light btn modal-trigger" href="#modal2" onClick={this.toggleModal}>Modal</a>
 
-      </Main>)
+      </Main>
+      </div>)
   }
 }
 
