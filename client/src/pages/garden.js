@@ -3,11 +3,28 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import Container from '../components/Target';
 import "../css/garden.css";
+import API from "../utils/API";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 
 
+
+
 class Garden extends Component {
+	state = {
+		plants: []
+	  }
+	  componentDidMount() {
+		this.loadPlants();
+	  }
+	
+	  loadPlants = () => {
+		API.getPlants()
+		  .then(res =>
+			this.setState({ plants: res.data })
+		  ).catch(err => console.log(err));
+	  };	
+
 
 	render() {
 		const style = {
@@ -28,9 +45,15 @@ class Garden extends Component {
 			{ id: 9, text: "🍄" }
 		];
 
-		const listTwo = [];
+		const listTwo = [{ id: 2, text: "lavender" }];
 		const listThree = [];
-
+		const listFour = [];
+		const listFive = [];
+		const listSix = [];
+		const listSeven = [];
+		const listEight = [];
+		
+		
 		return (
 			<div>
 				<Navbar />
@@ -47,3 +70,4 @@ class Garden extends Component {
 }
 
 export default DragDropContext(HTML5Backend)(Garden);
+git 
