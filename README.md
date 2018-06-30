@@ -1,6 +1,6 @@
 # Bee-Z Street
+[Bee-Z Street Google Slides presentation](https://docs.google.com/presentation/d/1wvgveGbOG76tQeEOEISmlM2Q6npVLteYs8_3p5BxcaQ/edit?usp=sharing)
 
-(screenshot goes here)
 
 
 ## Description
