@@ -1,16 +1,10 @@
-/* .gardenMain {
- background: url('../images/dirt.png');
- background-repeat: no-repeat;
- background-size: cover;
-
-} */
-
-
 .gardenMain {
-    background: rgb(139,69,19);
-}
+background: url('../images/dirt.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 40px 0px 200px 0px;
+margin: 0px 0px -20px -20px;
+z-index: 2;
 
-.dirtGarden {
-    background: black;
-    margin: 0px -20px 0px -20px;
 }
