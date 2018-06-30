@@ -25,8 +25,6 @@ class PlantInfo extends Component {
 
   render() {
     const p = this.state.plant;
-    // console.log("string render");
-    // console.log(p);
 
     return (
       <Main>
