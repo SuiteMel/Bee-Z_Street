@@ -5,6 +5,8 @@ import Container from '../components/Target';
 import "../css/garden.css";
 import API from "../utils/API";
 import Main from "../components/Main";
+import Navbar from "../components/Navbar";
+
 
 
 
