@@ -8,6 +8,8 @@ import Search from "./pages/search";
 import Garden from "./pages/garden";
 import Contact from "./pages/contact";
 import PlantInfo from "./pages/plantInfo";
+import Login from "./pages/login";
+
 // import Draggable from "./pages/draggable";
 
 import "./App.css";
@@ -19,6 +21,7 @@ const App = () => (
     <div>
     {/* <Navbar /> */}
       <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
       <Route exact path="/search" component={Search} />
       <Route exact path="/garden" component={Garden} />
       <Route exact path="/contact" component={Contact} />
