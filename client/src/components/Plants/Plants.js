@@ -6,10 +6,13 @@ import "./Plants.css";
 
 const style =  {
 
-	padding: '0.5rem 1rem',
-	margin: '.5rem',
+	width: '109px',
+	height: '156px',
     cursor: 'move',
-	size: '24px',	
+	size: '24px',
+	
+
+
 };
 
 class Card extends Component {
@@ -21,7 +24,9 @@ class Card extends Component {
 
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
-				{card.text}
+				
+				{card.name}
+				<img src={card.url} width="109px" height="156px" />
 			
 				
 			</div>
@@ -38,9 +43,13 @@ const cardSource = {
 			index: props.index,
 			listId: props.listId,
 			card: props.card,
+			src: props.image,
+            alt: props.name
+			
 			
 		};
-	},
+	
+},
 
 	endDrag(props, monitor) {
 		const item = monitor.getItem();
