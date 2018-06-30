@@ -1,26 +1,8 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @green64 Sign out
-3
-1 0 SuiteMel/Bee-Z_Street
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-Bee-Z_Street/scripts/seedDB.js
-a34f51e  23 hours ago
-@green64 green64 moved garden page images to public image folder
-@pckearney25 @green64
-     
-Executable File  383 lines (372 sloc)  12.4 KB
 const mongoose = require("mongoose");
 const db = require("../models");
 mongoose.Promise = global.Promise;
 
-// This file empties the Books collection and inserts the books below
+// This file empties the Plants collection and inserts the plants below
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/beezstreet",

@@ -14,5 +14,11 @@ module.exports = {
       .find({ commonName: req.body.commonName })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  }
+  },
+  findById: function(req, res) {
+    db.Plant
+      .findById(req.params.id)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err))
+    }
 };
