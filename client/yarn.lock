@@ -6156,9 +6156,9 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-materialize@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-2.3.1.tgz#1ef3436b551dff024de956d8fcabb471c86e99c5"
+react-materialize@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-2.3.3.tgz#48b433112cf2dadcc3e7770933ac0d0f94fc2437"
   dependencies:
     classnames "^2.2.5"
     react "^16.2.0"
