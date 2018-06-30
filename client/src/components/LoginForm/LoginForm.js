@@ -11,7 +11,7 @@ var LoginForm = createReactClass({
       <form id="signup" onSubmit={this.handleSubmit}>
         <input className="col s12" type="email" placeholder="Email" required ref="email"/>  
         <input className="col s12" type="password" placeholder="Password" required ref="password" />
-        <input className="btn waves-effect waves-light #f9a825 yellow darken-3 s2 home" type="submit" value="Submit" />
+        <button class="btn waves-effect waves-light #f9a825 yellow darken-3" type="submit" name="action">Submit</button>
         </form>
         </div>
 
