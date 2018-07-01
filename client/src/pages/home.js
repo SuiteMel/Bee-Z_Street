@@ -6,12 +6,12 @@ import { Row } from "react-materialize";
 
 
 const Home = () => (
-  <Main className="homeMain home">
+  <Main className="homeMain">
     <div className="container">
     <div className="homeBorder" />
       <div className="row">
         <div className="col s6">
-          <h2 className="homeform">New to Bee-Z Street? Sign up is easy!</h2>
+          <h2 className="home">New to Bee-Z Street? Sign up is easy!</h2>
           <SignupForm />
 
         </div>

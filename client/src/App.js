@@ -9,12 +9,17 @@ import Garden from "./pages/garden";
 import Contact from "./pages/contact";
 import PlantInfo from "./pages/plantInfo";
 import Login from "./pages/login";
+
+// import Draggable from "./pages/draggable";
+
 import "./App.css";
 
 const App = () => (
-<Wrapper className="Site">
+<Wrapper>
+
   <Router>
-    <div className="Site-content">
+    <div>
+    {/* <Navbar /> */}
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/search" component={Search} />
@@ -22,6 +27,7 @@ const App = () => (
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/search/:id" component={PlantInfo} />
       </div>
+      {/* <Route exact path="/draggable" component={Draggable} /> */}
   </Router>
   <Footer> 
   <h3>Bee-Z Street &copy; 2018</h3>
