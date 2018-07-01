@@ -5,9 +5,9 @@ import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => (
-  <div>
+  <div className="Site-Content">
     <Navbar />
-  <Main className="contactMain">
+  <Main className="contactMain contact">
     <div className="container">
       <div className="row">
         <div className="col s6">

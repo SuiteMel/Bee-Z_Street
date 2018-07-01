@@ -4,11 +4,11 @@ import Main from "../components/Main";
 import SignupForm from "../components/SignupForm";
 
 const Home = () => (
-  <Main className="homeMain">
+  <Main className="homeMain home">
     <div className="container">
       <div className="row">
         <div className="col s6">
-          <h2 className="home">New to Bee-Z Street? Sign up is easy!</h2>
+          <h2 className="homeform">New to Bee-Z Street? Sign up is easy!</h2>
           <SignupForm />
 
         </div>

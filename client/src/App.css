@@ -22,7 +22,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  }
+    
+.Site-content {
+  flex: 1;
+  }
+  
 a:hover, a:active {
   color: #6a1b9a purple darken-3;
   text-decoration: none;
