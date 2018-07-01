@@ -1,10 +1,10 @@
 import React from "react";
-import "../css/home.css";
+import "../css/login.css";
 import Main from "../components/Main";
 import LoginForm from "../components/LoginForm";
 
 const Login = () => (
-  <Main className="homeMain">
+  <Main className="loginMain">
     <div className="container">
       <div className="row">
         <div className="col s5">

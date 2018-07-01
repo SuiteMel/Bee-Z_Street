@@ -2,10 +2,13 @@ import React from "react";
 import "../css/home.css";
 import Main from "../components/Main";
 import SignupForm from "../components/SignupForm";
+import { Row } from "react-materialize";
+
 
 const Home = () => (
   <Main className="homeMain home">
     <div className="container">
+    <div className="homeBorder" />
       <div className="row">
         <div className="col s6">
           <h2 className="homeform">New to Bee-Z Street? Sign up is easy!</h2>
@@ -25,8 +28,14 @@ const Home = () => (
           <p className="home">Climate-tolerant native plants are low-maintenance and use less water. And the fascinating bees, butterflies,
       and birds they attract are a beautiful bonus Mother Nature throws in free.</p>
 
-          <p className="home">Bee-Z Street help you identify native plants and visualize how they can brighten and beautify
-      your home landscaping. We think you'll love the results; the bees will thank you too!</p>
+          <p className="home">Whether you're interested in prairie habitat, growing in loamy soil or searching for shade-friendly 
+          species, Bee-Z Street help you identify the right plants for your situation. We think you'll love the results; 
+          the bees will thank you too!</p>
+      <div className="row filters">
+        <img src="../images/prairie.png" alt="" className="circle responsive-img shadow" />
+        <img src="../images/loam.png" alt="" className="circle responsive-img shadow" />
+        <img src="../images/shade.png" alt="" className="circle responsive-img shadow" />
+        </div>
         </div>
       </div>
     </div>

@@ -16,8 +16,11 @@ body, html {
   z-index: 2;
  }
 
- .border {
-  border: 1px red dotted;
+
+
+ .homeBorder {
+  border: 1px #311b92 solid;
+  margin: 10px 0px 10px 0px;
 }
 
 h1.home{
@@ -84,6 +87,16 @@ a.home:hover, a.home:active {
 a.home:link, a.home:visited {
   color: #aa00ff;
   font-family: 'Raleway', sans-serif;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around; 
+  padding-top: 5px;
+}
+.shadow{
+  border: 1px solid darkgreen;
+  box-shadow: 6px 6px 5px grey;
 }
 
 ::-webkit-input-placeholder {

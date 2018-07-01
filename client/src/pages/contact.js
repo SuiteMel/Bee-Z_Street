@@ -15,11 +15,12 @@ const Contact = () => (
 
         </div>
         <div className="col s6">
-          <h1 className="contact">We're always glad to hear from you!</h1>
+          <h1 className="contactHead">We want to hear from you!</h1>
 
           <p className="contact">Bee-Z Street gardeners across the country are beautifying their 
-            yards and gardens and helping vital bee populations. Send 
-            us pictures of your successes, and we'll include them in our 
+            yards and gardens and helping vital bee populations.</p> 
+            
+          <p className="contact">Send us pictures of your successes, and we'll include them in our 
             future garden showcase!
           </p>
         </div>

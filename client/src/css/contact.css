@@ -14,6 +14,15 @@
   border: 1px red dotted;
 }
 
+h1.contactHead{
+  font-size: 40px;
+  color: #311b92;
+  padding-left: 20px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  /* letter-spacing: 1.5px; */
+}
+
 h1.contact{
   font-size: 30px;
   padding-left: 20px;
