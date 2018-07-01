@@ -9,7 +9,6 @@ import Navbar from "../components/Navbar";
 
 
 
-
 class Garden extends Component {
 	state = {
 		plants: []
@@ -53,6 +52,8 @@ class Garden extends Component {
 
 
 		return (
+			<div>
+			<Navbar />
 			<Main  className = "gardenMain">
 				<h1>Welcome To Your Garden!</h1>
 
@@ -207,6 +208,7 @@ class Garden extends Component {
 				</div>
 
 			</Main>
+			</div>
 		)
 	};
 };
