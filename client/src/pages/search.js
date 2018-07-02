@@ -54,7 +54,7 @@ class Search extends Component {
 
   render() {
     return (
-      <div className="Site-Content">
+      <div>
         <Navbar />
         <Main>
           <h2 className="search">It's a Search</h2>
