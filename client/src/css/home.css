@@ -3,8 +3,7 @@
 
 body, html { 
   cursor: url('../images/bee_cursor.png'), default; 
-  height: 100%;  
-  background-color: #382609;
+  background: linear-gradient(70deg, #e65100, #f9a825);
 }
 
 .homeMain {
@@ -12,13 +11,17 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0px 200px 0px;
-  margin: 0px 0px -20px -20px;
+  padding: 40px 0px 420px 0px;
+  margin: 0px 0px 0px -20px;
+
   z-index: 2;
  }
 
- .border {
-  border: 1px red dotted;
+
+
+ .homeBorder {
+  border: 1px #311b92 solid;
+  margin: 10px 0px 10px 0px;
 }
 
 h1.home{
@@ -29,6 +32,8 @@ h1.home{
   font-family: 'Poppins', sans-serif;
   /* letter-spacing: 1.5px; */
 }
+
+
 h2.home{
   font-size: 24px;
   font-style: italic;
@@ -38,7 +43,16 @@ h2.home{
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
 }
-
+h2.homeform{
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: black;
+  padding-left: 20px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
 h3.home{
   font-size: 20px;
   margin-bottom: 10px;
@@ -76,6 +90,16 @@ a.home:hover, a.home:active {
 a.home:link, a.home:visited {
   color: #aa00ff;
   font-family: 'Raleway', sans-serif;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around; 
+  padding-top: 5px;
+}
+.shadow{
+  border: 1px solid darkgreen;
+  box-shadow: 6px 6px 5px grey;
 }
 
 ::-webkit-input-placeholder {

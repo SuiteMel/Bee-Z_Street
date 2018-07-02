@@ -32,11 +32,11 @@ class Garden extends Component {
 
 
 		const listOne = [
-			{ id: 1, text: "list1" , url: "./images/white_turtlehead_313.png"},
-			{ id: 1, text: "list1" , url: "./images/anemone_235.png"},
+			{ id: 1, text: "list1", url: "./images/white_turtlehead_313.png" },
+			{ id: 1, text: "list1", url: "./images/anemone_235.png" },
 		];
 
-		const listTwo = [ ];
+		const listTwo = [];
 		const listThree = [];
 		const listFour = [];
 		const listFive = [];
@@ -53,51 +53,53 @@ class Garden extends Component {
 
 
 		return (
-			<Main  className = "gardenMain">
-				<h1>Welcome To Your Garden!</h1>
+			<div>
+				<Navbar />
+				<Main className="gardenMain Site-content">
+					<h1>Welcome To Your Garden!</h1>
 
 
-				{this.state.plants.length ? (
-					<div>
-						{this.state.plants.map(plant => (
-							<div>
-								<p>
-									{plant.commonName}
-								</p>
-								<img src={plant.images.proportional} id={2} alt="plants" height="50px" width="50px" className="circle"></img>
-							</div>
-						))}
-					</div>
-				) : (
-						<h3>No Results to Display</h3>
-					)}
+					{this.state.plants.length ? (
+						<div>
+							{this.state.plants.map(plant => (
+								<div>
+									<p>
+										{plant.commonName}
+									</p>
+									<img src={plant.images.proportional} id={2} alt="plants" height="50px" width="50px" className="circle"></img>
+								</div>
+							))}
+						</div>
+					) : (
+							<h3>No Results to Display</h3>
+						)}
 
 
 
-				<div className="garden row ">
-					<div className=" col s3 ">
+					<div className="garden row ">
+						<div className=" col s3 ">
 
-						<Container id={1} list={listOne} />
-						<Container id={2} list={listTwo} />
-						<Container id={3} list={listThree} />
-						<Container id={4} list={listFour} />
-						<Container id={4} list={listFour} />
-						<Container id={5} list={listFive} />
-						<Container id={6} list={listSix} />
-						<Container id={7} list={listSeven} />
-					</div>
-					
-					<div className=" col s3">`
+							<Container id={1} list={listOne} />
+							<Container id={2} list={listTwo} />
+							<Container id={3} list={listThree} />
+							<Container id={4} list={listFour} />
+							<Container id={4} list={listFour} />
+							<Container id={5} list={listFive} />
+							<Container id={6} list={listSix} />
+							<Container id={7} list={listSeven} />
+						</div>
+
+						<div className=" col s3">`
 						<Container id={8} list={listTwo} />
-						<Container id={9} list={listThree} />
-						<Container id={10} list={listFour} />
-						<Container id={11} list={listFour} />
-						<Container id={12} list={listFive} />
-						<Container id={13} list={listSix} />
-						<Container id={14} list={listSeven} />
-						<Container id={15} list={listEight} />
-					</div>
-					{/* <div className="garden col s1">
+							<Container id={9} list={listThree} />
+							<Container id={10} list={listFour} />
+							<Container id={11} list={listFour} />
+							<Container id={12} list={listFive} />
+							<Container id={13} list={listSix} />
+							<Container id={14} list={listSeven} />
+							<Container id={15} list={listEight} />
+						</div>
+						{/* <div className="garden col s1">
 						<Container id={16} list={listTwo} />
 						<Container id={17} list={listThree} />
 						<Container id={18} list={listFour} />
@@ -204,9 +206,10 @@ class Garden extends Component {
 
 
 					</div> */}
-				</div>
+					</div>
 
-			</Main>
+				</Main>
+			</div>
 		)
 	};
 };
