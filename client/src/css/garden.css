@@ -9,19 +9,16 @@ background-position: center;
 
 }
 
-.container {
-   
-    background: rgb(160, 160, 143);
-   
-  
-    
-}
+
 
 .header {
     background: white !important;
     overflow: auto;
-  height: 250px !important;
+    white-space: nowrap;
+  height: 175px !important;
+  width: 80%;
+ 
 
- width: 100vw;
+ width: 150vw;
    
 }
