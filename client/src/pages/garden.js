@@ -58,12 +58,12 @@ return (
 				<Main className="gardenMain">
 			<Navbar />
 			
-			<TrashCan id={1}/>
-				<h1 className="white-text center-align"> Welcome To Your Garden!</h1>
+			
+				<h1 className="white-text center-align"> Design Your Kansas Native Plant Pollinator Garden!</h1>
 				
 					<div className=" container left header">
 
-			<Container className ="header row" id={1} list={listOne} />
+			<Container className ="header row" id={1} list={listOne}/>
 			
              
 						
