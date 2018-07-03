@@ -6,9 +6,8 @@ import "../css/garden.css";
 import API from "../utils/API";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
-import TrashCan from "../components/TrashCan";
 
-
+import {Col, Row} from 'react-materialize';
 
 
 class Garden extends Component {
@@ -28,8 +27,8 @@ class Garden extends Component {
 
 
 	render() {
-const listOne = [
-			{ id: 1, text: "list1", url: "./images/anemone_235.png" , name: 'anemone'},
+		const listOne = [
+			{ id: 1, text: "list1", url: "./images/anemone_235.png", name: 'anemone' },
 			{ id: 1, text: "list1", url: "./images/borage_235.png", name: 'borage' },
 			{ id: 1, text: "list1", url: "./images/butterfly_milkweed_250.png", name: 'butterfly milkweed' },
 			{ id: 1, text: "list1", url: "./images/coneflowers_235.png", name: 'coneflowers' },
@@ -37,7 +36,7 @@ const listOne = [
 			{ id: 1, text: "list1", url: "./images/lavender_157.png", name: 'lavender' },
 			{ id: 1, text: "list1", url: "./images/prairie_phlox_80.png", name: 'prairie phlox' },
 			{ id: 1, text: "list1", url: "./images/rattlesnake_master_252.png", name: 'rattlesnake master' },
-			{ id: 1, text: "list1", url: "./images/sage_250.png", name: 'sage'},
+			{ id: 1, text: "list1", url: "./images/sage_250.png", name: 'sage' },
 			{ id: 1, text: "list1", url: "./images/swamp_milkweed_235.png", name: 'swamp milkweed' },
 			{ id: 1, text: "list1", url: "./images/virginia_waterleaf_215.png", name: 'Virginia waterleaf' },
 			{ id: 1, text: "list1", url: "./images/white_turtlehead_313.png", name: 'white turtlehead' },
@@ -50,142 +49,162 @@ const listOne = [
 		const listFive = [];
 		const listSix = [];
 		const listSeven = [];
-		const listEight = [];
+		
 
-return (
-			<div>	
+		return (
+			<div>
 
 				<Main className="gardenMain">
-			<Navbar />
-			
-			
-				<h1 className="white-text center-align"> Design Your Kansas Native Plant Pollinator Garden!</h1>
-				
-					<div className=" container left header">
+					<Navbar />
 
-			<Container className ="header row" id={1} list={listOne}/>
-			
-             
-						
-				
-				</div>
-
-
-				<div className="garden row">
-					<div className="col s1 ">
 					
-
-						    <Container id={100} list={listTwo} />
-							<Container id={2} list={listTwo} />
-							<Container id={3} list={listThree} />
-							<Container id={4} list={listFour} />
-							<Container id={4} list={listFour} />
-							<Container id={5} list={listFive} />
-							<Container id={6} list={listSix} />
-							<Container id={7} list={listSeven} />
-						</div>
-
-						<div className="col s1 ">
+					<h1 className="white-text center-align"> Design Your Garden!</h1>
+					<h4 className="white-text center-align">Drag and drop the plants to design your own garden</h4>
+					<h4 className="white-text center-align">Drag horizontally to delete a plant</h4>
+					<div className=" container left header ">
 					
+					<Row>
+					<Col s={1} className='grid-example'>
 
-					<Container id={100} list={listTwo} />
-					<Container id={2} list={listTwo} />
-					<Container id={3} list={listThree} />
-					<Container id={4} list={listFour} />
-					<Container id={4} list={listFour} />
-					<Container id={5} list={listFive} />
-					<Container id={6} list={listSix} />
-					<Container id={7} list={listSeven} />
-				</div>
-						<div className="garden col s1">
-						<Container id={16} list={listTwo} />
-						<Container id={17} list={listThree} />
-						<Container id={18} list={listFour} />
-						<Container id={19} list={listFour} />
-						<Container id={20} list={listFive} />
-						<Container id={21} list={listSix} />
-						<Container id={22} list={listSeven} />
-						<Container id={23} list={listEight} />
-					</div>
-					<div className="garden col s1">
-						<Container id={24} list={listTwo} />
-						<Container id={25} list={listThree} />
-						<Container id={26} list={listFour} />
-						<Container id={27} list={listFour} />
-						<Container id={28} list={listFive} />
-						<Container id={29} list={listSix} />
-						<Container id={30} list={listSeven} />
-						<Container id={31} list={listEight} />
-					</div>
-					<div className="garden col s1">
-						<Container id={32} list={listTwo} />
-						<Container id={33} list={listThree} />
-						<Container id={34} list={listFour} />
-						<Container id={35} list={listFour} />
-						<Container id={36} list={listFive} />
-						<Container id={37} list={listSix} />
-						<Container id={38} list={listSeven} />
-						<Container id={39} list={listEight} />
-					</div>
-					<div className="garden col s1">
-						<Container id={40} list={listTwo} />
-						<Container id={41} list={listThree} />
-						<Container id={42} list={listFour} />
-						<Container id={43} list={listFour} />
-						<Container id={44} list={listFive} />
-						<Container id={45} list={listSix} />
-						<Container id={46} list={listSeven} />
-						<Container id={47} list={listEight} />
-					</div>
-					<div className=" col s1">
-						<Container id={48} list={listTwo} />
-						<Container id={49} list={listThree} />
-						<Container id={50} list={listFour} />
-						<Container id={51} list={listFour} />
-						<Container id={52} list={listFive} />
-						<Container id={53} list={listSix} />
-						<Container id={54} list={listSeven} />
-						<Container id={55} list={listEight} />
-					</div>
-					<div className=" col s1">
-						<Container id={2} list={listTwo} />
-						<Container id={3} list={listThree} />
-						<Container id={4} list={listFour} />
-						<Container id={4} list={listFour} />
-						<Container id={5} list={listFive} />
-						<Container id={6} list={listSix} />
-						<Container id={7} list={listSeven} />
-						<Container id={8} list={listEight} />
-					</div>
-					<div className=" col s1">
-						<Container id={2} list={listTwo} />
-						<Container id={3} list={listThree} />
-						<Container id={4} list={listFour} />
-						<Container id={4} list={listFour} />
-						<Container id={5} list={listFive} />
-						<Container id={6} list={listSix} />
-						<Container id={7} list={listSeven} />
-						<Container id={8} list={listEight} />
-					</div>
-					<div className=" col s1">
-						<Container id={2} list={listTwo} />
-						<Container id={3} list={listThree} />
-						<Container id={4} list={listFour} />
-						<Container id={4} list={listFour} />
-						<Container id={5} list={listFive} />
-						<Container id={6} list={listSix} />
-						<Container id={7} list={listSeven} />
-						<Container id={8} list={listEight} />
-
-
-
-					</div>
-				</div>
+						<Container className="header vertical-align " id={1} list={listOne} />
+						</Col>
+					</Row>
 				
 
-			</Main>
+					</div>
+
+
+					<Row>
+					<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+</Col>
+
+						<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+
+<Col s={1} className='grid-example'>
+
+
+<Container id={100} list={listTwo} />
+<Container id={2} list={listTwo} />
+<Container id={3} list={listThree} />
+<Container id={4} list={listFour} />
+<Container id={4} list={listFour} />
+
+</Col>
+
+
+					</Row>
+
+
+				</Main>
 			</div>
-				)
+		)
 	};
 };
 
