@@ -25,7 +25,7 @@ class Card extends Component {
 				
 				
 				<img src={card.url} alt = "plants" width="109px" height="156px" />
-				{card.name}
+				
 			
 				
 			</div>
@@ -53,7 +53,7 @@ const cardSource = {
 	endDrag(props, monitor) {
 		const item = monitor.getItem();
 		const dropResult = monitor.getDropResult();	
-		const sourceListId = monitor.getItem().listId;	
+		
 
 		if ( dropResult && dropResult.listId !== item.listId ){
 		return
