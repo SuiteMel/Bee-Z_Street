@@ -9,9 +9,7 @@ const style =  {
 	width: '109px',
 	height: '156px',
     cursor: 'move',
-	size: '24px',
-	
-
+	size: '24px'
 
 };
 
@@ -25,8 +23,9 @@ class Card extends Component {
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
 				
+				
+				<img src={card.url} alt = "plants" width="109px" height="156px" />
 				{card.name}
-				<img src={card.url} width="109px" height="156px" />
 			
 				
 			</div>
@@ -54,8 +53,13 @@ const cardSource = {
 	endDrag(props, monitor) {
 		const item = monitor.getItem();
 		const dropResult = monitor.getDropResult();	
+		const sourceListId = monitor.getItem().listId;	
 
-		if ( dropResult && dropResult.listId !== item.listId ) {
+		if ( dropResult && dropResult.listId !== item.listId ){
+		return
+		}
+
+		if ( dropResult.listId === item.listId  ){
 			props.removeCard(item.index);
 		}
 	}
@@ -84,6 +88,7 @@ const cardTarget = {
 
 		// Get pixels to the top
 		const hoverClientY = clientOffset.y - hoverBoundingRect.top;
+		
 
 		// Only perform the move when the mouse has crossed half of the items height
 		// When dragging downwards, only move when the cursor is below 50%
@@ -102,6 +107,8 @@ const cardTarget = {
 		// Time to actually perform the action
 		if ( props.listId === sourceListId ) {
 			props.moveCard(dragIndex, hoverIndex);
+			
+
 
 			// Note: we're mutating the monitor item here!
 			// Generally it's better to avoid mutations,
