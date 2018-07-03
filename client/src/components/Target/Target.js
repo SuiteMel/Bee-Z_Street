@@ -32,7 +32,7 @@ class Container extends Component {
 			}
 		}));
 	}
-	//function that moves card
+	
 	moveCard(dragIndex, hoverIndex) {
 		const { cards } = this.state;
 		const dragCard = cards[dragIndex];
@@ -55,9 +55,10 @@ class Container extends Component {
 		const style = {
 
 			width: "109px",
-			height: "156px",
+			height: "175px",
 			cursor: 'move',
-			border: '1px dashed gray'
+			border: '1px dashed gray',
+			display: 'flex'
 
 		};
 
