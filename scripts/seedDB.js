@@ -19,7 +19,7 @@ const plantSeed = [
     spacing: 24, //inches
     notes:
       "Rattlesnake master has unique round flowers that are held above long sturdy flower stalks. To feature the yucca-like, spiny, gray foliage, plant rattlesnake master next to shorter grasses such as prairie dropseed.",
-    habitat: "prarie",
+    habitat: "prairie",
     flowering: ["July", "August"],
     sun: ["full"],
     soil: ["sand", "loam", "clay"],
@@ -56,7 +56,7 @@ const plantSeed = [
     spacing: 16, //inches
     notes:
       "Because of its large taproot, butterfly milkweed does not translplant well an requires loose soils. Plant in masses to create an unrivaled display of bright orange flowers.",
-    habitat: "prarie",
+    habitat: "prairie",
     flowering: ["June", "July"],
     sun: ["full"],
     soil: ["sand", "loam"],
@@ -91,8 +91,8 @@ const plantSeed = [
     height: 15, //inches
     spacing: 12, //inches
     notes:
-      "Prairie phlox performs best in well-drained soils in full sun. Use massed on the edges of small prarie plantings or in a boulevard planting.",
-    habitat: "prarie",
+      "Prairie phlox performs best in well-drained soils in full sun. Use massed on the edges of small prairie plantings or in a boulevard planting.",
+    habitat: "prairie",
     flowering: ["April", "May"],
     sun: ["full"],
     soil: ["sand", "loam"],
@@ -127,8 +127,8 @@ const plantSeed = [
     height: 45, //inches
     spacing: 12, //inches.
     notes:
-      "One of the tallest coneflower species. combine with prarie grasses or medium-height forbs such as butterfly milkweed",
-    habitat: "prarie",
+      "One of the tallest coneflower species. combine with prairie grasses or medium-height forbs such as butterfly milkweed",
+    habitat: "prairie",
     flowering: ["June", "July"],
     sun: ["full"],
     soil: ["sand", "loam", "clay"],
