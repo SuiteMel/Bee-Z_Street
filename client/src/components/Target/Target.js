@@ -57,7 +57,7 @@ class Container extends Component {
 			width: "109px",
 			height: "175px",
 			cursor: 'move',
-			border: '1px dashed gray',
+			
 			display: 'flex'
 
 		};
@@ -74,6 +74,7 @@ class Container extends Component {
 								index={i}
 								listId={this.props.id}
 								card={card}
+							
 								removeCard={this.removeCard.bind(this)}
 								moveCard={this.moveCard.bind(this)} />
 						</div>
