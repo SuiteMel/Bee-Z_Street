@@ -14,7 +14,7 @@ class ContactForm extends Component {
       <h1 className="contact">Bee-friendly gardening is a breeze!</h1>
       <h2 className="contact">Have a question? Let us help!</h2>
     <form className="input-field col s9" action="mailto:samanthamccallfp18@gmail.com" method="post" enctype="text/plain">
-    <h3 className="contactForm contact">Subject</h3>
+    <h3 className="contactForm contact">Topic</h3>
               <input 
               className="contactForm"              
               type="text" 
@@ -30,7 +30,7 @@ class ContactForm extends Component {
               onChange={this.handleInputChange}
               type="text"
               name="body"
-              placeholder="Leave your message here. If you're asking about a specific plant 
+              placeholder="If you're asking about a specific plant 
               and you have a picture, upload it below."
               />
         {/* new field */}
@@ -49,7 +49,7 @@ class ContactForm extends Component {
                 value="Submit"
                 onClick={this.handleFormSubmit}
                 >
-                Submit
+                Submit your question
               </button>
       </form>
   </div>
