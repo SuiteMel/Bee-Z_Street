@@ -53,7 +53,6 @@ class Garden extends Component {
 			<div>
 
 				<Main className="gardenMain">
-					<Navbar />
 
 				
 					<h1 className="white-text center-align garden-head"> Design Your Garden!</h1>
