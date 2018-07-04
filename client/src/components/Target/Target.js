@@ -5,7 +5,7 @@ import { DropTarget } from 'react-dnd';
 
 
 
-class Container extends Component {
+class Target extends Component {
 
 	constructor(props) {
 		super(props);
@@ -55,9 +55,9 @@ class Container extends Component {
 		const style = {
 
 			width: "109px",
-			height: "175px",
+			height: "200px",
 			cursor: 'move',
-			
+			border: 'solid',
 			display: 'flex'
 
 		};
@@ -101,4 +101,4 @@ export default DropTarget("CARD", cardTarget, (connect, monitor) => ({
 	connectDropTarget: connect.dropTarget(),
 	isOver: monitor.isOver(),
 	canDrop: monitor.canDrop()
-}))(Container);
+}))(Target);
