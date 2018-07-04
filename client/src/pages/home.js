@@ -14,7 +14,7 @@ const Home = () => (
 
         </div>
         <div className="col s6">
-          <h1 className="home">Welcome to Bee-Z Street!</h1>
+          <h1 className="homeHead">Welcome to Bee-Z Street!</h1>
           <h2 className="home">Your guide to bee-friendly gardening</h2>
 
           <p className="home">If you're interested in beautifying your garden with more diversity and fewer chemicals,
