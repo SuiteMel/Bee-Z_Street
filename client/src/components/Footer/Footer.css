@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
+
 .footer {
     position: fixed;
     height: 50px;
@@ -14,4 +17,5 @@
     font-weight: bolder;
     text-align: center;
     padding: 10px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
 }

@@ -4,25 +4,30 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 import "./Plants.css";
 
+const style =  {
 
-const style = {
-	
-	padding: '0.5rem 1rem',
-	margin: '.5rem',
+	width: '109px',
+	height: '156px',
     cursor: 'move',
-    size: '24px'
-    
+	size: '24px'
+
 };
 
 class Card extends Component {
-
+	
 	render() {
 		const { card, isDragging, connectDragSource, connectDropTarget } = this.props;
 		const opacity = isDragging ? 0 : 1;
+	
 
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
-				{card.text}
+				 {card.name}
+				
+				<img className="responsive-img" src={card.url} alt = "plants" width="109px" height="156px" />
+				
+			 
+				
 			</div>
 		));
 	}
@@ -30,19 +35,31 @@ class Card extends Component {
 
 const cardSource = {
 
-	beginDrag(props) {		
-		return {			
+	beginDrag(props) {	
+		
+		return {
+						
 			index: props.index,
 			listId: props.listId,
-			card: props.card
+			card: props.card,
+			src: props.image,
+            alt: props.name
+			
+			
 		};
-	},
+	
+},
 
 	endDrag(props, monitor) {
 		const item = monitor.getItem();
 		const dropResult = monitor.getDropResult();	
+		
 
-		if ( dropResult && dropResult.listId !== item.listId ) {
+		if ( dropResult && dropResult.listId !== item.listId ){
+		return
+		}
+
+		if ( dropResult.listId === item.listId  ){
 			props.removeCard(item.index);
 		}
 	}
@@ -71,6 +88,7 @@ const cardTarget = {
 
 		// Get pixels to the top
 		const hoverClientY = clientOffset.y - hoverBoundingRect.top;
+		
 
 		// Only perform the move when the mouse has crossed half of the items height
 		// When dragging downwards, only move when the cursor is below 50%
@@ -89,6 +107,8 @@ const cardTarget = {
 		// Time to actually perform the action
 		if ( props.listId === sourceListId ) {
 			props.moveCard(dragIndex, hoverIndex);
+			
+
 
 			// Note: we're mutating the monitor item here!
 			// Generally it's better to avoid mutations,

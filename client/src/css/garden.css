@@ -1,16 +1,29 @@
-/* .gardenMain {
- background: url('../images/dirt.png');
- background-repeat: no-repeat;
- background-size: cover;
-
-} */
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
 .gardenMain {
-    background: rgb(139,69,19);
+background: url('../images/watercolor-brown.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+font-family: Poppins;
+}
+
+
+.header {
+    background: white !important;
+    overflow: auto;
+   clear: both !important;
+  height: 200px !important;
+  width: 100% !important;
+  
+  
 }
 
 .dirtGarden {
-    background: black;
-    margin: 0px -20px 0px -20px;
+  width: 100% !important;
 }
+
+
+
+

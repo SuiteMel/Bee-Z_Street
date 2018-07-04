@@ -1,6 +1,6 @@
 # Bee-Z Street
+[Bee-Z Street Google Slides presentation](https://docs.google.com/presentation/d/1wvgveGbOG76tQeEOEISmlM2Q6npVLteYs8_3p5BxcaQ/edit?usp=sharing)
 
-(screenshot goes here)
 
 
 ## Description
@@ -13,7 +13,7 @@ Back-End: MongoDB, Passport Authentication, Nodemon, Webpack, Babel, Express, OR
 
 #Demo
 
-Check out Bee-Z Street here XXXXXXXXXXXXXXXX
+Check out Bee-Z Street here https://bee-z-street.herokuapp.com/
 
 ## Installation
 
