@@ -6,7 +6,6 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => (
   <div>
-    <Navbar />
   <Main className="contactMain contact">
     <div className="container">
       <div className="row">

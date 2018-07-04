@@ -60,12 +60,20 @@ h3.contact{
     line-height: 30px;
   }
 
+  .contact input{
+  width: 400px;
+  height: 30px;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  color: black;
+  font-weight: bolder;
+}
 
-textarea{
-  height: 350px; 
-} 
+.contact textarea{
+  height: 350px;
+}
 
-button{
+.contact button{
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bolder;
@@ -75,21 +83,21 @@ button{
   font-weight: bolder;
 }
 
-::-webkit-input-placeholder {
+.contact ::-webkit-input-placeholder {
   color: #3B3C36;
   opacity: 1 !important; /* for older chrome versions. may no longer apply. */
   font-style: italic;
   font-weight: bolder;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.contact :-moz-placeholder { /* Firefox 18- */
   color: #3B3C36;
   opacity: 1 !important;
   font-style: italic;
   font-weight: bolder;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+.contact ::-moz-placeholder {  /* Firefox 19+ */
   color: #3B3C36;
   opacity: 1 !important;
   font-style: italic;
