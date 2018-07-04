@@ -4,10 +4,9 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
-// import SearchForm from "../components/SearchForm";
-import { Row, Input } from "react-materialize";
+import { Navbar, NavItem, Input } from "react-materialize";
 import "../css/search.css";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 
 
 class Search extends Component {
@@ -55,7 +54,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Main>
           <h2 className="search">It's a Search</h2>
           <div className="row">
