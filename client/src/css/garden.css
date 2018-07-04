@@ -6,7 +6,7 @@ background: url('../images/watercolor-brown.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-
+font-family: Poppins;
 }
 
 
@@ -14,11 +14,17 @@ background-position: center;
 .header {
     background: white !important;
     overflow: auto;
-    white-space: nowrap;
-  height: 175px !important;
-  width: 80%;
- 
-
- width: 150vw;
-   
+   clear: both !important;
+  height: 200px !important;
+  width: 100% !important;
+  
+  
 }
+
+.dirtGarden {
+  width: 100% !important;
+}
+
+
+
+
