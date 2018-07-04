@@ -21,7 +21,7 @@ mongoose.connect(
   { promiseLibrary: bluebird }
 );
 
-// Start the API server
+// Start the API server...
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
