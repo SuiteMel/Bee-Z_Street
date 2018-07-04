@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import Container from '../components/Target';
+import Target from '../components/Target';
 import "../css/garden.css";
 import API from "../utils/API";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 
-import {Col, Row} from 'react-materialize';
+import { Col, Row } from 'react-materialize';
 
 
 class Garden extends Component {
@@ -46,10 +46,8 @@ class Garden extends Component {
 		const listTwo = [];
 		const listThree = [];
 		const listFour = [];
-		const listFive = [];
-		const listSix = [];
-		const listSeven = [];
-		
+
+
 
 		return (
 			<div>
@@ -57,146 +55,150 @@ class Garden extends Component {
 				<Main className="gardenMain">
 					<Navbar />
 
-					
-					<h1 className="white-text center-align"> Design Your Garden!</h1>
+				
+					<h1 className="white-text center-align garden-head"> Design Your Garden!</h1>
 					<h4 className="white-text center-align">Drag and drop the plants to design your own garden</h4>
 					<h4 className="white-text center-align">Drag horizontally to delete a plant</h4>
-					<div className=" container left header ">
-					
-					<Row>
-					<Col s={1} className='grid-example'>
 
-						<Container className="header vertical-align " id={1} list={listOne} />
+
+
+					<Row className=" container  header ">
+						<Col s={12} l={12} xl={12} >
+
+							<Target className="header vertical-align " id={1} list={listOne} />
 						</Col>
+
 					</Row>
+					
 				
 
-					</div>
 
 
-					<Row>
-					<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-</Col>
+					<Row className="dirtGarden">
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+						</Col>
 
 						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
-<Col s={1} className='grid-example'>
-
-
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-
-</Col>
-<Col s={1} className='grid-example'>
+						</Col>
+						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
-<Col s={1} className='grid-example'>
-
-
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-
-</Col>
-<Col s={1} className='grid-example'>
+						</Col>
+						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
-<Col s={1} className='grid-example'>
-
-
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-
-</Col>
-<Col s={1} className='grid-example'>
+						</Col>
+						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
-<Col s={1} className='grid-example'>
-
-
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-
-</Col>
-<Col s={1} className='grid-example'>
+						</Col>
+						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
-
-<Col s={1} className='grid-example'>
-
-
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
-
-</Col>
-
-<Col s={1} className='grid-example'>
+						</Col>
+						<Col s={1} className='grid-example'>
 
 
-<Container id={100} list={listTwo} />
-<Container id={2} list={listTwo} />
-<Container id={3} list={listThree} />
-<Container id={4} list={listFour} />
-<Container id={4} list={listFour} />
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
 
-</Col>
+						</Col>
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+
+						</Col>
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+
+						</Col>
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+
+						</Col>
+
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+
+						</Col>
+
+						<Col s={1} className='grid-example'>
+
+
+							<Target id={100} list={listTwo} />
+							<Target id={2} list={listTwo} />
+							<Target id={3} list={listThree} />
+							<Target id={4} list={listFour} />
+							<Target id={4} list={listFour} />
+
+						</Col>
 
 
 					</Row>

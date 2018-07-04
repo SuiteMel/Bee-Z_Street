@@ -22,11 +22,11 @@ class Card extends Component {
 
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
+				 {card.name}
 				
+				<img className="responsive-img" src={card.url} alt = "plants" width="109px" height="156px" />
 				
-				<img src={card.url} alt = "plants" width="109px" height="156px" />
-				
-			
+			 
 				
 			</div>
 		));
