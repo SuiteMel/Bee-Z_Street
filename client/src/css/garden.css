@@ -2,26 +2,30 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
 .gardenMain {
-background: url('../images/watercolor-brown.jpg');
+background:  url("../images/watercolor-brown.jpg"); 
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 font-family: Poppins;
+padding: 0px 0px 380px 0px;  
+margin: -30px 0px -20px 0px;
 }
 
 
 .header {
     background: white !important;
     overflow: auto;
-   clear: both !important;
-  height: 200px !important;
-  width: 100% !important;
+  border-bottom: 10px solid purple;
+  box-shadow: 0 8px 8px -6px black;
+
+
   
   
 }
 
 .dirtGarden {
-  width: 100% !important;
+  width: 90% !important;
+
 }
 
 
