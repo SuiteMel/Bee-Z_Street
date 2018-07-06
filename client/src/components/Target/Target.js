@@ -57,7 +57,10 @@ class Target extends Component {
 			
 			height: "300px",
 			cursor: 'move',
-			border: 'gray dotted'
+			border: 'white dotted',
+			display: 'flex',
+			alignContent: 'center',
+			
 			
 			
 

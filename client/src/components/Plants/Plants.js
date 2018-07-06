@@ -4,6 +4,7 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 import "./Plants.css";
 
+
 const style =  {
 
 	width: '163px',
@@ -22,12 +23,12 @@ class Card extends Component {
 	
 
 		return connectDragSource(connectDropTarget(
-			<div style={{ ...style, opacity }}>
+			<div className="hoverable" style={{ ...style, opacity }}>
 				
 				
-				<img className="responsive-img" src={card.url} alt = "plants" width="163px" height="234px" />
+				<img className="responsive-img center-align" src={card.url} alt = "plants" width="163px" height="234px" />
 				
-				{card.name}
+				<h6 className="center-align">{card.name}</h6>
 				
 			</div>
 		));
