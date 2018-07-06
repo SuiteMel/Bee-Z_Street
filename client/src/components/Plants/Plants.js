@@ -6,10 +6,11 @@ import "./Plants.css";
 
 const style =  {
 
-	width: '109px',
-	height: '156px',
+	width: '163px',
+	height: '275px',
     cursor: 'move',
-	size: '24px'
+	size: '24px',
+	
 
 };
 
@@ -22,11 +23,11 @@ class Card extends Component {
 
 		return connectDragSource(connectDropTarget(
 			<div style={{ ...style, opacity }}>
-				 {card.name}
 				
-				<img className="responsive-img" src={card.url} alt = "plants" width="109px" height="156px" />
 				
-			 
+				<img className="responsive-img" src={card.url} alt = "plants" width="163px" height="234px" />
+				
+				{card.name}
 				
 			</div>
 		));
@@ -56,12 +57,14 @@ const cardSource = {
 		
 
 		if ( dropResult && dropResult.listId !== item.listId ){
-		return
+			return
 		}
 
-		if ( dropResult.listId === item.listId  ){
+		else {
 			props.removeCard(item.index);
 		}
+		
+		
 	}
 };
 

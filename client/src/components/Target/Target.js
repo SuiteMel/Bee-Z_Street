@@ -54,11 +54,12 @@ class Target extends Component {
 		const isActive = canDrop && isOver;
 		const style = {
 
-			width: "109px",
-			height: "200px",
+			
+			height: "300px",
 			cursor: 'move',
-			border: 'solid',
-			display: 'flex'
+			border: 'gray dotted'
+			
+			
 
 		};
 
