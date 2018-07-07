@@ -7,7 +7,7 @@ var SignupForm = createReactClass({
   render: function(){
     return(
       <div className="input-field col s12 screen black-text">
-
+       <h2 className="homeform">New to Bee-Z Street? It's easy to register!</h2>
       <form id="signup" onSubmit={this.handleSubmit}>
         <input className="col s12" type="text" placeholder="First Name" required ref="firstName"/>
         <input className="col s12" type="text" placeholder="Last Name" required ref="lastName"/>

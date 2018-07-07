@@ -8,12 +8,8 @@ class Register extends Component {
     return (
       <Main className="homeMain home">
         <div className="container">
-          <div className="homeBorder" />
           <div className="row">
             <div className="col s6">
-              <h2 className="homeform">
-                New to Bee-Z Street? It's easy to register!
-              </h2>
               <SignupForm />
             </div>
             <div className="col s6">
