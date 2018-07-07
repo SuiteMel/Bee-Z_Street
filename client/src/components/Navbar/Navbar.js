@@ -6,12 +6,15 @@ import "./Navbar.css";
 const Navbar = () => (
   <nav className="nav #f9a825 yellow darken-3">
     <div className="nav-wrapper #f9a825 yellow darken-3">
-    <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
-      <h3 className="navbar">Bee-Z Street</h3>
-    </Link>
-   
-      <ul id="nav-mobile" className="right hide-on-med-and-down #f9a825 yellow darken-3">
-      <li
+      <Link className="#f9a825 yellow darken-3 brand-logo" to="/">
+        <h3 className="navbar">Bee-Z Street</h3>
+      </Link>
+
+      <ul
+        id="nav-mobile"
+        className="right hide-on-med-and-down #f9a825 yellow darken-3"
+      >
+        <li
           className={
             window.location.pathname === "/search"
               ? "nav-item active"
@@ -35,12 +38,12 @@ const Navbar = () => (
         </li>
         <li
           className={
-            window.location.pathname === "/contact"
+            window.location.pathname === "/"
               ? "nav-item active"
               : "nav-item navbar"
           }
         >
-          <Link to="/contact" className="nav-link">
+          <Link to="/" className="nav-link">
             Contact
           </Link>
         </li>
