@@ -4,12 +4,14 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 import "./Plants.css";
 
+
 const style =  {
 
-	width: '109px',
-	height: '156px',
+	width: '163px',
+	height: '275px',
     cursor: 'move',
-	size: '24px'
+	size: '24px',
+	
 
 };
 
@@ -21,12 +23,12 @@ class Card extends Component {
 	
 
 		return connectDragSource(connectDropTarget(
-			<div style={{ ...style, opacity }}>
-				 {card.name}
+			<div className="hoverable" style={{ ...style, opacity }}>
 				
-				<img className="responsive-img" src={card.url} alt = "plants" width="109px" height="156px" />
 				
-			 
+				<img className="responsive-img center-align" src={card.url} alt = "plants" width="163px" height="234px" />
+				
+				<h6 className="center-align">{card.name}</h6>
 				
 			</div>
 		));
@@ -56,12 +58,14 @@ const cardSource = {
 		
 
 		if ( dropResult && dropResult.listId !== item.listId ){
-		return
+			return
 		}
 
-		if ( dropResult.listId === item.listId  ){
+		else {
 			props.removeCard(item.index);
 		}
+		
+		
 	}
 };
 

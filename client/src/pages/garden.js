@@ -5,9 +5,7 @@ import Target from '../components/Target';
 import "../css/garden.css";
 import API from "../utils/API";
 import Main from "../components/Main";
-import Navbar from "../components/Navbar";
-
-import { Col, Row } from 'react-materialize';
+import { Col, Row, } from 'react-materialize';
 
 
 class Garden extends Component {
@@ -50,161 +48,106 @@ class Garden extends Component {
 
 
 		return (
-			<div>
 
-				<Main className="gardenMain">
 
-				
-					<h1 className="white-text center-align garden-head"> Design Your Garden!</h1>
-					<h4 className="white-text center-align">Drag and drop the plants to design your own garden</h4>
-					<h4 className="white-text center-align">Drag horizontally to delete a plant</h4>
+			<Main className="gardenMain">
 
 
 
-					<Row className=" container  header ">
-						<Col s={12} l={12} xl={12} >
+				<h1 className="white-text center-align garden-head"> Design Your Garden!</h1>
+				<h4 className="white-text center-align">Drag and drop native Kansas plants to design your own garden</h4>
+				<h4 className="white-text center-align">Drag twice to delete a plant</h4>
+				<h6 className=" purple-text center-align">--Not Touch Compatible--</h6>
 
-							<Target className="header vertical-align " id={1} list={listOne} />
-						</Col>
 
-					</Row>
-					
-				
 
+				<Row className="dirtGarden">
+					<Col className="header" s={12} m={12} l={12} xl={12} >
+
+						<Target className="header vertical-align " id={1} list={listOne} />
+					</Col>
+				</Row>
 
 
 
 
-					<Row className="dirtGarden">
-						<Col s={1} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-						</Col>
-
-						<Col s={1} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
+				<Row>
 
-						</Col>
-						<Col s={1} className='grid-example'>
+					<Col s={6} m={6} l={2} xl={2} >
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+					</Col>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+					</Col>
+					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-						<Col s={1} className='grid-example'>
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
-
-						<Col s={1} className='grid-example'>
+					</Col>
+					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
 
-						</Col>
-
-						<Col s={1} className='grid-example'>
+					</Col>
+					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
 
 
-							<Target id={100} list={listTwo} />
-							<Target id={2} list={listTwo} />
-							<Target id={3} list={listThree} />
-							<Target id={4} list={listFour} />
-							<Target id={4} list={listFour} />
-
-						</Col>
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
 
 
-					</Row>
+					</Col>
+					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
 
 
-				</Main>
-			</div>
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listTwo} />
+						<Target id={2} list={listThree} />
+						<Target id={2} list={listFour} />
+
+
+					</Col>
+
+
+
+				</Row>
+
+
+			</Main>
+
 		)
 	};
 };
