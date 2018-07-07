@@ -43,7 +43,7 @@ class ContactForm extends Component {
               />
         {/* new field */}
               <button
-                className="btn waves-effect waves-light #f9a825 yellow darken-3 contactForm" 
+                className="btn waves-effect waves-light #f9a825 yellow darken-3 contactButton" 
                 name="action"
                 type="submit"
                 value="Submit"
