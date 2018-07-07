@@ -106,13 +106,6 @@ class PlantInfo extends Component {
                   {i.insect}
                 </Card>
                 </Col>
-            
-                // <ul className="collection">
-                //   <li className="collection-item avatar">
-                //     <img src={i.image} alt={i.insect} class="circle" />
-                //     <span class="title">{i.insect}</span>
-                //   </li>
-                // </ul>
               ))}
               
             </Row>
@@ -121,5 +114,4 @@ class PlantInfo extends Component {
     );
   }
 }
-
 export default PlantInfo;

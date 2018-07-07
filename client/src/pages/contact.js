@@ -19,7 +19,7 @@ const Contact = () => (
           <p className="contact">Bee-Z Street gardeners across the country are beautifying their 
             yards and gardens and helping vital bee populations.</p> 
             
-          <p className="contact">Send us pictures of your successes, and we'll include them in our 
+          <p className="contact">Share your tips, tricks and successes, and we'll include them in our 
             future garden showcase!
           </p>
         </div>
