@@ -17,7 +17,7 @@ const App = () => (
   <Router>
     <div className="Site-content">
     <Navbar brand="Bee-Z Street" right  className={
-            window.location.pathname === "/"
+            window.location.pathname === "/login" ||  window.location.pathname === "/"
               ? "hide"
               : "#f9a825 yellow darken-3"
           }> 
@@ -36,7 +36,7 @@ const App = () => (
               ? "nav-item active"
               : "nav-item navbar"
           }>Contact</NavItem>
-      <NavItem href="/" className="nav-item navbar">Log Out</NavItem>
+      <NavItem href="/login" className="nav-item navbar">Log Out</NavItem>
     </Navbar>
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />

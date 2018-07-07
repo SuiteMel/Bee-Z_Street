@@ -22,3 +22,11 @@ h3.search{
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
 }
+
+.searchPage {
+  padding: 10px 20px;
+}
+
+.searchPage .collection {
+  margin: 0;
+}
