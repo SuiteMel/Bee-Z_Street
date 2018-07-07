@@ -4,7 +4,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
-import { Navbar, NavItem, Input } from "react-materialize";
+import { Input } from "react-materialize";
 import "../css/search.css";
 // import Navbar from "../components/Navbar";
 

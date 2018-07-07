@@ -41,17 +41,17 @@ const plantSeed = [
       {
         insect: "Honey Bees",
         image:
-          "https://en.wikipedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+          "./images/bees/honeybee.png"
       },
       {
         insect: "Yellow-Faced Bees",
         image:
-          "https://crownbees.com/media/magiccart/blog/Male_YFB_on_Tree_HeliotropeSquare.png"
+          "./images/bees/yellow-face-bees.png"
       },
       {
         insect: "Bumble Bees",
         image:
-          "https://animalsadda.com/wp-content/uploads/2015/05/bumble-bee-6.jpg"
+          "./images/bees/bumblebee.png"
       }
     ]
   },

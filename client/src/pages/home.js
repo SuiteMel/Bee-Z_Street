@@ -31,7 +31,7 @@ const Home = () => (
           the bees will thank you too!</p>
       <div className="row">
       <div className="col s4">
-        <a href="./search"><img src="../images/prairie.png" alt="prairie image" className="circle responsive-img shadow" /></a>
+        <a href="./search"><img src="../images/prairie.png" alt="prairie" className="circle responsive-img shadow" /></a>
         <p className="trio">Choose your<br />habitat</p>
       </div>
       <div className="col s4">

@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/contact.css";
 import Main from "../components/Main";
-import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => (
@@ -11,7 +10,6 @@ const Contact = () => (
       <div className="row">
         <div className="col s6">
           <ContactForm />
-
         </div>
         <div className="col s6">
           <h1 className="contactHead">We want to hear from you!</h1>
