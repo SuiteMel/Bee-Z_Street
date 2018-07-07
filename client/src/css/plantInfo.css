@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
+
+.infoMain {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.infoMain .h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+}
+
+.infoMain .circle {
+  max-height: 300px;
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+.infoMain .collection{
+  font-family: 'Poppins', sans-serif;
+}
+
+.infoMain h6 {
+  font-weight: bold;
+}

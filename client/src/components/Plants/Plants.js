@@ -26,7 +26,7 @@ class Card extends Component {
 			<div className="hoverable" style={{ ...style, opacity }}>
 				
 				
-				<img className="responsive-img center-align" src={card.url} alt = "plants" width="163px" height="234px" />
+				<img className="responsive-img" src={card.url} alt = "plants" width="163px" height="235px" />
 				
 				<h6 className="center-align">{card.name}</h6>
 				
