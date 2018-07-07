@@ -12,10 +12,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0px 420px 0px;
+  padding: 40px 0px 0px 0px;
   margin: 0px 0px 0px -20px;
-
-  z-index: 2;
+  height: 92vh;
 }
 
 .homeBorder {

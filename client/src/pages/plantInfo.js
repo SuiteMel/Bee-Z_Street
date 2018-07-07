@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Main from "../components/Main";
-import Navbar from "../components/Navbar";
 import API from "../utils/API";
+import "../css/plantInfo.css";
+import { Row, Col, Card, CardTitle } from "react-materialize";
 
 class PlantInfo extends Component {
   state = {
@@ -29,57 +30,88 @@ class PlantInfo extends Component {
 
     return (
       <div>
-        <Navbar />
-        <Main>
-          It's the Details!
-          <h1>{p.commonName}</h1>
-          <p>{p.name}</p>
-          <img src={p.images.box} alt={p.commonName} />
-          <p>Height: {p.height}</p>
-          <p>Spacing: {p.spacing}</p>
-          <p>{p.notes}</p>
-          <p>Habitat: {p.habitat}</p>
-          <ul>
+        <Main class="infoMain p-3">
+          
+          <Row>
+            <Col s={5}>
+            <p><span class="h2">{p.commonName}</span> <em>{p.name}</em></p>
+              <p className="center-align">
+              <img className="circle responsive-img" src={p.images.box} alt={p.commonName} />
+              </p>
+              <p>{p.notes}</p>
+            </Col>
+
+            <Col s={7}>
+
+              <Row>
+              <p className="h2 center-align">Planting Information</p>
+                <Col s={6}>
+                
+                  <ul className="collection with-header">
+                  <li className="collection-header #f9a825 yellow darken-3 white-text"><h6>Growing Info</h6></li>
+                    <li className="collection-item ">Height: {p.height} in.</li>
+                    <li className="collection-item">Spacing: {p.spacing} in.</li>
+                    <li className="collection-item">Habitat: <span className="caps">{p.habitat}</span></li>
+                  </ul>
+                </Col>
+
+                <Col s={6}>
+                  <ul className="collection with-header">
+                  <li className="collection-header #f9a825 yellow darken-3 white-text"><h6>Flowering Months</h6></li>
             {p.flowering.map(i => (
-              <li>{i}</li>
-            ))}
-          </ul>
+                      <li className="collection-item"> {i}</li>
+                    ))}
+                  </ul>
+                </Col>
+                </Row>
 
-          <ul>
+                <Row>
+                  <Col s={4}>
+                    <ul className="collection with-header">
+                    <li className="collection-header #f9a825 yellow darken-3 white-text"><h6>Sun Exposure</h6></li>
             {p.sun.map(i => (
-              <li>{i}</li>
-            ))}
-          </ul>
+                        <li className="collection-item"><span className="caps">{i}</span></li>
+                      ))}
+                    </ul>
+                  </Col>
 
-          <ul>
+                  <Col s={4}>
+                    <ul className="collection with-header">
+                    <li className="collection-header #f9a825 yellow darken-3 white-text"><h6>Soil Types</h6></li>
             {p.soil.map(i => (
-              <li>{i}</li>
-            ))}
-          </ul>
+                        <li className="collection-item"><span className="caps">{i}</span></li>
+                      ))}
+                    </ul>
+                  </Col>
 
-          <ul>
+                  <Col s={4}>
+                    <ul className="collection with-header">
+                      <li className="collection-header #f9a825 yellow darken-3 white-text"><h6>Water Types</h6></li>
             {p.water.map(i => (
-              <li>{i}</li>
-            ))}
-          </ul>
+                        <li className="collection-item"><span className="caps">{i}</span></li>
+                      ))}
+                    </ul>
+                  </Col>
+                </Row>
+              
+            
+            </Col>
+          </Row>
 
-
-          {p.insects.map(i => (
-            <ul>
-              <li>{i.insect}</li>
-              <li>{i.image}</li>
-            </ul>
-          ))}
-
-
-          {/* 
-
-          {p.insects} */}
-
+          <Row>
+          
+              {p.insects.map(i => (
+                <Col s={4}>
+                <Card left header={<CardTitle image={i.image}></CardTitle>}>
+                  {i.insect}
+                </Card>
+                </Col>
+              ))}
+              
+            </Row>
         </Main>
       </div>
     );
   }
 }
-
 export default PlantInfo;

@@ -21,8 +21,13 @@ const Contact = () => (
             </p>
 
             <p className="contact">
-              Send us pictures of your successes, and we'll include them in our
-              future garden showcase!
+              Bee-Z Street gardeners across the country are beautifying their
+              yards and gardens and helping vital bee populations.
+            </p>
+
+            <p className="contact">
+              Share your tips, tricks and successes, and we'll include them in
+              our future garden showcase!
             </p>
           </div>
         </div>

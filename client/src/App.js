@@ -20,6 +20,7 @@ const App = () => (
           brand="Bee-Z Street"
           right
           className={
+            window.location.pathname === "/login" ||
             window.location.pathname === "/register"
               ? "hide"
               : "#f9a825 yellow darken-3"
@@ -28,7 +29,7 @@ const App = () => (
           <NavItem
             href="/search"
             className={
-              window.location.pathname === "/search"
+              window.location.pathname === "/"
                 ? "nav-item active"
                 : "nav-item navbar"
             }
@@ -46,24 +47,24 @@ const App = () => (
             Garden
           </NavItem>
           <NavItem
-            href="/"
+            href="/contact"
             className={
-              window.location.pathname === "/"
+              window.location.pathname === "/contact"
                 ? "nav-item active"
                 : "nav-item navbar"
             }
           >
             Contact
           </NavItem>
-          <NavItem href="/" className="nav-item navbar">
+          <NavItem href="/login" className="nav-item navbar">
             Log Out
           </NavItem>
         </Navbar>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/search" component={Search} />
+        <Route exact path="/" component={Search} />
         <Route exact path="/garden" component={Garden} />
-        <Route exact path="/" component={Contact} />
+        <Route exact path="/contact" component={Contact} />
         <Route exact path="/search/:id" component={PlantInfo} />
       </div>
     </Router>

@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import "../css/register.css";
 import API from "../utils/API";
-import { Link } from "react-router-dom";
 import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
-//removed  Navbar, NavItem, from below
 import { Input } from "react-materialize";
 import "../css/search.css";
-// import Navbar from "../components/Navbar";
 
 class Search extends Component {
   state = {
@@ -52,9 +49,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
-        <Main>
-          <h2 className="search">It's a Search.</h2>
+        <Main className="searchPage">
           <div className="row">
             <div className="col s3" id="searchCol">
               <form
@@ -149,20 +144,12 @@ class Search extends Component {
                     <div>
                       <PlantCard
                         key={plant._id}
+                        _id={plant._id}
                         image={plant.images.box}
                         commonName={plant.commonName}
                         name={plant.name}
                         notes={plant.notes}
-                      >
-                        {/* {console.log(this.state.plants)} */}
-                        <span key={plant._id}>
-                          <Link to={"/search/" + plant._id}>
-                            <span className="btn">
-                              <i className="material-icons">arrow_forward</i>
-                            </span>
-                          </Link>
-                        </span>
-                      </PlantCard>
+                      />
                     </div>
                   ))}
                 </ul>
