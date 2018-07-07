@@ -14,7 +14,12 @@ const Login = () => (
         <div className="col s7">
           <h1 className="home">Welcome Back to Bee-Z Street</h1>
           <LoginForm />
-          <p className="instructions screen">Not a member? It's easy to <a className="home" href="/">sign up!</a></p>
+          <p className="instructions screen">
+            Not a member? It's easy to{" "}
+            <a className="home" href="/register">
+              sign up!
+            </a>
+          </p>
 
           {/* <h2 className="home">Let's get growing!</h2>
 
@@ -28,7 +33,6 @@ const Login = () => (
           <p className="home">If you've already had some gardening successes, don't forget to visit 
           our <a className="home" href="./contact">Contact page</a> and share a story, image, or both. 
           We can't wait to see how your garden grows!</p> */}
-          
         </div>
       </div>
     </div>
