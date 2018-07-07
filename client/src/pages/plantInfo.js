@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Main from "../components/Main";
 import API from "../utils/API";
+import { Link } from "react-router-dom";
 // import { Col, Row, } from 'react-materialize';
 import "../css/plantInfo.css";
 
@@ -84,6 +85,10 @@ class PlantInfo extends Component {
                         <li className="imageUrl">{i.image}</li>
                       </ul>
                       ))}
+                     <Link to={"/search/"}>
+                        <button class="btn waves-effect waves-light #f9a825 yellow darken-3" type="submit" name="action">&larr; Return to Search</button>
+                        {/* <span className="btn"><i className="material-icons">arrow_forward</i></span> */}
+                    </Link>                          
                 </div>
               </div>
             </div>
