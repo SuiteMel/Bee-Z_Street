@@ -11,9 +11,9 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0px 650px 0px;
   margin: 0px 0px 0px -20px;
-  height: 88vh;
+  z-index: 2;
  }
 
  .border {
@@ -22,7 +22,7 @@ body, html {
 
 h1.home{
   font-size: 40px;
-  color: #6a1b9a;
+  color: #311b92;
   padding-left: 10px;
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
