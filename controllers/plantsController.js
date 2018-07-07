@@ -1,27 +1,52 @@
 const db = require("../models");
 
+//getToken = headers => {
+//if (headers && headers.authorization) {
+//const parted = headers.authorization.split(" ");
+//if (parted.length === 2) {
+//return parted[1];
+//} else {
+//return null;
+//}
+//} else {
+//return null;
+//}
+//};
+
 // Defining methods for the plantsController
 module.exports = {
-  findAll: function (req, res) {
-    db.Plant
-      .find(req.query)
+  // const token = getToken(req.headers);
+  // if (token) {
+  findAll: (req, res) => {
+    db.Plant.find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+    //} else {
+    //return res.status(403).send({ success: false, msg: "Unauthorized." });
+    //}
   },
-  findBySearch: function(req, res) {
-    console.log(req.body)
-    db.Plant
-      .find(req.body)
+  findBySearch: (req, res) => {
+    //const token = getToken(req.headers);
+    //if (token) {
+    console.log(req.body);
+    db.Plant.find(req.body)
       .then(dbModel => {
-        res.json(dbModel)
+        res.json(dbModel);
       })
       .catch(err => res.status(422).json(err));
+    //} else {
+    //return res.status(403).send({ success: false, msg: "Unauthorized." });
+    //}
   },
-  findById: function(req, res) {
-    db.Plant
-      .findById(req.params.id)
+  findById: (req, res) => {
+    //const token = getToken(req.headers);
+    //if (token) {
+    db.Plant.findById(req.params.id)
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err))
-    }
+      .catch(err => res.status(422).json(err));
+    //} else {
+    //return res.status(403).send({ success: false, msg: "Unauthorized." });
+    //}
+  }
 };

@@ -3,15 +3,6 @@ const db = require("../models");
 mongoose.Promise = global.Promise;
 const bluebird = require("bluebird");
 
-// This file empties the Plants collection and inserts the plants below
-
-//mongoose.connect(
-//process.env.MONGODB_URI || "mongodb://localhost/beezstreet",
-//{
-//useMongoClient: true
-//}
-//);
-
 // Connect to the Mongo DB
 mongoose.Promise = bluebird;
 mongoose.connect(
@@ -338,22 +329,18 @@ const plantSeed = [
     ]
   }
 ];
-
 const userSeed = [
   {
-    username: "patrick",
-    password: "coneflower",
-    savedPlants: ["coneflower", "sunflower", "common milkweed"],
-    savedGardens: [["coneflower", "daisy"], ["tulip", "daffodyl"]]
+    firstname: "Patrick",
+    lastname: "Kearney",
+    useername: "pckearney@garden.com",
+    password: "coneflower"
   },
   {
-    username: "melissa",
-    password: "ShastaDaisy",
-    savedPlants: ["coneflower", "sunflower", "tickseed"],
-    savedGardens: [
-      ["coneflower", "sneezeweed"],
-      ["Shasta Daisy", "California Poppy"]
-    ]
+    firstname: "Jennifer",
+    lastname: "Lang",
+    useername: "jennifer@dragndrop.com",
+    password: "reactmaterialize"
   }
 ];
 
