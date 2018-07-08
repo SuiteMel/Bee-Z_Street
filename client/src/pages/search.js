@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
 import { Input } from "react-materialize";
 import "../css/search.css";
+//import axios from "axios";
 
 class Search extends Component {
   state = {
@@ -17,6 +18,9 @@ class Search extends Component {
   };
 
   componentDidMount() {
+    //axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+    //"jwtToken"
+    //);
     this.loadPlants();
   }
 
@@ -30,11 +34,18 @@ class Search extends Component {
   loadPlants = () => {
     API.getPlants()
       .then(res => this.setState({ plants: res.data }))
-      .catch(err => console.log(err));
+      .catch(err => {
+        console.log(err);
+        //if (error.response.status === 401) {
+        //this.props.history.push("/login");
+      });
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
+    //axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+    //"jwtToken"
+    //);
     API.searchPlants({
       commonName: this.state.cName,
       soil: this.state.soil,

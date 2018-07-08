@@ -1,34 +1,93 @@
-require('./SignupForm.css');
-var React = require('react');
-var createReactClass = require('create-react-class');
+import React, { Component } from "react";
+import "./SignupForm.css";
+//import API from "../../utils/API";
 
+class SignupForm extends Component {
+  state = {
+    firstname: "",
+    lastname: "",
+    username: "",
+    password: "",
+    message: "THE COWS ARE COMING!"
+  };
 
-var SignupForm = createReactClass({
-  render: function(){
-    return(
+  onChange = event => {
+    const state = this.state;
+    state[event.target.name] = event.target.value;
+    this.setState(state);
+  };
+
+  onSubmit = event => {
+    event.preventDefault();
+    const { firstname, lastname, username, password } = this.state;
+    //API.registerSubmit({ firstname, lastname, username, password }).then(
+    //result => {
+    //if (result.data.success) {
+    //this.props.history.push("/login");
+    //} else {
+    //this.setState({ message: result.data.msg });
+    //}
+    //}
+    //);
+    console.log(firstname, lastname, username, password);
+  };
+  render() {
+    const { firstname, lastname, username, password, message } = this.state;
+    return (
       <div className="input-field col s12 screen black-text">
-       <h2 className="homeform">New to Bee-Z Street? It's easy to register!</h2>
-      <form id="signup" onSubmit={this.handleSubmit}>
-        <input className="col s12" type="text" placeholder="First Name" required ref="firstName"/>
-        <input className="col s12" type="text" placeholder="Last Name" required ref="lastName"/>
-        <input className="col s12" type="password" placeholder="Password" required ref="password"/>
-        <input className="col s12" type="email" placeholder="Email" required ref="email"/>
-        <button class="btn waves-effect waves-light #f9a825 yellow darken-3" type="submit" name="action">Register me</button>
+        <form id="signup" onSubmit={this.onSubmit}>
+          {message !== "" && (
+            <div className="alert alert-warning alert-dismissible" role="alert">
+              <b>{message}</b>
+            </div>
+          )}
+          <input
+            className="col s12"
+            type="text"
+            placeholder="First Name"
+            name="firstname"
+            value={firstname}
+            onChange={this.onChange}
+            required
+          />
+          <input
+            className="col s12"
+            type="text"
+            placeholder="Last Name"
+            name="lastname"
+            value={lastname}
+            onChange={this.onChange}
+            required
+          />
+          <input
+            className="col s12"
+            type="email"
+            placeholder="Email"
+            name="username"
+            value={username}
+            onChange={this.onChange}
+            required
+          />
+          <input
+            className="col s12"
+            type="password"
+            placeholder="Password"
+            name="password"
+            value={password}
+            onChange={this.onChange}
+            required
+          />
+          <button
+            className="btn waves-effect waves-light #f9a825 yellow darken-3"
+            type="submit"
+            name="action"
+          >
+            Register me
+          </button>
         </form>
-        </div>
-
+      </div>
     );
-  },
-
-//  this function was used in demo -- I included it in case we could
-//  use it to add name to database
-  handleSubmit: function (e) {
-    e.preventDefault();  
-    this.props.onAdd(this.refs.firstName.value);  
-    this.props.onAdd(this.refs.lastName.value); 
-    this.props.onAdd(this.refs.password.value); 
-    this.props.onAdd(this.refs.email.value); 
   }
-});
+}
 
-module.exports = SignupForm;
+export default SignupForm;

@@ -27,7 +27,7 @@ const App = () => (
           }
         >
           <NavItem
-            href="/search"
+            href="/"
             className={
               window.location.pathname === "/"
                 ? "nav-item active"
@@ -56,7 +56,7 @@ const App = () => (
           >
             Contact
           </NavItem>
-          <NavItem href="/login" className="nav-item navbar">
+          <NavItem href="/" className="nav-item navbar">
             Log Out
           </NavItem>
         </Navbar>
