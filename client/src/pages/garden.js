@@ -3,27 +3,12 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import Target from '../components/Target';
 import "../css/garden.css";
-import API from "../utils/API";
 import Main from "../components/Main";
 import { Col, Row, } from 'react-materialize';
 
 
 class Garden extends Component {
-	state = {
-		plants: []
-	}
-	componentDidMount() {
-		this.loadPlants();
-	}
-
-	loadPlants = () => {
-		API.getPlants()
-			.then(res =>
-				this.setState({ plants: res.data })
-			).catch(err => console.log(err));
-	};
-
-
+	
 	render() {
 		const listOne = [
 			{ id: 1, text: "list1", url: "./images/anemone_235.png", name: 'anemone' },

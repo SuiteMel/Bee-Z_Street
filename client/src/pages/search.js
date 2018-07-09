@@ -69,7 +69,6 @@ class Search extends Component {
                   <option value="loam">Loam</option>
                   <option value="sand">Sand</option>
                 </Input>
-
                 {/* Sun selection */}
                 <Input s={12} type="select" label="Select Sun Type" defaultValue="" name="sun" value={this.state.sun} onChange={this.handleInputChange}>
                   <option value="" >Choose your Sun</option>
@@ -77,7 +76,6 @@ class Search extends Component {
                   <option value="part-sun">Part-Sun</option>
                   <option value="shade">Shade</option>
                 </Input>
-
                 {/* Water selection */}
                 <Input s={12} type="select" label="Select Water Type" defaultValue="" name="water" value={this.state.water} onChange={this.handleInputChange}>
                   <option value="" >Choose your Water</option>
@@ -85,7 +83,6 @@ class Search extends Component {
                   <option value="mesic">Mesic</option>
                   <option value="dry">Dry</option>
                 </Input>
-
                 {/* Habitat selection */}
                 <Input s={12} type="select" label="Select Habitat" defaultValue="" name="habitat" value={this.state.habitat} onChange={this.handleInputChange}>
                   <option value="" >Choose your Habitat</option>
@@ -93,11 +90,9 @@ class Search extends Component {
                   <option value="woodland edge">Woodland Edge</option>
                   <option value="wetland edge">Wetland Edge</option>
                 </Input>
-
                 <a className="btn"><i className="material-icons" onClick={this.handleFormSubmit}>search</i></a>
               </form>
             </div>
-
             <div className="col s9">
               {this.state.plants.length ? (
                 <ul className="collection">
@@ -129,5 +124,4 @@ class Search extends Component {
       </div>)
   }
 }
-
 export default Search;
