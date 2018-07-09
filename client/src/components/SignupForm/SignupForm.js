@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./SignupForm.css";
-//import API from "../../utils/API";
+import API from "../../utils/API";
 
 class SignupForm extends Component {
   state = {
@@ -8,7 +8,7 @@ class SignupForm extends Component {
     lastname: "",
     username: "",
     password: "",
-    message: "THE COWS ARE COMING!"
+    message: ""
   };
 
   onChange = event => {
@@ -20,16 +20,16 @@ class SignupForm extends Component {
   onSubmit = event => {
     event.preventDefault();
     const { firstname, lastname, username, password } = this.state;
-    //API.registerSubmit({ firstname, lastname, username, password }).then(
-    //result => {
-    //if (result.data.success) {
-    //this.props.history.push("/login");
-    //} else {
-    //this.setState({ message: result.data.msg });
-    //}
-    //}
-    //);
-    console.log(firstname, lastname, username, password);
+    API.registerSubmit({ firstname, lastname, username, password }).then(
+      result => {
+        if (result.data.success) {
+          console.log("SUCCESSFUL REGISTRATION!");
+          //this.props.history.push("/login");
+        } else {
+          this.setState({ message: result.data.msg });
+        }
+      }
+    );
   };
   render() {
     const { firstname, lastname, username, password, message } = this.state;
