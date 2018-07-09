@@ -13,7 +13,7 @@ export default {
     let plantData = {};
 
     if (param.commonName) {
-      plantData.commonName = {$regex: commonName, $options: 'i'};
+      plantData.commonName = { $regex: commonName, $options: "i" };
     }
 
     if (param.soil) {
@@ -35,5 +35,14 @@ export default {
   },
   getPlant: function(id) {
     return axios.get("/api/plants/" + id);
+  },
+
+  //checks login credentials against database.
+  loginSubmit: function(loginData) {
+    return axios.post("/api/auth/login", loginData);
+  },
+  //registers a new user into the database.
+  registerSubmit: function(registerData) {
+    return axios.post("/api/auth/register", registerData);
   }
-}
+};

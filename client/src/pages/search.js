@@ -33,7 +33,9 @@ class Search extends Component {
 
   loadPlants = () => {
     API.getPlants()
-      .then(res => this.setState({ plants: res.data }))
+      .then(res => {
+        this.setState({ plants: res.data });
+      })
       .catch(err => {
         console.log(err);
         //if (error.response.status === 401) {
@@ -55,6 +57,12 @@ class Search extends Component {
     })
       .then(res => this.setState({ plants: res.data }))
       .catch(err => console.log(err));
+  };
+  //TEMPORARY ADDITION ALONG WITH THE BUTTON BELOW
+  logout = event => {
+    event.preventDefault();
+    localStorage.removeItem("jwtToken");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -170,6 +178,9 @@ class Search extends Component {
             </div>
           </div>
         </Main>
+        <button className="logoutbutton" type="button" onClick={this.logout}>
+          Logout
+        </button>
       </div>
     );
   }
