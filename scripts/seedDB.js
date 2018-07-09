@@ -56,7 +56,8 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["mesic", "dry"],
     images: {
-      box: "../images/plant_photos/asclepias-tuberosa-butterfly-weed-close-up.jpg",
+      box:
+        "../images/plant_photos/asclepias-tuberosa-butterfly-weed-close-up.jpg",
       proportional: "./images/butterfly_milkweed_250.png"
     },
     insects: [
@@ -66,10 +67,12 @@ const plantSeed = [
       },
       {
         insect: "Green Sweat Bees",
-        image: "../images/bees/green-sweat-bee.png"      },
+        image: "../images/bees/green-sweat-bee.png"
+      },
       {
         insect: "Monarch Butterflies",
-        image: "../images/bees/monarch.png"      }
+        image: "../images/bees/monarch.png"
+      }
     ]
   },
   {
@@ -85,19 +88,22 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box: "../images/plant_photos/phlox_villosissima_alplains_cc.jpg",    
+      box: "../images/plant_photos/phlox_villosissima_alplains_cc.jpg",
       proportional: "./images/prairie_phlox_80.png"
     },
     insects: [
       {
         insect: "Bumblebees",
-        image: "../images/bees/bumblebee.png"      },
+        image: "../images/bees/bumblebee.png"
+      },
       {
         insect: "Green Sweat Bees",
-        image: "../images/bees/green-sweat-bee.png"      },
+        image: "../images/bees/green-sweat-bee.png"
+      },
       {
         insect: "Small Carpenter Bees",
-        image: "../images/bees/small-carpenter-bee.png"      }
+        image: "../images/bees/small-carpenter-bee.png"
+      }
     ]
   },
   {
@@ -113,19 +119,21 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["mesic", "dry"],
     images: {
-      box: "../images/plant_photos/echinacea_pallida.jpg",    
+      box: "../images/plant_photos/echinacea_pallida.jpg",
       proportional: "./images/coneflower_235.png"
     },
     insects: [
       {
         insect: "Long-Horned Bees",
-        image: "../images/bees/longhorn-bee.png"      },
+        image: "../images/bees/longhorn-bee.png"
+      },
       {
         insect: "Sweat Bees",
-        image: "../images/bees/sweat-bee.png"      },
+        image: "../images/bees/sweat-bee.png"
+      },
       {
         insect: "American Lady Butterflies",
-        image: "../images/bees/american-lady-butterfly.png"      
+        image: "../images/bees/american-lady-butterfly.png"
       }
     ]
   },
@@ -142,19 +150,22 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["mesic", "dry"],
     images: {
-      box: "../images/plant_photos/Geranium-maculatum-Chatto-3.jpg",    
+      box: "../images/plant_photos/Geranium-maculatum-Chatto-3.jpg",
       proportional: "./images/wild_geranium_120.png"
     },
     insects: [
       {
         insect: "Mason Bees",
-        image: "../images/bees/mason-bee.png"      },
+        image: "../images/bees/mason-bee.png"
+      },
       {
         insect: "Mining Bees",
-        image: "../images/bees/mining-bee.png"      },
+        image: "../images/bees/mining-bee.png"
+      },
       {
         insect: "Cuckoo Bees",
-        image: "../images/bees/cuckoo-bee.png"      }
+        image: "../images/bees/cuckoo-bee.png"
+      }
     ]
   },
 
@@ -171,21 +182,21 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box: "../images/plant_photos/Aster-large-leaved-wood_1024x1024.jpg",    
+      box: "../images/plant_photos/Aster-large-leaved-wood_1024x1024.jpg",
       proportional: "./images/large_leafed_aster_240.png"
     },
     insects: [
       {
         insect: "Bumblebees",
-        image:  "../images/bees/bumblebee.png" 
+        image: "../images/bees/bumblebee.png"
       },
       {
         insect: "Green Sweat Bees",
-        image: "../images/bees/green-sweat-bee.png"      
+        image: "../images/bees/green-sweat-bee.png"
       },
       {
         insect: "Mining Bees",
-        image:  "../images/bees/mining-bee.png"   
+        image: "../images/bees/mining-bee.png"
       }
     ]
   },
@@ -203,13 +214,13 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box: "../images/plant_photos/va_waterleaf1.jpg",    
+      box: "../images/plant_photos/va_waterleaf1.jpg",
       proportional: "./images/virginia_waterleaf_215.png"
     },
     insects: [
       {
         insect: "Mining Bees",
-        image:  "../images/bees/mining-bee.png"     
+        image: "../images/bees/mining-bee.png"
       },
       {
         insect: "Mason Bees",
@@ -217,7 +228,7 @@ const plantSeed = [
       },
       {
         insect: "Sweat Bees",
-        image:  "../images/bees/sweat-bee.png"
+        image: "../images/bees/sweat-bee.png"
       }
     ]
   },
@@ -234,17 +245,18 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet, mesic"],
     images: {
-      box: "../images/plant_photos/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",    
+      box:
+        "../images/plant_photos/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",
       proportional: "./images/swamp_milkweed_235.png"
     },
     insects: [
       {
         insect: "Monarch Butterflies",
-        image:  "../images/bees/monarch.png"
+        image: "../images/bees/monarch.png"
       },
       {
         insect: "Great Spangled Fritillary",
-        image:  "../images/bees/great-spangled-fritillary.png"
+        image: "../images/bees/great-spangled-fritillary.png"
       },
       {
         insect: "Red Admiral Butterfly",
@@ -265,21 +277,21 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet"],
     images: {
-      box: "../images/plant_photos/white_turtlehead_chelone-glabra-_1_.jpg",    
+      box: "../images/plant_photos/white_turtlehead_chelone-glabra-_1_.jpg",
       proportional: "./images/white_turtlehead_313.png"
     },
     insects: [
       {
         insect: "Long-Horned Bees",
-        image:  "../images/bees/longhorn-bee.png"
+        image: "../images/bees/longhorn-bee.png"
       },
       {
         insect: "Bumblebees",
-        image:  "../images/bees/bumblebee.png"
+        image: "../images/bees/bumblebee.png"
       },
       {
         insect: "Baltimore Checkerspot Butterfly",
-        image:  "../images/bees/baltimore-checkerspot-butterfly.png"
+        image: "../images/bees/baltimore-checkerspot-butterfly.png"
       }
     ]
   }
@@ -288,13 +300,13 @@ const userSeed = [
   {
     firstname: "Patrick",
     lastname: "Kearney",
-    useername: "pckearney@garden.com",
+    username: "pckearney@garden.com",
     password: "coneflower"
   },
   {
     firstname: "Jennifer",
     lastname: "Lang",
-    useername: "jennifer@dragndrop.com",
+    username: "jennifer@dragndrop.com",
     password: "reactmaterialize"
   }
 ];
