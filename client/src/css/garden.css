@@ -12,16 +12,15 @@ margin: -30px 0px -20px 0px;
 height: 90%;
 }
 
+.garden-head {
+  padding-top: 50px;
+}
 
 .header {
     background: white !important;
     overflow: auto;
   border-bottom: 10px solid purple;
-  box-shadow: 0 8px 8px -6px black;
-
-
-  
-  
+  box-shadow: 0 8px 8px -6px black;  
 }
 
 .dirtGarden {

@@ -99,7 +99,6 @@ class Search extends Component {
                   <option value="loam">Loam</option>
                   <option value="sand">Sand</option>
                 </Input>
-
                 {/* Sun selection */}
                 <Input
                   s={12}
@@ -115,7 +114,6 @@ class Search extends Component {
                   <option value="part-sun">Part-Sun</option>
                   <option value="shade">Shade</option>
                 </Input>
-
                 {/* Water selection */}
                 <Input
                   s={12}
@@ -131,7 +129,6 @@ class Search extends Component {
                   <option value="mesic">Mesic</option>
                   <option value="dry">Dry</option>
                 </Input>
-
                 {/* Habitat selection */}
                 <Input
                   s={12}
@@ -155,7 +152,6 @@ class Search extends Component {
                 </a>
               </form>
             </div>
-
             <div className="col s9">
               {this.state.plants.length ? (
                 <ul className="collection">
