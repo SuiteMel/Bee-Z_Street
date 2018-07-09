@@ -296,36 +296,11 @@ const plantSeed = [
     ]
   }
 ];
-const userSeed = [
-  {
-    firstname: "Patrick",
-    lastname: "Kearney",
-    username: "pckearney@garden.com",
-    password: "coneflower"
-  },
-  {
-    firstname: "Jennifer",
-    lastname: "Lang",
-    username: "jennifer@dragndrop.com",
-    password: "reactmaterialize"
-  }
-];
 
 db.Plant.remove({})
   .then(() => db.Plant.collection.insertMany(plantSeed))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted into Plant!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
-
-db.User.remove({})
-  .then(() => db.User.collection.insertMany(userSeed))
-  .then(data => {
-    console.log(data.insertedIds.length + " records inserted into User!");
     process.exit(0);
   })
   .catch(err => {

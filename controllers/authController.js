@@ -25,7 +25,10 @@ module.exports = {
       // save the user
       newUser.save(err => {
         if (err) {
-          return res.json({ success: false, msg: "Username already exists." });
+          return res.json({
+            success: false,
+            msg: "That email address is already registered."
+          });
         }
         res.json({ success: true, msg: "Successfully created new user." });
       });
