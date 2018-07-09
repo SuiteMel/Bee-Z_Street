@@ -42,7 +42,7 @@ class Garden extends Component {
 				<h1 className="white-text center-align garden-head"> Design Your Garden!</h1>
 				<h4 className="white-text center-align">Drag and drop native Kansas plants to design your own garden</h4>
 				<h4 className="white-text center-align">Drag twice to delete a plant</h4>
-				<h6 className=" purple-text center-align">--Not Touch Compatible--</h6>
+				<h6 className=" purple-text center-align"> &mdash; Not Touch Compatible &mdash; </h6>
 
 
 
