@@ -82,7 +82,7 @@ class SignupForm extends Component {
             type="submit"
             name="action"
           >
-            Register me 4
+            Register me
           </button>
         </form>
       </div>
