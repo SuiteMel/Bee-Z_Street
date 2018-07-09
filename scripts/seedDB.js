@@ -24,8 +24,7 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://cdn.shopify.com/s/files/1/1008/4432/products/Rattlesnake_Master_2.jpg?v=1525018687",
+      box: "../images/plant_photos/Rattlesnake_Master.jpg",
       proportional: "./images/rattlesnake_master_252.png"
     },
     insects: [
@@ -57,8 +56,7 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["mesic", "dry"],
     images: {
-      box:
-        "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/a/s/asclepias-tuberosa-butterfly-weed-close-up.jpg",
+      box: "../images/plant_photos/asclepias-tuberosa-butterfly-weed-close-up.jpg",
       proportional: "./images/butterfly_milkweed_250.png"
     },
     insects: [
@@ -87,8 +85,7 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://www.highcountrygardens.com/media/catalog/product/cache/3/image/cdd56dd0d7347dc27aa421c918b212c4/p/h/phlox_villosissima_alplains_cc.jpg",
+      box: "../images/plant_photos/phlox_villosissima_alplains_cc.jpg",    
       proportional: "./images/prairie_phlox_80.png"
     },
     insects: [
@@ -116,8 +113,7 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["mesic", "dry"],
     images: {
-      box:
-        "https://www.australianseed.com/persistent/catalogue_images/products/echinacea_pallida.jpg",
+      box: "../images/plant_photos/echinacea_pallida.jpg",    
       proportional: "./images/coneflower_235.png"
     },
     insects: [
@@ -146,8 +142,7 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["mesic", "dry"],
     images: {
-      box:
-        "https://dorsetperennials.co.uk/wp-content/uploads/2015/05/Geranium-maculatum-Chatto-3.jpg",
+      box: "../images/plant_photos/Geranium-maculatum-Chatto-3.jpg",    
       proportional: "./images/wild_geranium_120.png"
     },
     insects: [
@@ -176,8 +171,7 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://cdn.shopify.com/s/files/1/0739/9053/products/Aster-large-leaved-wood_1024x1024.jpg?v=1478537263",
+      box: "../images/plant_photos/Aster-large-leaved-wood_1024x1024.jpg",    
       proportional: "./images/large_leafed_aster_240.png"
     },
     insects: [
@@ -209,8 +203,7 @@ const plantSeed = [
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "http://www.illinoiswildflowers.info/woodland/photos/va_waterleaf1.jpg",
+      box: "../images/plant_photos/va_waterleaf1.jpg",    
       proportional: "./images/virginia_waterleaf_215.png"
     },
     insects: [
@@ -241,8 +234,7 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet, mesic"],
     images: {
-      box:
-        "https://www.omcseeds.com/image/cache/data/products/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",
+      box: "../images/plant_photos/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",    
       proportional: "./images/swamp_milkweed_235.png"
     },
     insects: [
@@ -273,8 +265,7 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet"],
     images: {
-      box:
-        "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/c/h/chelone-glabra-_1_.jpg",
+      box: "../images/plant_photos/white_turtlehead_chelone-glabra-_1_.jpg",    
       proportional: "./images/white_turtlehead_313.png"
     },
     insects: [
