@@ -15,9 +15,9 @@ const db = require("../models");
 
 // Defining methods for the plantsController
 module.exports = {
-  // const token = getToken(req.headers);
-  // if (token) {
   findAll: (req, res) => {
+    // const token = getToken(req.headers);
+    // if (token) {
     db.Plant.find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
