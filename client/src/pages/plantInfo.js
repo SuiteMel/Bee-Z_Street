@@ -49,7 +49,7 @@ class PlantInfo extends Component {
       <div>
         <Main class="infoMain p-3">
           <Row>
-            <Col s={5}>
+            <Col s={12} m={5} className="white-text">
               <p>
                 <span class="h2">{p.commonName}</span> <em>{p.name}</em>
               </p>
@@ -63,10 +63,11 @@ class PlantInfo extends Component {
               <p>{p.notes}</p>
             </Col>
 
-            <Col s={7}>
+            <Col s={12} m={7}>
               <Row>
-                <p className="h2 center-align">Planting Information</p>
-                <Col s={6}>
+                <p className="h2 center-align white-text">Planting Information</p>
+                <Col s={12} m={6}>
+                
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Growing Info</h6>
@@ -81,7 +82,7 @@ class PlantInfo extends Component {
                   </ul>
                 </Col>
 
-                <Col s={6}>
+                <Col s={12} m={6}>
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Flowering Months</h6>
@@ -94,7 +95,7 @@ class PlantInfo extends Component {
               </Row>
 
               <Row>
-                <Col s={4}>
+                <Col s={12} m={4}>
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Sun Exposure</h6>
@@ -107,7 +108,7 @@ class PlantInfo extends Component {
                   </ul>
                 </Col>
 
-                <Col s={4}>
+                <Col s={12} m={4}>
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Soil Types</h6>
@@ -120,7 +121,7 @@ class PlantInfo extends Component {
                   </ul>
                 </Col>
 
-                <Col s={4}>
+                <Col s={12} m={4}>
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Water Types</h6>
@@ -137,18 +138,19 @@ class PlantInfo extends Component {
           </Row>
 
           <Row>
+            <p className="h2 center-align white-text">Pollinators</p>
             {p.insects.map(i => (
-              <Col s={4}>
+              <Col s={12} m={4}>
                 <Card left header={<CardTitle image={i.image} />}>
                   {i.insect}
                 </Card>
               </Col>
             ))}
           </Row>
-        </Main>
-        <button className="logoutbutton" type="button" onClick={this.logout}>
-          Logout
+          <button className="logoutbutton" type="button" onClick={this.logout}>
+            Logout
         </button>
+        </Main>
       </div>
     );
   }
