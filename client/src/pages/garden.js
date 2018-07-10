@@ -28,7 +28,7 @@ class Garden extends Component {
 
 		const listTwo = [];
 		const listThree = [];
-		const listFour = [];
+	
 
 
 
@@ -70,7 +70,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 
 					</Col>
@@ -82,7 +82,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 
 					</Col>
@@ -92,7 +92,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 
 					</Col>
@@ -102,7 +102,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 					</Col>
 					<Col s={6} m={6} l={2} xl={2} className='grid-example'>
@@ -111,7 +111,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 
 					</Col>
@@ -121,7 +121,7 @@ class Garden extends Component {
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listTwo} />
 						<Target id={2} list={listThree} />
-						<Target id={2} list={listFour} />
+						
 
 
 					</Col>
