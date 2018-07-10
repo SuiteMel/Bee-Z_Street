@@ -22,11 +22,12 @@ class Login extends Component {
     API.loginSubmit({ username, password })
       .then(result => {
         //PCK added next four lines
-        console.log("Result: " + result);
-        const resString = JSON.stringify(result);
-        console.log("Result String: " + resString);
-        console.log("Token: " + result.data.token);
+        //console.log("Result: " + result);
+        //const resString = JSON.stringify(result);
+        //console.log("Result String: " + resString);
+        //console.log("Token: " + result.data.token);
         localStorage.setItem("jwtToken", result.data.token);
+        localStorage.setItem("beeZUser", username);
         this.setState({ message: "" });
 
         this.props.history.push("/");
