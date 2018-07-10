@@ -18,6 +18,10 @@ body {
   height: 100%;
 }
 
+@media (min-height: 100vh) {
+  .homeMain {height: 118vh;}
+}
+
 /* .homeBorder {
   border: 1px #311b92 solid;
   margin: 10px 0px 10px 0px; 
