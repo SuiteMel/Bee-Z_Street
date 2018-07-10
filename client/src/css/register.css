@@ -14,7 +14,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 118vh;
+  /* height: 118vh; */
+  height: 100%;
 }
 
 /* .homeBorder {

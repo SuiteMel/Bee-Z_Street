@@ -65,6 +65,7 @@ class Search extends Component {
         }
       });
   };
+
   //TEMPORARY ADDITION ALONG WITH THE BUTTON BELOW
   logout = event => {
     event.preventDefault();
@@ -77,7 +78,7 @@ class Search extends Component {
       <div>
         <Main className="searchPage">
           <div className="row">
-            <div className="col s3" id="searchCol">
+            <div className="col s12 m3" id="searchCol">
               <form
                 id="searchForm"
                 className="row"
@@ -151,6 +152,7 @@ class Search extends Component {
                   <option value="woodland edge">Woodland Edge</option>
                   <option value="wetland edge">Wetland Edge</option>
                 </Input>
+                
 
                 <a className="btn">
                   <i className="material-icons" onClick={this.handleFormSubmit}>
@@ -159,7 +161,7 @@ class Search extends Component {
                 </a>
               </form>
             </div>
-            <div className="col s9">
+            <div className="col s12 m9">
               {this.state.plants.length ? (
                 <ul className="collection">
                   {this.state.plants.map(plant => (
@@ -176,8 +178,8 @@ class Search extends Component {
                   ))}
                 </ul>
               ) : (
-                <h3 className="search">No Results to Display</h3>
-              )}
+                  <h3 className="search">No Results to Display</h3>
+                )}
             </div>
           </div>
         </Main>
