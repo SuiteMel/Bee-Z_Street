@@ -129,37 +129,32 @@ class Register extends Component {
               </p>
               <div className="row">
                 <div className="col s4">
-                  <a href="./search">
                     <img
                       src="../images/prairie.png"
                       alt="prairie"
                       className="circle responsive-img shadow"
                     />
-                  </a>
                   <p className="trio">
                     Choose your<br />habitat
                   </p>
                 </div>
                 <div className="col s4">
-                  <a href="./search">
+
                     <img
                       src="../images/loam.png"
                       alt="loam soil"
                       className="circle responsive-img shadow"
                     />
-                  </a>
                   <p className="trio">
                     Choose your<br />soil
                   </p>
                 </div>
                 <div className="col s4">
-                  <a href="./search">
                     <img
                       src="../images/shade.png"
                       alt="shade garden"
                       className="circle responsive-img shadow"
                     />
-                  </a>
                   <p className="trio">
                     Choose your<br />sun level
                   </p>
