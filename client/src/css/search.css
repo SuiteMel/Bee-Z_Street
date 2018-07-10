@@ -27,6 +27,19 @@ h3.search{
   padding: 10px 20px;
 }
 
+.searchPage #searchCol {
+  margin-bottom: 10px;
+}
+
 .searchPage .collection {
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .searchPage .m9 {
+    background-color: white;
+  }
+  .searchPage .collection {
+    border: 0;
+  }
 }

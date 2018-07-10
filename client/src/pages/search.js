@@ -5,7 +5,7 @@ import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
 import { Input } from "react-materialize";
 import "../css/search.css";
-//import axios from "axios";
+import axios from "axios";
 
 class Search extends Component {
   state = {
@@ -18,9 +18,9 @@ class Search extends Component {
   };
 
   componentDidMount() {
-    //axios.defaults.headers.common["Authorization"] = localStorage.getItem(
-    //"jwtToken"
-    //);
+    axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+      "jwtToken"
+    );
     this.loadPlants();
   }
 
@@ -33,19 +33,23 @@ class Search extends Component {
 
   loadPlants = () => {
     API.getPlants()
-      .then(res => this.setState({ plants: res.data }))
-      .catch(err => {
-        console.log(err);
-        //if (error.response.status === 401) {
-        //this.props.history.push("/login");
+      .then(res => {
+        this.setState({ plants: res.data });
+      })
+      .catch(error => {
+        if (error.response.status === 401) {
+          this.props.history.push("/login");
+        }
       });
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
-    //axios.defaults.headers.common["Authorization"] = localStorage.getItem(
-    //"jwtToken"
-    //);
+
+    //Does this need to be added to every function?
+    axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+      "jwtToken"
+    );
     API.searchPlants({
       commonName: this.state.cName,
       soil: this.state.soil,
@@ -54,7 +58,19 @@ class Search extends Component {
       habitat: this.state.habitat
     })
       .then(res => this.setState({ plants: res.data }))
-      .catch(err => console.log(err));
+      .catch(error => {
+        if (error.response.status === 401) {
+          //Again, what is going on  here???
+          this.props.history.push("/login");
+        }
+      });
+  };
+
+  //TEMPORARY ADDITION ALONG WITH THE BUTTON BELOW
+  logout = event => {
+    event.preventDefault();
+    localStorage.removeItem("jwtToken");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -62,7 +78,7 @@ class Search extends Component {
       <div>
         <Main className="searchPage">
           <div className="row">
-            <div className="col s3" id="searchCol">
+            <div className="col s12 m3" id="searchCol">
               <form
                 id="searchForm"
                 className="row"
@@ -136,6 +152,7 @@ class Search extends Component {
                   <option value="woodland edge">Woodland Edge</option>
                   <option value="wetland edge">Wetland Edge</option>
                 </Input>
+                
 
                 <a className="btn">
                   <i className="material-icons" onClick={this.handleFormSubmit}>
@@ -144,7 +161,7 @@ class Search extends Component {
                 </a>
               </form>
             </div>
-            <div className="col s9">
+            <div className="col s12 m9">
               {this.state.plants.length ? (
                 <ul className="collection">
                   {this.state.plants.map(plant => (
@@ -161,11 +178,14 @@ class Search extends Component {
                   ))}
                 </ul>
               ) : (
-                <h3 className="search">No Results to Display</h3>
-              )}
+                  <h3 className="search">No Results to Display</h3>
+                )}
             </div>
           </div>
         </Main>
+        <button className="logoutbutton" type="button" onClick={this.logout}>
+          Logout
+        </button>
       </div>
     );
   }

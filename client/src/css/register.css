@@ -1,18 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
-html, body {min-height: 100%;}
-body {background-size: cover;}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background-size: cover;
+}
 
 .homeMain {
   background: url("../images/home-bee4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 118vh;
+  /* height: 118vh; */
+  height: 100%;
 }
-
-
 
 /* .homeBorder {
   border: 1px #311b92 solid;
@@ -125,4 +129,34 @@ a.home:visited {
 :-ms-input-placeholder {
   color: #3b3c36;
   font-style: italic;
+}
+
+.form h3 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+input.form {
+  display: inline-block;
+}
+
+button.signup {
+  padding: 5px;
+}
+
+h2.homeform {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: black;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.screen {
+  background-color: rgba(255, 255, 255, 0.1);
 }
