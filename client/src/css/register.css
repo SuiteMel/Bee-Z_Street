@@ -1,26 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300, 600);
-@import url(https://fonts.googleapis.com/css?family=Raleway:300, 600);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
-body,
-html {
-  cursor: url("../images/bee_cursor.png"), default;
-  background: linear-gradient(70deg, #e65100, #f9a825);
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background-size: cover;
 }
 
 .homeMain {
-  background: url("../images/home-bee4.jpg");
+  background: url("../images/home-bee4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 40px 0px 0px 0px;
-  margin: 0px 0px 0px -20px;
-  height: 92vh;
+  height: 118vh;
 }
 
-.homeBorder {
+/* .homeBorder {
   border: 1px #311b92 solid;
-  margin: 10px 0px 10px 0px;
-}
+  margin: 10px 0px 10px 0px; 
+}*/
 
 h1.homeHead {
   font-size: 40px;
@@ -40,16 +40,7 @@ h2.home {
   font-weight: bolder;
   font-family: "Poppins", sans-serif;
 }
-h2.homeform {
-  font-size: 24px;
-  font-style: italic;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  color: black;
-  padding-left: 20px;
-  font-weight: bolder;
-  font-family: "Poppins", sans-serif;
-}
+
 h3.home {
   font-size: 20px;
   margin-bottom: 10px;
@@ -137,4 +128,34 @@ a.home:visited {
 :-ms-input-placeholder {
   color: #3b3c36;
   font-style: italic;
+}
+
+.form h3 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+input.form {
+  display: inline-block;
+}
+
+button.signup {
+  padding: 5px;
+}
+
+h2.homeform {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: black;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.screen {
+  background-color: rgba(255, 255, 255, 0.1);
 }

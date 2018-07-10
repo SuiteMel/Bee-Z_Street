@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/contact.css";
 import Main from "../components/Main";
-//import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => (

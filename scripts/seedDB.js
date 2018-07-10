@@ -17,32 +17,28 @@ const plantSeed = [
     height: 48, //inches
     spacing: 24, //inches
     notes:
-      "Rattlesnake master has unique round flowers that are held above long sturdy flower stalks. To feature the yucca-like, spiny, gray foliage, plant rattlesnake master next to shorter grasses such as prairie dropseed.",
+      "Rattlesnake Master has unique round flowers that are held above long, sturdy flower stalks. To feature the yucca-like, spiny, gray foliage, plant Rattlesnake Master next to shorter grasses such as Prairie Dropseed.",
     habitat: "prairie",
     flowering: ["July", "August"],
     sun: ["full"],
     soil: ["sand", "loam", "clay"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://cdn.shopify.com/s/files/1/1008/4432/products/Rattlesnake_Master_2.jpg?v=1525018687",
+      box: "../images/plant_photos/Rattlesnake_Master.jpg",
       proportional: "./images/rattlesnake_master_252.png"
     },
     insects: [
       {
         insect: "Honey Bees",
-        image:
-          "https://en.wikipedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+        image: "../images/bees/honeybee.png"
       },
       {
         insect: "Yellow-Faced Bees",
-        image:
-          "https://crownbees.com/media/magiccart/blog/Male_YFB_on_Tree_HeliotropeSquare.png"
+        image: "../images/bees/yellow-face-bees.png"
       },
       {
-        insect: "Bumble Bees",
-        image:
-          "https://animalsadda.com/wp-content/uploads/2015/05/bumble-bee-6.jpg"
+        insect: "Bumblebees",
+        image: "../images/bees/bumblebee.png"
       }
     ]
   },
@@ -53,7 +49,7 @@ const plantSeed = [
     height: 24, //inches
     spacing: 16, //inches
     notes:
-      "Because of its large taproot, butterfly milkweed does not translplant well an requires loose soils. Plant in masses to create an unrivaled display of bright orange flowers.",
+      "Because of its large taproot, Butterfly Milkweed does not translplant well and requires loose soils. Plant in masses to create an unrivaled display of bright orange flowers.",
     habitat: "prairie",
     flowering: ["June", "July"],
     sun: ["full"],
@@ -61,24 +57,21 @@ const plantSeed = [
     water: ["mesic", "dry"],
     images: {
       box:
-        "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/a/s/asclepias-tuberosa-butterfly-weed-close-up.jpg",
+        "../images/plant_photos/asclepias-tuberosa-butterfly-weed-close-up.jpg",
       proportional: "./images/butterfly_milkweed_250.png"
     },
     insects: [
       {
         insect: "Leaf-Cutter Bees",
-        image:
-          "https://14fr7h2xgn5j198icf1rcm0i-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/LeafcutterCC%C2%A9MJIPhotos.jpg"
+        image: "../images/bees/leaf-cutter-bee.png"
       },
       {
         insect: "Green Sweat Bees",
-        image:
-          "https://nature.mdc.mo.gov/sites/default/files/styles/centered_full/public/media/images/2010/05/sweat_bee.jpg?itok=21nZ5yQK"
+        image: "../images/bees/green-sweat-bee.png"
       },
       {
         insect: "Monarch Butterflies",
-        image:
-          "http://mediad.publicbroadcasting.net/p/wesa/files/styles/x_large/public/201705/monarch__1_.jpg"
+        image: "../images/bees/monarch.png"
       }
     ]
   },
@@ -88,32 +81,28 @@ const plantSeed = [
     height: 15, //inches
     spacing: 12, //inches
     notes:
-      "Prairie phlox performs best in well-drained soils in full sun. Use massed on the edges of small prairie plantings or in a boulevard planting.",
+      "Prairie Phlox performs best in well-drained soils in full sun. Use massed on the edges of small prairie plantings or in a boulevard planting.",
     habitat: "prairie",
     flowering: ["April", "May"],
     sun: ["full"],
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://www.highcountrygardens.com/media/catalog/product/cache/3/image/cdd56dd0d7347dc27aa421c918b212c4/p/h/phlox_villosissima_alplains_cc.jpg",
+      box: "../images/plant_photos/phlox_villosissima_alplains_cc.jpg",
       proportional: "./images/prairie_phlox_80.png"
     },
     insects: [
       {
-        insect: "Bumble Bees",
-        image:
-          "https://animalsadda.com/wp-content/uploads/2015/05/bumble-bee-6.jpg"
+        insect: "Bumblebees",
+        image: "../images/bees/bumblebee.png"
       },
       {
-        insect: "Green Sweat bees",
-        image:
-          "https://nature.mdc.mo.gov/sites/default/files/styles/centered_full/public/media/images/2010/05/sweat_bee.jpg?itok=21nZ5yQK"
+        insect: "Green Sweat Bees",
+        image: "../images/bees/green-sweat-bee.png"
       },
       {
         insect: "Small Carpenter Bees",
-        image:
-          "http://nathistoc.bio.uci.edu/hymenopt/Small%20Carpenter%20Bees%20(Ceratina)%20B.jpg"
+        image: "../images/bees/small-carpenter-bee.png"
       }
     ]
   },
@@ -123,32 +112,28 @@ const plantSeed = [
     height: 45, //inches
     spacing: 12, //inches.
     notes:
-      "One of the tallest coneflower species. combine with prairie grasses or medium-height forbs such as butterfly milkweed",
+      "One of the tallest coneflower species. combine with prairie grasses or medium-height forbs such as Butterfly Milkweed.",
     habitat: "prairie",
     flowering: ["June", "July"],
     sun: ["full"],
     soil: ["sand", "loam", "clay"],
     water: ["mesic", "dry"],
     images: {
-      box:
-        "https://www.australianseed.com/persistent/catalogue_images/products/echinacea_pallida.jpg",
+      box: "../images/plant_photos/echinacea_pallida.jpg",
       proportional: "./images/coneflower_235.png"
     },
     insects: [
       {
         insect: "Long-Horned Bees",
-        image:
-          "https://bugguide.net/images/cache/HQA/RYK/HQARYK1RKQYQ20K0W0Q0P0Q080DQJKYQX0NR3KBR50BRRQOQ3KWRQQ3RW000IQH0IQQ020DQM0Z0603RQQTRXQL020.jpg"
+        image: "../images/bees/longhorn-bee.png"
       },
       {
         insect: "Sweat Bees",
-        image:
-          "https://2.bp.blogspot.com/-PLKsB3Rf60o/V7igR_GuSMI/AAAAAAAAI4E/KJTCPeLSK6wX-9bWV7tT8vX-L1vtY9vSACLcB/s1600/HalictusRubicundusCO2a.jpg"
+        image: "../images/bees/sweat-bee.png"
       },
       {
         insect: "American Lady Butterflies",
-        image:
-          "https://www.laspilitas.com/images/grid24_24/6855/butterflies/Butterflies_and_Moths/American_Painted_lady/painted_lady_butterfly.jpg"
+        image: "../images/bees/american-lady-butterfly.png"
       }
     ]
   },
@@ -158,32 +143,28 @@ const plantSeed = [
     height: 24, //inches
     spacing: 12, //inches
     notes:
-      "Wild geranium rivals cultivated geraniums with its numerous, large pink flowers. It flowers profusely in springs with high rainfall. An excellent plant to mass under trees.",
+      "Wild Geranium rivals cultivated geraniums with its numerous, large pink flowers. It flowers profusely in springs with high rainfall. An excellent plant to mass under trees.",
     habitat: "woodland edge",
     flowering: ["April", "May"],
     sun: ["part-sun", "shade"],
     soil: ["sand", "loam"],
     water: ["mesic", "dry"],
     images: {
-      box:
-        "https://dorsetperennials.co.uk/wp-content/uploads/2015/05/Geranium-maculatum-Chatto-3.jpg",
+      box: "../images/plant_photos/Geranium-maculatum-Chatto-3.jpg",
       proportional: "./images/wild_geranium_120.png"
     },
     insects: [
       {
         insect: "Mason Bees",
-        image:
-          "http://cwf-fcf.org/assets/images/pollinators/mason-bee-Jason-D-Roberts.jpg"
+        image: "../images/bees/mason-bee.png"
       },
       {
         insect: "Mining Bees",
-        image:
-          "http://1.bp.blogspot.com/-54m638DYUmw/UXaiScQ4v7I/AAAAAAAABEE/9wGVjlsF67o/s1600/DSC03519.JPG"
+        image: "../images/bees/mining-bee.png"
       },
       {
         insect: "Cuckoo Bees",
-        image:
-          "https://bugguide.net/images/raw/J0A/QZS/J0AQZSVQZSEQ9K4Q108QY01Q307KY08KY07KRS5KHSWQV0EQZS1QY05KWKLK6KQKV0NQY01Q304K.jpg"
+        image: "../images/bees/cuckoo-bee.png"
       }
     ]
   },
@@ -194,32 +175,28 @@ const plantSeed = [
     height: 30, //inches
     spacing: 36, //inches
     notes:
-      "Large-leafed aster is one of the few native woodland perennials to flower in late summer. Combine with ferns for great contrast and foliage textures",
+      "Large-Leafed Aster is one of the few native woodland perennials to flower in late summer. Combine with ferns for great contrast and foliage textures",
     habitat: "woodland edge",
     flowering: ["July", "August", "September"],
     sun: ["part-sun", "shade"],
     soil: ["sand", "loam", "clay"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "https://cdn.shopify.com/s/files/1/0739/9053/products/Aster-large-leaved-wood_1024x1024.jpg?v=1478537263",
+      box: "../images/plant_photos/Aster-large-leaved-wood_1024x1024.jpg",
       proportional: "./images/large_leafed_aster_240.png"
     },
     insects: [
       {
-        insect: "Bumble Bees",
-        image:
-          "https://animalsadda.com/wp-content/uploads/2015/05/bumble-bee-6.jpg"
+        insect: "Bumblebees",
+        image: "../images/bees/bumblebee.png"
       },
       {
-        insect: "Green Sweat bees",
-        image:
-          "https://nature.mdc.mo.gov/sites/default/files/styles/centered_full/public/media/images/2010/05/sweat_bee.jpg?itok=21nZ5yQK"
+        insect: "Green Sweat Bees",
+        image: "../images/bees/green-sweat-bee.png"
       },
       {
         insect: "Mining Bees",
-        image:
-          "http://1.bp.blogspot.com/-54m638DYUmw/UXaiScQ4v7I/AAAAAAAABEE/9wGVjlsF67o/s1600/DSC03519.JPG"
+        image: "../images/bees/mining-bee.png"
       }
     ]
   },
@@ -230,32 +207,28 @@ const plantSeed = [
     height: 15, //inches
     spacing: 12, //inches
     notes:
-      "The silver-spotted leaves are prominent before the flowerheads develop; they then turn dark green. Mass plants near edge of woodland for a colorful display.",
+      "The silver-spotted leaves of Virginia Waterleaf are prominent before the flowerheads develop; they then turn dark green. Mass plants near edge of woodland for a colorful display.",
     habitat: "woodland edge",
     flowering: ["May"],
     sun: ["part-sun", "shade"],
     soil: ["sand", "loam"],
     water: ["wet", "mesic", "dry"],
     images: {
-      box:
-        "http://www.illinoiswildflowers.info/woodland/photos/va_waterleaf1.jpg",
+      box: "../images/plant_photos/va_waterleaf1.jpg",
       proportional: "./images/virginia_waterleaf_215.png"
     },
     insects: [
       {
         insect: "Mining Bees",
-        image:
-          "http://1.bp.blogspot.com/-54m638DYUmw/UXaiScQ4v7I/AAAAAAAABEE/9wGVjlsF67o/s1600/DSC03519.JPG"
+        image: "../images/bees/mining-bee.png"
       },
       {
         insect: "Mason Bees",
-        image:
-          "http://cwf-fcf.org/assets/images/pollinators/mason-bee-Jason-D-Roberts.jpg"
+        image: "../images/bees/mason-bee.png"
       },
       {
         insect: "Sweat Bees",
-        image:
-          "https://2.bp.blogspot.com/-PLKsB3Rf60o/V7igR_GuSMI/AAAAAAAAI4E/KJTCPeLSK6wX-9bWV7tT8vX-L1vtY9vSACLcB/s1600/HalictusRubicundusCO2a.jpg"
+        image: "../images/bees/sweat-bee.png"
       }
     ]
   },
@@ -273,23 +246,21 @@ const plantSeed = [
     water: ["wet, mesic"],
     images: {
       box:
-        "https://www.omcseeds.com/image/cache/data/products/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",
+        "../images/plant_photos/swamp-milkweed-asclepias-incarnata-cinderella_0-600x600.jpg",
       proportional: "./images/swamp_milkweed_235.png"
     },
     insects: [
       {
         insect: "Monarch Butterflies",
-        image:
-          "http://mediad.publicbroadcasting.net/p/wesa/files/styles/x_large/public/201705/monarch__1_.jpg"
+        image: "../images/bees/monarch.png"
       },
       {
         insect: "Great Spangled Fritillary",
-        image:
-          "https://www.massaudubon.org/butterflyatlas/images/butterflies/greatspangledfritillary.jpg"
+        image: "../images/bees/great-spangled-fritillary.png"
       },
       {
         insect: "Red Admiral Butterfly",
-        image: "http://www.luontoportti.com/suomi/images/16098.jpg"
+        image: "../images/bees/red-admiral-butterfly.png"
       }
     ]
   },
@@ -306,41 +277,23 @@ const plantSeed = [
     soil: ["sand", "loam", "clay"],
     water: ["wet"],
     images: {
-      box:
-        "https://www.americanmeadows.com/media/catalog/product/cache/1/image/2664a1c26d20ff89f08769f165108d16/c/h/chelone-glabra-_1_.jpg",
+      box: "../images/plant_photos/white_turtlehead_chelone-glabra-_1_.jpg",
       proportional: "./images/white_turtlehead_313.png"
     },
     insects: [
       {
         insect: "Long-Horned Bees",
-        image:
-          "https://bugguide.net/images/cache/HQA/RYK/HQARYK1RKQYQ20K0W0Q0P0Q080DQJKYQX0NR3KBR50BRRQOQ3KWRQQ3RW000IQH0IQQ020DQM0Z0603RQQTRXQL020.jpg"
+        image: "../images/bees/longhorn-bee.png"
       },
       {
-        insect: "Bumble Bees",
-        image:
-          "https://animalsadda.com/wp-content/uploads/2015/05/bumble-bee-6.jpg"
+        insect: "Bumblebees",
+        image: "../images/bees/bumblebee.png"
       },
       {
         insect: "Baltimore Checkerspot Butterfly",
-        image:
-          "http://mainebutterflies.com/Baltimore_Checkerspot_files/image007.jpg"
+        image: "../images/bees/baltimore-checkerspot-butterfly.png"
       }
     ]
-  }
-];
-const userSeed = [
-  {
-    firstname: "Patrick",
-    lastname: "Kearney",
-    useername: "pckearney@garden.com",
-    password: "coneflower"
-  },
-  {
-    firstname: "Jennifer",
-    lastname: "Lang",
-    useername: "jennifer@dragndrop.com",
-    password: "reactmaterialize"
   }
 ];
 
@@ -348,17 +301,6 @@ db.Plant.remove({})
   .then(() => db.Plant.collection.insertMany(plantSeed))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted into Plant!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
-
-db.User.remove({})
-  .then(() => db.User.collection.insertMany(userSeed))
-  .then(data => {
-    console.log(data.insertedIds.length + " records inserted into User!");
     process.exit(0);
   })
   .catch(err => {

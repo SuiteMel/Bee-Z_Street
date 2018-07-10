@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import PlantCard from "../components/PlantCard";
 import { Input } from "react-materialize";
 import "../css/search.css";
+import axios from "axios";
 
 class Search extends Component {
   state = {
@@ -17,6 +18,9 @@ class Search extends Component {
   };
 
   componentDidMount() {
+    axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+      "jwtToken"
+    );
     this.loadPlants();
   }
 
@@ -29,12 +33,23 @@ class Search extends Component {
 
   loadPlants = () => {
     API.getPlants()
-      .then(res => this.setState({ plants: res.data }))
-      .catch(err => console.log(err));
+      .then(res => {
+        this.setState({ plants: res.data });
+      })
+      .catch(error => {
+        if (error.response.status === 401) {
+          this.props.history.push("/login");
+        }
+      });
   };
 
   handleFormSubmit = event => {
     event.preventDefault();
+
+    //Does this need to be added to every function?
+    axios.defaults.headers.common["Authorization"] = localStorage.getItem(
+      "jwtToken"
+    );
     API.searchPlants({
       commonName: this.state.cName,
       soil: this.state.soil,
@@ -43,7 +58,18 @@ class Search extends Component {
       habitat: this.state.habitat
     })
       .then(res => this.setState({ plants: res.data }))
-      .catch(err => console.log(err));
+      .catch(error => {
+        if (error.response.status === 401) {
+          //Again, what is going on  here???
+          this.props.history.push("/login");
+        }
+      });
+  };
+  //TEMPORARY ADDITION ALONG WITH THE BUTTON BELOW
+  logout = event => {
+    event.preventDefault();
+    localStorage.removeItem("jwtToken");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -80,7 +106,6 @@ class Search extends Component {
                   <option value="loam">Loam</option>
                   <option value="sand">Sand</option>
                 </Input>
-
                 {/* Sun selection */}
                 <Input
                   s={12}
@@ -96,7 +121,6 @@ class Search extends Component {
                   <option value="part-sun">Part-Sun</option>
                   <option value="shade">Shade</option>
                 </Input>
-
                 {/* Water selection */}
                 <Input
                   s={12}
@@ -112,7 +136,6 @@ class Search extends Component {
                   <option value="mesic">Mesic</option>
                   <option value="dry">Dry</option>
                 </Input>
-
                 {/* Habitat selection */}
                 <Input
                   s={12}
@@ -136,7 +159,6 @@ class Search extends Component {
                 </a>
               </form>
             </div>
-
             <div className="col s9">
               {this.state.plants.length ? (
                 <ul className="collection">
@@ -159,6 +181,9 @@ class Search extends Component {
             </div>
           </div>
         </Main>
+        <button className="logoutbutton" type="button" onClick={this.logout}>
+          Logout
+        </button>
       </div>
     );
   }
