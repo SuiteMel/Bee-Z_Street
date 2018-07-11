@@ -1,7 +1,7 @@
 # Bee-Z Street
 [Bee-Z Street Google Slides presentation](https://docs.google.com/presentation/d/1wvgveGbOG76tQeEOEISmlM2Q6npVLteYs8_3p5BxcaQ/edit?usp=sharing)
 
-
+![Image of Bee-Z Street](https://github.com/SuiteMel/Bee-Z_Street/blob/sams_branch/client/public/images/read_me_image.png)
 
 ## Description
 
