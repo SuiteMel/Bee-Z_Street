@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import Register from "./pages/register";
@@ -18,13 +18,15 @@ const App = () => (
     <Router>
       <div className="Site-content">
       <Navigation />
+      <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Search} />
         <Route exact path="/garden" component={Garden} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/search/:id" component={PlantInfo} />
-        <Route component={NoMatch} />
+        <Route path="*" component={NoMatch} />
+      </Switch>
       </div>
     </Router>
     <Footer>
