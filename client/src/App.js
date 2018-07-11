@@ -9,6 +9,7 @@ import Contact from "./pages/contact";
 import PlantInfo from "./pages/plantInfo";
 import Login from "./pages/login";
 import Navigation from "./components/Navbar";
+import NoMatch from "./pages/NoMatch";
 
 import "./App.css";
 
@@ -23,6 +24,7 @@ const App = () => (
         <Route exact path="/garden" component={Garden} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/search/:id" component={PlantInfo} />
+        <Route component={NoMatch} />
       </div>
     </Router>
     <Footer>
