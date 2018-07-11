@@ -8,7 +8,7 @@ class Navigation extends Component {
     event.preventDefault();
     localStorage.removeItem("jwtToken");
     localStorage.removeItem("beeZUser");
-    // this.props.history.push("/login");
+    console.log("not working yet");
   };
 
   render() {

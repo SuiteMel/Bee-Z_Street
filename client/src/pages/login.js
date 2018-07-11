@@ -21,11 +21,6 @@ class Login extends Component {
     const { username, password } = this.state;
     API.loginSubmit({ username, password })
       .then(result => {
-        //PCK added next four lines
-        console.log("Result: " + result);
-        const resString = JSON.stringify(result);
-        console.log("Result String: " + resString);
-        console.log("Token: " + result.data.token);
         localStorage.setItem("jwtToken", result.data.token);
         localStorage.setItem("beeZUser", this.state.username);
         this.setState({ message: "" });
@@ -39,7 +34,6 @@ class Login extends Component {
           });
         }
       });
-    console.log(username, password);
   };
 
   render() {
