@@ -70,6 +70,7 @@ class Search extends Component {
   logout = event => {
     event.preventDefault();
     localStorage.removeItem("jwtToken");
+    localStorage.removeItem("beeZUser");
     this.props.history.push("/login");
   };
 
@@ -146,14 +147,12 @@ class Search extends Component {
                   name="habitat"
                   value={this.state.habitat}
                   onChange={this.handleInputChange}
-                  
                 >
                   <option value="">Choose your Habitat</option>
                   <option value="prairie">Prairie</option>
                   <option value="woodland edge">Woodland Edge</option>
                   <option value="wetland edge">Wetland Edge</option>
                 </Input>
-                
 
                 <a className="btn yellow darken-3">
                   <i className="material-icons" onClick={this.handleFormSubmit}>
@@ -179,8 +178,8 @@ class Search extends Component {
                   ))}
                 </ul>
               ) : (
-                  <h3 className="search">No Results to Display</h3>
-                )}
+                <h3 className="search">No Results to Display</h3>
+              )}
             </div>
           </div>
         </Main>

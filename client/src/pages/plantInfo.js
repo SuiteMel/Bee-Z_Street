@@ -39,6 +39,7 @@ class PlantInfo extends Component {
   logout = event => {
     event.preventDefault();
     localStorage.removeItem("jwtToken");
+    localStorage.removeItem("beeZUser");
     this.props.history.push("/login");
   };
 
@@ -65,9 +66,10 @@ class PlantInfo extends Component {
 
             <Col s={12} m={7}>
               <Row>
-                <p className="h2 center-align white-text">Planting Information</p>
+                <p className="h2 center-align white-text">
+                  Planting Information
+                </p>
                 <Col s={12} m={6}>
-                
                   <ul className="collection with-header">
                     <li className="collection-header #f9a825 yellow darken-3 white-text">
                       <h6>Growing Info</h6>
@@ -149,7 +151,7 @@ class PlantInfo extends Component {
           </Row>
           <button className="logoutbutton" type="button" onClick={this.logout}>
             Logout
-        </button>
+          </button>
         </Main>
       </div>
     );
