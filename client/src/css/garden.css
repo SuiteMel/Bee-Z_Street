@@ -2,12 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
 .gardenMain {
-background:  url("../images/watercolor-brown.jpg"); 
+background: linear-gradient(rgba(153,101,21,0.5), rgba(0,0,0,0)), url("../images/watercolor-brown.jpg"); 
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 font-family: Poppins;
-padding: 0px 0px 0px 0px;  
+
 margin: -30px 0px -20px 0px;
 height: 90%;
 }
