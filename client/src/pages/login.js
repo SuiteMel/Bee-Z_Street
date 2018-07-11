@@ -27,6 +27,7 @@ class Login extends Component {
         console.log("Result String: " + resString);
         console.log("Token: " + result.data.token);
         localStorage.setItem("jwtToken", result.data.token);
+        localStorage.setItem("beeZUser", this.state.username);
         this.setState({ message: "" });
 
         this.props.history.push("/");

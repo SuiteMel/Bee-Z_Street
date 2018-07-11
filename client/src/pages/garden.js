@@ -14,6 +14,7 @@ class Garden extends Component {
   logout = event => {
     event.preventDefault();
     localStorage.removeItem("jwtToken");
+    localStorage.removeItem("beeZUser");
     this.props.history.push("/login");
   };
 
