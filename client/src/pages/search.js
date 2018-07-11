@@ -146,6 +146,7 @@ class Search extends Component {
                   name="habitat"
                   value={this.state.habitat}
                   onChange={this.handleInputChange}
+                  
                 >
                   <option value="">Choose your Habitat</option>
                   <option value="prairie">Prairie</option>
@@ -154,7 +155,7 @@ class Search extends Component {
                 </Input>
                 
 
-                <a className="btn">
+                <a className="btn yellow darken-3">
                   <i className="material-icons" onClick={this.handleFormSubmit}>
                     search
                   </i>

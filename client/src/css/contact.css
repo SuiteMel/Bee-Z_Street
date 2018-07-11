@@ -13,6 +13,10 @@
   height: 100%;
  }
 
+@media (min-height: 100vh) {
+    .contactMain {height: 100vh;}
+}
+
 .border {
   border: 1px red dotted;
 }
