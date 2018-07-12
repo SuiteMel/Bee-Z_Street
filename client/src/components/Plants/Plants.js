@@ -2,34 +2,33 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
-import "./Plants.css";
 
 
-const style =  {
+const style = {
 
 	width: '163px',
 	height: '275px',
-    cursor: 'move',
+	cursor: 'move',
 	size: '24px',
-	
+
 
 };
 
 class Card extends Component {
-	
+
 	render() {
 		const { card, isDragging, connectDragSource, connectDropTarget } = this.props;
 		const opacity = isDragging ? 0 : 1;
-	
+
 
 		return connectDragSource(connectDropTarget(
 			<div className="hoverable" style={{ ...style, opacity }}>
-				
-				
-				<img className="responsive-img" src={card.url} alt = "plants" width="163px" height="235px" />
-				
+
+
+				<img className="responsive-img" src={card.url} alt="plants" width="163px" height="235px" />
+
 				<h6 className="center-align">{card.name}</h6>
-				
+
 			</div>
 		));
 	}
@@ -37,35 +36,35 @@ class Card extends Component {
 
 const cardSource = {
 
-	beginDrag(props) {	
-		
+	beginDrag(props) {
+
 		return {
-						
+
 			index: props.index,
 			listId: props.listId,
 			card: props.card,
 			src: props.image,
-            alt: props.name
-			
-			
+			alt: props.name
+
+
 		};
-	
-},
+
+	},
 
 	endDrag(props, monitor) {
 		const item = monitor.getItem();
-		const dropResult = monitor.getDropResult();	
-		
+		const dropResult = monitor.getDropResult();
 
-		if ( dropResult && dropResult.listId !== item.listId ){
+
+		if (dropResult && dropResult.listId !== item.listId) {
 			return
 		}
 
 		else {
 			props.removeCard(item.index);
 		}
-		
-		
+
+
 	}
 };
 
@@ -74,7 +73,7 @@ const cardTarget = {
 	hover(props, monitor, component) {
 		const dragIndex = monitor.getItem().index;
 		const hoverIndex = props.index;
-		const sourceListId = monitor.getItem().listId;	
+		const sourceListId = monitor.getItem().listId;
 
 		// Don't replace items with themselves
 		if (dragIndex === hoverIndex) {
@@ -92,7 +91,7 @@ const cardTarget = {
 
 		// Get pixels to the top
 		const hoverClientY = clientOffset.y - hoverBoundingRect.top;
-		
+
 
 		// Only perform the move when the mouse has crossed half of the items height
 		// When dragging downwards, only move when the cursor is below 50%
@@ -109,9 +108,9 @@ const cardTarget = {
 		}
 
 		// Time to actually perform the action
-		if ( props.listId === sourceListId ) {
+		if (props.listId === sourceListId) {
 			props.moveCard(dragIndex, hoverIndex);
-			
+
 
 
 			// Note: we're mutating the monitor item here!
@@ -119,7 +118,7 @@ const cardTarget = {
 			// but it's good here for the sake of performance
 			// to avoid expensive index searches.
 			monitor.getItem().index = hoverIndex;
-		}		
+		}
 	}
 };
 

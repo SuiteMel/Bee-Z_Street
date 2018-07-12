@@ -1,15 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300, 600);
-@import url(https://fonts.googleapis.com/css?family=Raleway:300, 600);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600);
 
 .contactMain {
   background: url("../images/bees-flowers-contact-whiter.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* margin: 0px 0px 0px -20px; */
   margin: 0;
   padding-bottom: 20px;
-  /* height: 88vh; */
   height: 100%;
 }
 
@@ -25,7 +23,6 @@
 
 h1.contactHead {
   font-size: 40px;
-  /* color: #311b92; */
   color: #6a1b9a;
   padding-left: 20px;
   font-weight: bolder;

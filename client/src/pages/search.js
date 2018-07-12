@@ -186,15 +186,15 @@ class Search extends Component {
                       ))}
                     </ul>
                   ) : (
-                    <h3 className="search">No Results to Display</h3>
-                  )}
+                      <h3 className="search">No Results to Display</h3>
+                    )}
                 </div>
               </div>
             </Main>
           </div>
         ) : (
-          this.props.history.push("/login")
-        )}
+            this.props.history.push("/login")
+          )}
       </div>
     );
   }
