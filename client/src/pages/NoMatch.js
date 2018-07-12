@@ -7,14 +7,14 @@ class NoMatch extends Component {
   render() {
     return (
       <Main className="noMatch">
-          <Row>
-            <Col s={12} className="">
-              <Card className="orange-text white ">
-                <h1 className="center-align">Ouch! You've been stung. This page doesn't exist.</h1>
-                <img src="./images/Sting-Kill-33.png" />
-              </Card>
-            </Col>
-          </Row>
+        <Row>
+          <Col s={12} className="">
+            <Card className="orange-text white ">
+              <h1 className="center-align">Ouch! You've been stung. This page doesn't exist.</h1>
+              <img src="./images/Sting-Kill-33.png" alt="Bee at the grill" />
+            </Card>
+          </Col>
+        </Row>
       </Main>
     );
   }

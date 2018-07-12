@@ -14,7 +14,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 118vh; */
   height: 100%;
 }
 
@@ -22,14 +21,8 @@ body {
   .homeMain {height: 118vh;}
 }
 
-/* .homeBorder {
-  border: 1px #311b92 solid;
-  margin: 10px 0px 10px 0px; 
-}*/
-
 h1.homeHead {
   font-size: 40px;
-  /* color: #311b92; */
   color: #6a1b9a;
   padding-left: 20px;
   font-weight: bolder;
@@ -81,7 +74,6 @@ p.instructions {
   font-weight: bolder;
   font-family: "Raleway", sans-serif;
   line-height: 30px;
-  /* text-shadow: 2px 2px 4px #ffffff; */
   font-style: italic;
 }
 a.home:hover,
@@ -97,7 +89,6 @@ a.home:visited {
 }
 
 .shadow {
-  /* border: 1px solid darkgreen; */
   display: block;
   margin-top: 10px;
   margin-left: auto;

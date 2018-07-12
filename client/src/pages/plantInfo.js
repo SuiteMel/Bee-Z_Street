@@ -158,8 +158,8 @@ class PlantInfo extends Component {
             </Main>
           </div>
         ) : (
-          this.props.history.push("/login")
-        )}
+            this.props.history.push("/login")
+          )}
       </div>
     );
   }
