@@ -5,6 +5,8 @@ import Target from "../components/Target";
 import "../css/garden.css";
 import Main from "../components/Main";
 import { Col, Row } from "react-materialize";
+import Navigation from "../components/Navbar";
+//import logout from "../utils/logout";
 
 class Garden extends Component {
   state = {
@@ -14,6 +16,7 @@ class Garden extends Component {
   logout = event => {
     event.preventDefault();
     localStorage.removeItem("jwtToken");
+    localStorage.removeItem("beeZUser");
     this.props.history.push("/login");
   };
 
@@ -96,79 +99,75 @@ class Garden extends Component {
     return (
       <div>
         {this.state.jwtToken ? (
-          <Main className="gardenMain">
-            <h1 className="white-text center-align garden-head">
-              {" "}
-              Design Your Garden!
-            </h1>
-            <h4 className="white-text center-align">
-              Drag and drop native Kansas plants to design your own garden
-            </h4>
-            <h4 className="white-text center-align">
-              Drag twice to delete a plant
-            </h4>
-            <h6 className=" purple-text center-align">
-              {" "}
-              &mdash; Not Touch Compatible &mdash;{" "}
-            </h6>
+          <div>
+            <Navigation logout={this.logout} />
+            <Main className="gardenMain">
+              <h1 className="white-text center-align garden-head">
+                {" "}
+                Design Your Garden!
+              </h1>
+              <h4 className="white-text center-align">
+                Drag and drop native Kansas plants to design your own garden
+              </h4>
+              <h4 className="white-text center-align">
+                Drag twice to delete a plant
+              </h4>
+              <h6 className=" purple-text center-align">
+                {" "}
+                &mdash; Not Touch Compatible &mdash;{" "}
+              </h6>
 
-            <Row className="dirtGarden">
-              <Col className="header" s={12} m={12} l={12} xl={12}>
-                <Target
-                  className="header vertical-align "
-                  id={1}
-                  list={listOne}
-                />
-              </Col>
-            </Row>
+              <Row className="dirtGarden">
+                <Col className="header" s={12} m={12} l={12} xl={12}>
+                  <Target
+                    className="header vertical-align "
+                    id={1}
+                    list={listOne}
+                  />
+                </Col>
+              </Row>
 
-            <Row>
-              <Col s={6} m={6} l={2} xl={2}>
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
+              <Row>
+                <Col s={6} m={6} l={2} xl={2}>
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
 
-              <Col s={6} m={6} l={2} xl={2} className="grid-example">
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
-              <Col s={6} m={6} l={2} xl={2} className="grid-example">
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
-              <Col s={6} m={6} l={2} xl={2} className="grid-example">
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
-              <Col s={6} m={6} l={2} xl={2} className="grid-example">
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
-              <Col s={6} m={6} l={2} xl={2} className="grid-example">
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listTwo} />
-                <Target id={2} list={listThree} />
-                <Target id={2} list={listFour} />
-              </Col>
-            </Row>
-            <button
-              className="logoutbutton"
-              type="button"
-              onClick={this.logout}
-            >
-              Logout
-            </button>
-          </Main>
+                <Col s={6} m={6} l={2} xl={2} className="grid-example">
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
+                <Col s={6} m={6} l={2} xl={2} className="grid-example">
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
+                <Col s={6} m={6} l={2} xl={2} className="grid-example">
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
+                <Col s={6} m={6} l={2} xl={2} className="grid-example">
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
+                <Col s={6} m={6} l={2} xl={2} className="grid-example">
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listTwo} />
+                  <Target id={2} list={listThree} />
+                  <Target id={2} list={listFour} />
+                </Col>
+              </Row>
+            </Main>
+          </div>
         ) : (
           this.props.history.push("/login")
         )}

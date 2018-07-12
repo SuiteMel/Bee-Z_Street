@@ -35,6 +35,10 @@ h3.search{
   margin: 0;
 }
 
+.searchPage .dropdown-content li > span {
+  color: orange;
+}
+
 @media (max-width: 600px) {
   .searchPage .m9 {
     background-color: white;

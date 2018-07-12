@@ -3,8 +3,6 @@ import update from 'immutability-helper';
 import Card from '../Plants';
 import { DropTarget } from 'react-dnd';
 
-
-
 class Target extends Component {
 
 	constructor(props) {
@@ -32,7 +30,7 @@ class Target extends Component {
 			}
 		}));
 	}
-	
+
 	moveCard(dragIndex, hoverIndex) {
 		const { cards } = this.state;
 		const dragCard = cards[dragIndex];
@@ -53,17 +51,11 @@ class Target extends Component {
 		const { canDrop, isOver, connectDropTarget } = this.props;
 		const isActive = canDrop && isOver;
 		const style = {
-
-			
 			height: "300px",
 			cursor: 'move',
 			border: 'white dotted',
 			display: 'flex',
 			alignContent: 'center',
-			
-			
-			
-
 		};
 
 		const backgroundColor = isActive ? 'rgba(0, 0, 0, 0.5)' : 'rgba(0, 0, 0, 0)';
@@ -78,11 +70,10 @@ class Target extends Component {
 								index={i}
 								listId={this.props.id}
 								card={card}
-							
+
 								removeCard={this.removeCard.bind(this)}
 								moveCard={this.moveCard.bind(this)} />
 						</div>
-
 					)
 				})}
 			</div>

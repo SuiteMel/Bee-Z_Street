@@ -44,5 +44,9 @@ export default {
   //registers a new user into the database.
   registerSubmit: function(registerData) {
     return axios.post("/api/auth/register", registerData);
+  },
+  //registers a users contact message into the database.
+  contactSubmit: function(contactData) {
+    return axios.post("/api/contact", contactData);
   }
 };

@@ -25,7 +25,21 @@ class Register extends Component {
       result => {
         if (result.data.success) {
           console.log("SUCCESSFUL REGISTRATION!");
-          this.props.history.push("/login");
+          API.loginSubmit({ username, password })
+            .then(result => {
+              localStorage.setItem("jwtToken", result.data.token);
+              localStorage.setItem("beeZUser", this.state.username);
+              this.setState({ message: "" });
+
+              this.props.history.push("/");
+            })
+            .catch(error => {
+              if (error.response.status === 401) {
+                this.setState({
+                  message: error.response.data.msg
+                });
+              }
+            });
         } else {
           this.setState({ message: result.data.msg });
         }
@@ -129,37 +143,31 @@ class Register extends Component {
               </p>
               <div className="row">
                 <div className="col s4">
-                  <a href="./search">
-                    <img
-                      src="../images/prairie.png"
-                      alt="prairie"
-                      className="circle responsive-img shadow"
-                    />
-                  </a>
+                  <img
+                    src="../images/prairie.png"
+                    alt="prairie"
+                    className="circle responsive-img shadow"
+                  />
                   <p className="trio">
                     Choose your<br />habitat
                   </p>
                 </div>
                 <div className="col s4">
-                  <a href="./search">
-                    <img
-                      src="../images/loam.png"
-                      alt="loam soil"
-                      className="circle responsive-img shadow"
-                    />
-                  </a>
+                  <img
+                    src="../images/loam.png"
+                    alt="loam soil"
+                    className="circle responsive-img shadow"
+                  />
                   <p className="trio">
                     Choose your<br />soil
                   </p>
                 </div>
                 <div className="col s4">
-                  <a href="./search">
-                    <img
-                      src="../images/shade.png"
-                      alt="shade garden"
-                      className="circle responsive-img shadow"
-                    />
-                  </a>
+                  <img
+                    src="../images/shade.png"
+                    alt="shade garden"
+                    className="circle responsive-img shadow"
+                  />
                   <p className="trio">
                     Choose your<br />sun level
                   </p>
