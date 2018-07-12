@@ -3,6 +3,8 @@ import "../css/contact.css";
 import Main from "../components/Main";
 import API from "../utils/API";
 import axios from "axios";
+import Navigation from "../components/Navbar";
+//import logout from "../utils/logout";
 
 class Contact extends Component {
   state = {
@@ -45,11 +47,13 @@ class Contact extends Component {
   };
 
   render() {
-    const { username, subject, body, jwtToken } = this.state;
+    const { subject, body } = this.state;
+
     return (
       <div>
-        {jwtToken && username ? (
+        {this.state.jwtToken ? (
           <Main className="contactMain contact">
+            <Navigation logout={this.logout} />
             <div className="container">
               <div className="row">
                 <div className="col s6">
@@ -114,13 +118,6 @@ class Contact extends Component {
                   </p>
                 </div>
               </div>{" "}
-              <button
-                className="logoutbutton"
-                type="button"
-                onClick={this.logout}
-              >
-                Logout
-              </button>
             </div>
           </Main>
         ) : (
